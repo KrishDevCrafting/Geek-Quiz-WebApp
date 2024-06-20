@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose")
 const app = express();
 const port = 8000;
 const userModules = require("./modules/userModel")
@@ -10,16 +11,15 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-const mongoose = require('mongoose');
+// MongoDB connection URI
+const mongoURI = 'mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001';
 
-main().catch(err => console.log(err));
-
-async function main() {
-  await mongoose.connect('mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001');
-
-  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-}
-
+mongoose.connect(mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.log(err));
 
 
 
