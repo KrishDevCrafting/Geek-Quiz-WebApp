@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./components/navbar/Nav";
+import NavBar from "./components/navbar/Nav.jsx";
 import Main from "./components/Cards/Main";
 import Cards from "./components/Cards/Cards";
 import Card from "./components/Cards/Cards2";

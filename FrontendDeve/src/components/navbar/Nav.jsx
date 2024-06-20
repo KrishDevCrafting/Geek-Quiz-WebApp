@@ -1,5 +1,5 @@
 import React from "react";
-import "./nav"
+import "./Scrollnav"
 import "./nav.css";
 //import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
