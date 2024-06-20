@@ -76,7 +76,7 @@ const NavBar = () => {
     {/* Nav-bar section Started */}
       <div className="main">
         <nav id="style">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://geek-quiz-web-app.vercel.app/" target="_blank" rel="noopener noreferrer">
             GeekQuiz
           </a>
           <div id="box-nav">

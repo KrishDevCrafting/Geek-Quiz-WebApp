@@ -13,7 +13,7 @@
 }
 .main a {
   text-decoration: none;
-  color: white;
+  color: #EEEEEE;
 }
 
 #style {
@@ -40,6 +40,10 @@ transition: top 0.3s ease-in-out;
  margin-left: 20px;
 }
 
+/* Nav-bar Hover Effect...! */
+#style a:hover {
+color:#686D76;
+}
 /* .img {
   letter-spacing: 10px;
   display: flex;
