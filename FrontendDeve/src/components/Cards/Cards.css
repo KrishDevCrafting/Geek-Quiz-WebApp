@@ -4,7 +4,8 @@
 
 .main-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 20px;
 }
 .child-box,
 .child-box-1 {
@@ -27,7 +28,7 @@ different line */
   margin: 50px 10px 50px 10px;
   color: white;
   width: 400px;
-  height: 300px;
+  height: 200px;
   /* background-image: url("https://i.pinimg.com/originals/d6/c7/a1/d6c7a145b32a562ff6bf8fa542b15e3b.gif"); */
   position: relative;
   display: grid;

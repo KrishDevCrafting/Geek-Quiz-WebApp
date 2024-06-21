@@ -9,7 +9,7 @@ import ComponenetA from "./Testing/ComponentA";
 const App = () => {
   return (
     <>
-    <Logo/>
+    {/* <Logo/> */}
 <ComponenetA/>
     <NavBar />
       <Main />

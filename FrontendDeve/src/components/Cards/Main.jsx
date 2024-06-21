@@ -11,12 +11,16 @@ const Main = () => {
           <h1 id="text-align">
             <ul>
               <li>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Doloribus, optio.
+                Top Players - 🎮
+                
               </li>
-              <li>this is a line 2</li>
-              <li>THIS IS A LINE 3</li>
-              <li>THIS IS A LINE 4</li>
+              <li>Jeo
+
+              
+
+              </li>
+              <li>Sam</li>
+              <li>siddhart Damm</li>
             </ul>
           </h1>
         </div>
