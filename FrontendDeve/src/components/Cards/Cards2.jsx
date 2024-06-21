@@ -7,6 +7,7 @@ const Card = () => {
         {/* card-1   */}
 
         <section>
+     <h1 style={{border: "1px soild red"}}>CAR-QUIZ</h1>     
           <div className="main-container-2">
             <div class="box-card card-2">
               <div class="border-2"></div>

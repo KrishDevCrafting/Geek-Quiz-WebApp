@@ -4,7 +4,9 @@
   display: flex;
   justify-content: space-around;
 }
-
+.main-container-2{
+  margin-top: 200px;
+}
 .card-2{
   
   margin: 50px 10px 50px 10px;
