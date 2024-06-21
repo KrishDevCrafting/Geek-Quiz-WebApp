@@ -11,7 +11,7 @@ const Cards = () => {
             <div class="border"></div>
             <div class="content">
               <div class="logo">
-                <div class="logo1">
+                <div class="logo">
                   <div className="logo2">
                     <h1>InterStellar</h1>
                   </div>

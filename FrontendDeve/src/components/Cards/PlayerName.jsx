@@ -1,5 +1,5 @@
 import React from "react";
-import "../Cards/Main.css";
+import "../Cards/PlayerName.css";
 const Main = () => {
   
 

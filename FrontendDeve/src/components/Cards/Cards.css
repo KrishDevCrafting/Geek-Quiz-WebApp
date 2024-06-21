@@ -1,6 +1,6 @@
-/* .grand-parent {
-  background-color: #222831;
-} */
+.grand-parent {
+ border: 1px solid purple;
+}
 
 .main-box {
   display: flex;
@@ -25,6 +25,7 @@
 different line */
 
 .card {
+  
   margin: 50px 10px 50px 10px;
   color: white;
   width: 400px;
@@ -38,7 +39,7 @@ different line */
   transition: all 0.5s ease-in-out;
 }
 
-#logo-main,
+/* #logo-main,
 #logo-second {
   height: 100%;
 }
@@ -52,7 +53,7 @@ different line */
   fill: none;
   stroke: #bd9f67;
   stroke-width: 1px;
-}
+} */
 
 .border {
   position: absolute;
@@ -211,6 +212,7 @@ different line */
 }
 
 .card-1 {
+  
   background-image: url("https://i.pinimg.com/originals/2c/1c/64/2c1c6400528c9ff32f446a6cdee6c125.gif");
   background-repeat: no-repeat;
   background-size: cover;

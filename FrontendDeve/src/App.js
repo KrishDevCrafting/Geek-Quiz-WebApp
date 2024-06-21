@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./components/navbar/Nav.jsx";
-import Main from "./components/Cards/Main";
+import Main from "./components/Cards/PlayerName.jsx";
 import Cards from "./components/Cards/Cards1.jsx";
 import Card from "./components/Cards/Cards2";
 import Logo from "./components/Logo.js";
