@@ -11,7 +11,7 @@
   color: white;
   width: 400px;
   height: 200px;
-  /* background-image: url("https://i.pinimg.com/originals/d6/c7/a1/d6c7a145b32a562ff6bf8fa542b15e3b.gif"); */
+ 
   position: relative;
   display: grid;
   place-content: center;
@@ -19,7 +19,17 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
+.box-card{
+  background-image: url("https://i.pinimg.com/originals/10/65/bc/1065bc662c55648c454c462f208d920e.gif");
+  background-position: center;
+}
 
+.box-card-2{
+  background-position: 100%;
+backdrop-filter: opacity(0.9);
+  background-size: 120% ;
+  background-image: url("https://i.pinimg.com/originals/1b/f5/27/1bf527fcd5727db297772c143e129976.gif");
+}
 /* #logo-main,
 #logo-second {
   height: 100%;
