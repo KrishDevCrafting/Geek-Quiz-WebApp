@@ -1,26 +1,23 @@
 const express = require("express");
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 const app = express();
-const port = 8000;
-const userModules = require("./modules/userModel")
+
+const userModules = require("./modules/userModel");
+require("dotenv").config();
 app.get("/", (req, res) => {
   res.send("Quiz-App-Server is Running!");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log("Example app listening on port", process.env.PORT);
 });
 
 // MongoDB connection URI
-const mongoURI = 'mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001';
-
-mongoose.connect(mongoURI, {
+const mongoURI="mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001";
+mongoose
+  .connect(mongoURI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log(err));
-
-
-
-
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.log(err));
