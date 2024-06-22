@@ -13,6 +13,12 @@ app.listen(process.env.PORT, () => {
   console.log("Example app listening on port", process.env.PORT);
 });
 
+// middleware 
+app.use((red,req,next)=>{
+console.log(req.path, req.method);
+next()
+})
+
 // MongoDB connection URI
 const mongoURI="mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001";
 mongoose
