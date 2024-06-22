@@ -8,10 +8,7 @@ require("dotenv").config();
 app.get("/", (req, res) => {
   res.send("Quiz-App-Server is Running!");
 });
-// Listen for Server
-app.listen(process.env.PORT, () => {
-  console.log("Example app listening on port", process.env.PORT);
-});
+
 
 // middleware 
 app.use((red,req,next)=>{
@@ -20,11 +17,23 @@ next()
 })
 
 // MongoDB connection URI
-const mongoURI="mongodb+srv://krishgeek777:hacker7750@krish001.shs51el.mongodb.net/?retryWrites=true&w=majority&appName=Krish001";
-mongoose
-  .connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log(err));
+
+mongoose.connect(process.env.MONGODB_URL) 
+   .then(()=>{
+    console.log('Connected to MongoDB');
+
+// Listen for Server
+app.listen(process.env.PORT, () => {
+  console.log("Example app listening on port", process.env.PORT);
+})
+   })
+.catch((error)=>{
+console.log(error)
+
+
+
+})
+   
+  
+
+  
