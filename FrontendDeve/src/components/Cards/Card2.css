@@ -4,8 +4,11 @@
   display: flex;
   justify-content: space-around;
 }
-.main-container-2{
-  margin-top: 200px;
+
+
+#Card-2-Heading{
+  text-align: center;
+  color: white;
 }
 .card-2{
   
