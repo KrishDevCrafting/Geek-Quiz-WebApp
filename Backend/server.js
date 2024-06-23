@@ -3,8 +3,16 @@ const mongoose = require("mongoose");
 // Express App
 const app = express();
 const cors  = require("cors")
-const userModules = require("./modules/userModel");
+
+const userModules = require("./models/userModel");
+const userRoutes = require("../Backend/routes/userRoutes")
 require("dotenv").config();
+
+// Routes
+app.use('/api/users',userRoutes)
+
+
+// Show on the Server
 app.get("/", (req, res) => {
   res.send("Quiz-App-Server is Running!");
 });

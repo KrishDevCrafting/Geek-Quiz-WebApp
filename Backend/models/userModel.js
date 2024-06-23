@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
     allownull: false,
   },
   password: {
-    type: String,
+    type: Number,
     require: [true, "Password is mandatory"],
     allownull: false,
   },
