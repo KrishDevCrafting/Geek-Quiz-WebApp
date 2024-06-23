@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 // Express App
 const app = express();
-
+const cors  = require("cors")
 const userModules = require("./modules/userModel");
 require("dotenv").config();
 app.get("/", (req, res) => {
@@ -11,10 +11,16 @@ app.get("/", (req, res) => {
 
 
 // middleware 
-app.use((red,req,next)=>{
-console.log(req.path, req.method);
-next()
-})
+// app.use((red,req,next)=>{
+// console.log(req.path, req.method);
+// next()
+// })
+
+
+// Middleware
+app.use(express.json());
+app.use(cors());
+
 
 // MongoDB connection URI
 
