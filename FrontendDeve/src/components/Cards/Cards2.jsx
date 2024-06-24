@@ -3,13 +3,14 @@ import "./Card2.css";
 const Card = () => {
   return (
     <>
-    <div><h1 id="Card-2-Heading">CAR-QUIZ</h1></div>
-      
+      <div className="align-text">
+        <h1 id="text">CAR-QUIZ</h1>
+      </div>
+
       <div className="main-card">
         {/* card-1   */}
 
         <section>
-        
           <div className="main-container-2">
             <div class="box-card card-2">
               <div class="border-2"></div>
