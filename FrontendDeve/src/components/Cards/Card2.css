@@ -242,13 +242,30 @@ body {
 .align-text{
  margin: 20px;
 }
+
+
 #text {
-  color: #fff;
+ 
+  /* color: #fff; */
   font-family: 'Dashhorizon';
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #text:first-of-type {    /* For increasing performance 
                        ID/Class should've been used. 
@@ -290,3 +307,4 @@ body {
 }
 
 /* End of the Text Animation */
+

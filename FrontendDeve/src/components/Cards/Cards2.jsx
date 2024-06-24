@@ -1,10 +1,10 @@
 import React from "react";
 import "./Card2.css";
-const Card = () => {
+const Card2 = () => {
   return (
     <>
       <div className="align-text">
-        <h1 id="text">CAR-QUIZ</h1>
+        <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
       <div className="main-card">
@@ -80,4 +80,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card2;
