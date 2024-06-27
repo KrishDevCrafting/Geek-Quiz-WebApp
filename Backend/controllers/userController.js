@@ -26,20 +26,21 @@ const loginUser = async (req, res) => {
   try {
     const user = await User.findOne({ email });
     if (!user) {
-      return res.status(400).send({ message: "Invalid email or password" });
+      console.log('User not found:', email);
+      return res.status(400).send({ message: 'Invalid email or password' });
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return res.status(400).send({ message: "Invalid email or password" });
+    if (password !== user.password) {
+      console.log('Password mismatch for user:', email);
+      return res.status(400).send({ message: 'Invalid email or password' });
     }
 
-    res.status(200).send({ message: "Login successful", user });
+    res.status(200).send({ message: 'Login successful', user });
   } catch (error) {
-    res.status(500).send({ message: "Server error", error });
+    console.error('Error during login:', error);
+    res.status(500).send({ message: 'Server error', error });
   }
 };
-
 // Signup User
 const signupUser = async (req, res) => {
   res.json({
