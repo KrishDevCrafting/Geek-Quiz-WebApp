@@ -14,7 +14,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Middleware to parse JSON
 
 // Routes
-app.use("/user",userRoutes)
+app.use("/user", userRoutes);
 // app.post("/register", userController.createUser); // Handle user registration
 // app.post("/login", userController.loginUser); // Handle user login
 
@@ -25,9 +25,7 @@ app.get("/", (req, res) => {
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.MONGODB_URL, {
-   
-  })
+  .connect(process.env.MONGODB_URL, {})
   .then(() => {
     console.log("Connected to MongoDB");
 

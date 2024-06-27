@@ -1,4 +1,5 @@
 const User = require("../models/userModel");
+const bcrypt = require("bcrypt");
 
 // Create the Users
 const createUser = async (req, res) => {
@@ -20,9 +21,23 @@ const createUser = async (req, res) => {
 
 // Login User
 const loginUser = async (req, res) => {
-  res.json({
-    mess: "login user",
-  });
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).send({ message: "Invalid email or password" });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).send({ message: "Invalid email or password" });
+    }
+
+    res.status(200).send({ message: "Login successful", user });
+  } catch (error) {
+    res.status(500).send({ message: "Server error", error });
+  }
 };
 
 // Signup User
