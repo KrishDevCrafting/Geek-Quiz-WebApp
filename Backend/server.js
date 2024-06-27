@@ -1,43 +1,38 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// Express App
-const app = express();
 const cors = require("cors");
-
-const userModules = require("./models/userModel");
-const userRoutes = require("../Backend/routes/userRoutes");
 require("dotenv").config();
 
-// Routes
-app.use("/api/users", userRoutes);
+// Importing userController for handling user operations
+const userController = require("./controllers/userController");
 
-// Show on the Server
+// Express App
+const app = express();
+
+// Middleware
+app.use(cors()); // Enable CORS for all routes
+app.use(express.json()); // Middleware to parse JSON
+
+// Routes
+app.post("/register", userController.createUser); // Handle user registration
+
+// Default route
 app.get("/", (req, res) => {
   res.send("Quiz-App-Server is Running!");
 });
 
-// middleware
-// app.use((red,req,next)=>{
-// console.log(req.path, req.method);
-// next()
-// })
-
-// Middleware
-app.use(express.json());
-app.use(cors());
-
-// MongoDB connection URI
-
+// MongoDB Connection
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(process.env.MONGODB_URL, {})
   .then(() => {
     console.log("Connected to MongoDB");
 
-    // Listen for Server
-    app.listen(process.env.PORT, () => {
-      console.log("Example app listening on port", process.env.PORT);
+    // Start the server`
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
     });
   })
   .catch((error) => {
-    console.log(error);
+    console.error("Error connecting to MongoDB:", error.message);
   });
