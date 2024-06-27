@@ -47,4 +47,16 @@ const signupUser = async (req, res) => {
   });
 };
 
-module.exports = { signupUser, loginUser, createUser };
+//get all User data
+const getUsers = async (req, res) => {
+  try {
+    const users = await User.find();
+    res.status(200).send(users)
+  } catch (err) {
+    res.status(500).send({
+      message: 'error Fetching the Users', err
+    })
+  }
+}
+
+module.exports = { signupUser, loginUser, createUser,getUsers };

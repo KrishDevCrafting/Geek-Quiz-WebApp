@@ -10,7 +10,7 @@ const {
 
 // Login route
 router.post("/login", userController.loginUser);
-
+router.get("/getdata",userController.getUsers)
 // Signup route
 router.post("/signup", signupUser);
 router.post("/register", userController.createUser);
