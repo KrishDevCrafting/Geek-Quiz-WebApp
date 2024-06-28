@@ -1,6 +1,8 @@
 import React from "react";
 import "./Scrollnav"
 import "./nav.css";
+
+
 //import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
 const NavBar = () => {
@@ -19,7 +21,7 @@ const NavBar = () => {
 
 
     {/* Nav-bar section Started */}
-      <div className="main">
+      <div className="main text-7xl">
         <nav id="style">
           <a href="https://geek-quiz-web-app.vercel.app/" target="_blank" rel="noopener noreferrer">
             GeekQuiz
@@ -39,7 +41,7 @@ const NavBar = () => {
             </a>
           </div>
           <div>
-            <button id="btn-play">
+            <button id="btncss-play" className="buttonCss">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 36"
