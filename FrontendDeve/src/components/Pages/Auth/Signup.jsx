@@ -2,7 +2,28 @@ import React from "react";
 const Signup = () => {
   return (
     <>
-      <h1 style={{ color: "red" }}>Sign-up Route</h1>
+
+
+
+
+<div className="container-box">
+<div className="box">
+  asgaga
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
     </>
   );
 };
