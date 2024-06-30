@@ -4,28 +4,32 @@ const Signup = () => {
     <>
       <div className="container-box">
         <div className="box">
+
+          <form action="/">
           <h1>Sign-up</h1>
           <div>
-            <span>
+           <label htmlFor="name">Name:</label>
               Name: <input type="text" placeholder="UserName" />
-            </span>
+           
           </div>
 
           <div>
-            <span>
-              Email: <input type="email" name="" id="" placeholder="Email" required/>
-            </span>
+           <label htmlFor="Email"> Email:</label>
+              <input type="email" name="email" id="email" placeholder="Email" required/>
+           
           </div>
 
           <div>
-            <span>
-              Password:{" "}
-              <input type="password" name="" id="" placeholder="Password" />
-            </span>
+            
+            <label htmlFor="Pasword">Password:
+            </label>                <input type="password" name="" id="" placeholder="Password" />
+            
           </div>
           <div>
-            <button>Submit-here</button>
+            
+            <button style={{backgroundColor: "red", color: "black"}} type="submit">Submit-here</button>
           </div>
+          </form>
         </div>
       </div>
     </>
