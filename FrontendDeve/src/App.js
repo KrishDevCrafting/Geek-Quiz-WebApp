@@ -1,5 +1,6 @@
 import React from "react";
 import Signup from "./components/Pages/Auth/Signup.jsx";
+import { LoginComponent } from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home.jsx";
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/Login" element={<LoginComponent />} />
           </Routes>
         </BrowserRouter>
       </div>

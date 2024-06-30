@@ -31,6 +31,10 @@ const Signup = () => {
           </div>
           </form>
         </div>
+<div className="rock">
+  
+</div>
+
       </div>
     </>
   );
