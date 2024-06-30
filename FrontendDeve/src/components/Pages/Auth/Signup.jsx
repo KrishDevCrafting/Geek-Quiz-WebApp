@@ -8,7 +8,7 @@ const Signup = () => {
 
 <div className="container-box">
 <div className="box">
-  asgaga
+ 
 </div>
 
 
