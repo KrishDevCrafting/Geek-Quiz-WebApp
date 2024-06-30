@@ -1,6 +1,6 @@
 import React from "react";
 import "../Cards/PlayerName.css";
-const Main = () => {
+const DynamicName = () => {
   
 
   return (
@@ -29,4 +29,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default DynamicName;

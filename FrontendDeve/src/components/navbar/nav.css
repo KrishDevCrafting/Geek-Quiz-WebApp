@@ -1,48 +1,47 @@
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
+/* .main {
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #1f2231 100%);
+} */
+
 .main a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: #fff;
 }
 
 #style {
   font-family: "Open Sans", sans-serif;
   margin-top: 15px;
   position: fixed;
-
+margin-left: 1rem;
   align-items: center;
   top: 0%;
-/* top: 20px; */
-transition: top 0.3s ease-in-out;
+  /* top: 20px; */
+  transition: top 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 #box-nav {
   display: flex;
   gap: 50px;
 
-  margin-left: 700px;
+  margin-left: 850px;
 }
-#btncss-play{
- margin-left: 20px;
+#btncss-play {
+  margin-left: 20px;
 }
 
 /* Nav-bar Hover Effect...! */
 #style a:hover {
-color:#686D76;
+  color: #686d76;
 }
 /* .img {
   letter-spacing: 10px;
@@ -61,18 +60,18 @@ color:#686D76;
   background-repeat: no-repeat;
   background-size: cover;
 } */
-.Dynamic-text-style{
+.Dynamic-text-style {
   font-family: "Rajdhani", sans-serif;
   /* font-family: "Bebas Neue", sans-serif; */
   font-weight: 400;
   color: #fff;
-  
+
   letter-spacing: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 90%;
- 
+
   font-weight: 500;
   font-style: normal;
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card2.css";
-import ".././styles.css"
+import ".././styles.css";
 const Card2 = () => {
   return (
     <>
       <div className="align-text">
-        <h1  id="text">MotorCar-QUIZ</h1>
+        <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
       <div className="main-card">
@@ -34,7 +34,7 @@ const Card2 = () => {
         {/* Card-2 */}
         <section>
           <div className="main-container-2">
-            <div class="box-card-2 card-2">
+            <div class="box-card-3 card-2">
               <div class="border-2"></div>
               <div class="content-2">
                 <div class="card-logo-2">

@@ -1,21 +1,20 @@
 import React from "react";
-import NavBar from "./components/navbar/Nav.jsx";
-import Main from "./components/Cards/PlayerName.jsx";
-import Cards from "./components/Cards/Cards1.jsx";
-
-// import Logo from "./components/Logo.js";
-import ComponenetA from "./Background-Star-Effect/ComponentA.jsx";
-import Card2 from "./components/Cards/Cards2";
-
+import Signup from "./components/Pages/Auth/Signup.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./Home.jsx";
 const App = () => {
   return (
     <>
-      {/* <Logo/> */}
-      <ComponenetA />
-      <NavBar />
-      <Main />
-     <Card2/>
-     <Cards />
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+
+      <div className="App"></div>
     </>
   );
 };

@@ -1,19 +1,14 @@
-
 /* Card2.css */
 @font-face {
-  font-family: 'Dashhorizon';
-  src: url('../../assets/Fonts/Dashhorizon.ttf') format('opentype');
+  font-family: "Dashhorizon";
+  src: url("../../assets/Fonts/Dashhorizon.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 #text2 {
-  color: #E2BBE9;
- 
-  
+  color: #e2bbe9;
 }
-
-
 
 .main-card {
   /* background-color: aquamarine; */
@@ -22,18 +17,16 @@
   justify-content: space-around;
 }
 
-
-#Card-2-Heading{
+#Card-2-Heading {
   text-align: center;
   color: white;
 }
-.card-2{
-  
+.card-2 {
   margin: 50px 10px 50px 10px;
   color: white;
   width: 400px;
   height: 200px;
- 
+
   position: relative;
   display: grid;
   place-content: center;
@@ -41,32 +34,24 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
-.box-card{
-  background-image: url("https://i.pinimg.com/originals/10/65/bc/1065bc662c55648c454c462f208d920e.gif");
+.box-card {
+  background-image: url("https://i.pinimg.com/originals/10/65/bc/1065bc662c55648c454c462f208d920e.gif") !important;
   background-position: center;
 }
 
-.box-card-2{
+.box-card-2 {
   background-position: 100%;
-backdrop-filter: opacity(0.9);
-  background-size: 120% ;
-  background-image: url("https://i.pinimg.com/originals/1b/f5/27/1bf527fcd5727db297772c143e129976.gif");
-}
-/* #logo-main,
-#logo-second {
-  height: 100%;
+  backdrop-filter: opacity(0.9);
+  background-size: 100%;
+  background-image: url("../../assets/Supra-img.gif") !important;
 }
 
-#logo-main {
-  fill: red;
+.box-card-3 {
+  background-position: 100%;
+  backdrop-filter: opacity(0.9);
+  background-size: 100%;
+  background-image: url("../../assets/GTR-car-img.webp") !important;
 }
-
-#logo-second {
-  padding-bottom: 10px;
-  fill: none;
-  stroke: #bd9f67;
-  stroke-width: 1px;
-} */
 
 .border-2 {
   position: absolute;
@@ -123,7 +108,7 @@ backdrop-filter: opacity(0.9);
   opacity: 0;
 }
 
-.content-2 .logo-bottom-text-2{
+.content-2 .logo-bottom-text-2 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -225,7 +210,7 @@ backdrop-filter: opacity(0.9);
 }
 
 /* Animated Text css */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 /* 
 body {
   text-align:center;
@@ -239,32 +224,21 @@ body {
   overflow:hidden;
   
 } */
-.align-text{
- margin: 20px;
+.align-text {
+  margin: 20px;
 }
-
 
 #text {
- font-size: 2rem;
+  font-size: 2rem;
   color: #fff;
-  font-family: 'Dashhorizon';
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
+  font-family: "Dashhorizon";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-#text:first-of-type {    /* For increasing performance 
+#text:first-of-type {
+  /* For increasing performance 
                        ID/Class should've been used. 
                        For a small demo 
                        it's okaish for now */
@@ -272,36 +246,64 @@ body {
 }
 
 #text:last-of-type {
-  width:0px;
+  width: 0px;
   animation: reveal 7s infinite;
 }
 
 #text:last-of-type span {
-  margin-left:-355px;
+  margin-left: -355px;
   animation: slidein 7s infinite;
 }
 
 @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
 
 @keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
 }
 
 /* End of the Text Animation */
-
