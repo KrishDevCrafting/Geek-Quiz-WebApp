@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../components/style.css"
 const Signup = () => {
   return (
     <>
       <div className="container-box">
         <div className="box">
           <form action="/">
-            <h1>Sign-up</h1>
+            <h1 className="text-blue-800">Sign-up</h1>
             <div>
               <label htmlFor="name">Name:</label>
               Name: <input type="text" placeholder="UserName" />

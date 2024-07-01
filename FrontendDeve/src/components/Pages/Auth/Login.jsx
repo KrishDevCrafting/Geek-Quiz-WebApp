@@ -1,12 +1,12 @@
 import React from "react";
-
+import "../../../components/style.css"
 export const LoginComponent = () => {
   return <>
   
   <div className="parent-box">
 
     <div className="">
-        <h1>hello</h1>
+        <h1 className="text-4xl text-blue-700">hello</h1>
     </div>
   </div>
   
