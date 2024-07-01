@@ -24,7 +24,7 @@ const NavBar = () => {
               GeekQuiz
             </a>
             <div id="box-nav">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="https://quickref.me/" target="_blank" rel="noopener noreferrer">
                 Features
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
