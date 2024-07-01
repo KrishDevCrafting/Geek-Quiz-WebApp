@@ -17,6 +17,7 @@
 }
 
 #style {
+  width: 95%;
   font-family: "Open Sans", sans-serif;
   margin-top: 15px;
   position: fixed;
@@ -30,12 +31,14 @@ margin-left: 1rem;
   align-items: center;
 }
 #box-nav {
+  margin-left: 55%;
   display: flex;
   gap: 50px;
-
-  margin-left: 850px;
+  
+ 
 }
 #btncss-play {
+  
   margin-left: 20px;
 }
 

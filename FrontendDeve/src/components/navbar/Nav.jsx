@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Scrollnav";
 import "./nav.css";
+import "../../components/style.css"
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
 //import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
@@ -24,7 +25,11 @@ const NavBar = () => {
               GeekQuiz
             </a>
             <div id="box-nav">
-              <a href="https://quickref.me/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://quickref.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:flex space-x-4">
                 Features
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
@@ -40,7 +45,7 @@ const NavBar = () => {
               </Link>
             </div>
             <div>
-              <button id="btncss-play" className="buttonCss">
+              <button id="btncss-play" className="buttonCss md:hidden flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 36 36"
