@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Scrollnav";
 import "./nav.css";
-import "../../components/style.css"
+import { ScrolleBar } from "./Scrollnav";
+import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
 //import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
@@ -15,7 +15,7 @@ const NavBar = () => {
       {/* Nav-bar section Started */}
       <div className="body2">
         <ComponenetA />
-
+        <ScrolleBar />
         <div className="main">
           <nav id="style">
             <a
@@ -38,14 +38,12 @@ const NavBar = () => {
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 FAQ
               </a>
-              <Link to="/signup">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Log-in
-                </a>
-              </Link>
+              <Link to="/signup">Log-in</Link>
             </div>
             <div>
-              <button id="btncss-play" className="buttonCss md:hidden flex items-center">
+              <button
+                id="btncss-play"
+                className="buttonCss md:hidden flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 36 36"

@@ -1,4 +1,3 @@
-/* The sp-layout mixin applied for mobile screens */
 @media screen and (max-width: 750px) {
   .star {
     /* For mobile performance, tail-fade animation will be removed */
@@ -112,5 +111,3 @@
   --fall-duration: 12s;
   --fall-delay: 10s;
 }
-
-/* Repeat the above block for each of the 50 stars, with varying properties */
