@@ -2,6 +2,7 @@ import React from "react";
 import Signup from "./components/Pages/Auth/Signup.jsx";
 import { LoginComponent } from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Home } from "./Home.jsx";
 const App = () => {
   return (
@@ -16,7 +17,9 @@ const App = () => {
         </BrowserRouter>
       </div>
 
-      <div className="App"></div>
+      <div className="App">
+        <SpeedInsights />
+      </div>
     </>
   );
 };
