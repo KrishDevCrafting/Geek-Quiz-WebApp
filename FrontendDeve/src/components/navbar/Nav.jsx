@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./nav.css";
+import "./nav.css"; 
 import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";

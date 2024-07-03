@@ -2,28 +2,63 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../../components/style.css";
 import "./SignupStyle.css";
+import GoogleImg from "../../../assets/googleLogo.png";
+import githubImg from "../../../assets/github.png";
 const Signup = () => {
   return (
     <>
-      <div className="container-box flex items-center justify-center">
+      <div className="container-box flex items-center justify-center border-rose-500 ">
         <div className="px-8">
           <form action="">
-            <h1 className="text-blue-800 text-6xl">Sign-up</h1>
-            <div>
+            <h1 className="text-blue-800 text-3xl">
+              Join & Connect the Fastest Growing Online Community
+            </h1>
+
+            <div className="text-cente">
+              <span className="mx-8">
+                <button
+                  type="submit"
+                  className="bg-slate-100 p-2 rounded-2xl px-4 cursor-wait">
+                  <img
+                    src={GoogleImg}
+                    alt="img"
+                    width="26px"
+                    height="36px"
+                    style={{ display: "inline", marginRight: "20px" }}
+                  />
+                  Sign up with Google
+                </button>
+              </span>
+              <span>
+                <button
+                  type="submit"
+                  className="bg-slate-100 p-2 rounded-2xl px-4">
+                  <img
+                    src={githubImg}
+                    alt="img"
+                    width="26px"
+                    height="36px"
+                    style={{ display: "inline", marginRight: "20px" }}
+                  />
+                  Sign up with Github
+                </button>
+              </span>
+            </div>
+
+            <div className="label-text-color">
               <label htmlFor="name" className="text-sm">
-                Name:
+                username:
               </label>
               <input
-                className="block"
+                className="block w-96 py-4 border-0 focus:outline-none"
                 name="text"
                 placeholder="Enter email or username"
                 type="text"
               />
             </div>
 
-            <div>
+            <div className="label-text-color">
               <label htmlFor="Email" className="text-sm">
-               
                 Email:
               </label>
               <input
@@ -32,11 +67,11 @@ const Signup = () => {
                 id="email"
                 placeholder="Email"
                 required
-                className="block"
+                className="block w-96 py-4 border-0 focus:outline-none"
               />
             </div>
 
-            <div>
+            <div className="label-text-color">
               <label htmlFor="Pasword" className="text-sm">
                 Password:
               </label>
@@ -45,7 +80,7 @@ const Signup = () => {
                 name=""
                 id=""
                 placeholder="Password"
-                className="block"
+                className="block w-96  py-4 border-0 focus:outline-none"
               />
             </div>
             <div>
@@ -60,10 +95,7 @@ const Signup = () => {
             <button className="text-blue-400"> Already have account</button>
           </Link>
         </div>
-
-
       </div>
-     
     </>
   );
 };
