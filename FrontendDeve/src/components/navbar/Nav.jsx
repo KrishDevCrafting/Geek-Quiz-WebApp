@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./nav.css"; 
+import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
@@ -17,8 +17,8 @@ const NavBar = () => {
         <ComponenetA />
         <ScrolleBar />
         <div className="main">
-          <nav id="style">
-            <a
+          <nav id="style" className="">
+              <a
               href="https://geek-quiz-web-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer">

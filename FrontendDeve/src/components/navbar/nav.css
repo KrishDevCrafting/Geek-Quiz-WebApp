@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 /* .main {
@@ -16,12 +15,24 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1080px) {
+  #box-nav {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+}
+
 #style {
-  width: 95%;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   margin-top: 15px;
   position: fixed;
-margin-left: 1rem;
+  /* margin-left: 1rem; */
   align-items: center;
   top: 0%;
   /* top: 20px; */
@@ -34,13 +45,10 @@ margin-left: 1rem;
   margin-left: 55%;
   display: flex;
   gap: 50px;
-  
- 
 }
-#btncss-play {
-  
+/* #btncss-play {
   margin-left: 20px;
-}
+} */
 
 /* Nav-bar Hover Effect...! */
 #style a:hover {
