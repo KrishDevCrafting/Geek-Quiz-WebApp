@@ -13,12 +13,15 @@ const NavBar = () => {
       {/* src/Testing */}
 
       {/* Nav-bar section Started */}
+      {/* 
+      https://www.codingnepalweb.com/navigation-bar-in-html-css-javascript-dark-light-mode/ */}
+      {/* https://www.codingnepalweb.com/demos/navigation-bar-in-html-css-javascript-dark-light-mode/ */}
       <div className="body2">
         <ComponenetA />
         <ScrolleBar />
         <div className="main">
           <nav id="style" className="">
-              <a
+            <a
               href="https://geek-quiz-web-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer">
