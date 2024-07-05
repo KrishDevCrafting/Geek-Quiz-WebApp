@@ -21,12 +21,13 @@ const NavBar = () => {
         <ScrolleBar />
         <div className="main">
           <nav id="style" className="">
+            <div className="GeekLogo">
             <a
               href="https://geek-quiz-web-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer">
               GeekQuiz
-            </a>
+            </a></div>
             <div id="box-nav">
               <a
                 href="https://quickref.me/"
@@ -86,6 +87,9 @@ const NavBar = () => {
                 <span class="now">now!</span>
                 <span class="play">play</span>
               </button>
+              <div id="mini-bar">
+  <button id="hamburger-menu">☰</button>
+</div>
             </div>
           </nav>
         </div>

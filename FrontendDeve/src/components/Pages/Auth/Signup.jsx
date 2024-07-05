@@ -18,7 +18,7 @@ const Signup = () => {
               <span className="mx-8">
                 <button
                   type="submit"
-                  className="bg-slate-100 p-2 rounded-2xl px-4 cursor-wait">
+                  className="bg-slate-100 p-2 rounded-2xl px-4">
                   <img
                     src={GoogleImg}
                     alt="img"

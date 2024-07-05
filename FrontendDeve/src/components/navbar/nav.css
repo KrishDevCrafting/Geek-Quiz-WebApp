@@ -15,20 +15,10 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1080px) {
-  #box-nav {
-    display: none;
-    flex-direction: column;
-
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-}
 
 #style {
   padding: 10px 20px 10px 20px;
-  width: 100%;
+  width: 100vw;
   font-family: "Open Sans", sans-serif;
   margin-top: 15px;
   position: fixed;
@@ -41,11 +31,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
 #box-nav {
-  margin-left: 55%;
+  margin-left: 45vw;
   display: flex;
   gap: 50px;
 }
+
 /* #btncss-play {
   margin-left: 20px;
 } */
@@ -54,6 +46,11 @@
 #style a:hover {
   color: #686d76;
 }
+
+#mini-bar {
+  display: none;
+}
+
 /* .img {
   letter-spacing: 10px;
   display: flex;
@@ -86,6 +83,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 #btncss {
   border-radius: 25px 25px 25px 25px;
   padding: 10px 50px 10px 50px;
@@ -160,4 +158,63 @@
 .buttonCss:hover .play {
   transform: translateX(200%);
   transition-delay: 300ms;
+}
+
+
+@media screen and (max-width:1140px) {
+  #box-nav {
+    color: red;
+    margin-left: 20vw;
+
+  }
+}
+
+@media screen and (max-width: 796px) {
+
+
+
+  #box-nav a {
+
+    display: none;
+
+  }
+
+  #box-nav {
+    border: none;
+    /* Remove border */
+    padding: 0;
+    /* Remove padding */
+    background-color: transparent;
+    /* Remove background color */
+    border-radius: 0;
+    display: none;
+
+  }
+
+  .GeekLogo a {
+
+    position: relative;
+    left: 20rem;
+  }
+
+
+
+
+
+  #mini-bar {
+    display: block;
+    position: relative;
+    right: 550px;
+    top: -20px;
+  }
+
+
+  #hamburger-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
 }
