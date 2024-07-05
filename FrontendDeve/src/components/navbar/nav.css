@@ -55,14 +55,14 @@
 }
 
 .hamburger-label {
-  width: 10px;
+  width: 450px;
   height: 40px;
   display: block;
   cursor: pointer;
 }
 
 .hamburger-label div {
-  width: 50px;
+  width: 40px;
   height: 6px;
   background-color: #fff;
   position: absolute;
