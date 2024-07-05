@@ -16,6 +16,8 @@ const NavBar = () => {
       {/* 
       https://www.codingnepalweb.com/navigation-bar-in-html-css-javascript-dark-light-mode/ */}
       {/* https://www.codingnepalweb.com/demos/navigation-bar-in-html-css-javascript-dark-light-mode/ */}
+      {/* https://uiverse.io/JkHuger/curvy-liger-67 */}
+
       <div className="body2">
         <ComponenetA />
         <ScrolleBar />
