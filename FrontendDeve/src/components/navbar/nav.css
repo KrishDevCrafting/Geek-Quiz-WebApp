@@ -49,9 +49,7 @@
 
 /* Hamburger-bar-code */
 
-.container{
-  display: none;
-}
+
 .label-check {
   display: none;
 }
@@ -99,7 +97,10 @@
   border-bottom-right-radius: 50px;
   width: 45px;
 }
-
+.container{
+  display: none;
+  width: 20px;
+}
 /* End hamburger-code */
 
 /* .img {
