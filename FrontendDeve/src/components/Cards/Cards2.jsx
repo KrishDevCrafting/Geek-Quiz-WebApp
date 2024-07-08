@@ -4,7 +4,7 @@ import ".././styles.css";
 const Card2 = () => {
   return (
     <>
-      <div className="align-text sm:text-blue-500 lg:text-white">
+      <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 

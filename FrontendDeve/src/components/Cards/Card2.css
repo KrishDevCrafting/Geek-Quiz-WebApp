@@ -317,4 +317,7 @@ body {
     margin-left: 10vw;
     width: 300px;
   }
+  #text {
+    color: #ffff;
+  }
 }
