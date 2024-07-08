@@ -53,10 +53,10 @@ const Signup = () => {
 
   return (
     <>
-      <div className="container-box flex items-center justify-center border-red-500">
+      <div className="container-box flex items-center justify-center ">
         <div className="px-8">
           <form onSubmit={handleSubmit}>
-            <h1 className="text-blue-800 text-3xl m-10">
+            <h1 className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500">
               Join & Connect the Fastest Growing Online Community
             </h1>
 
