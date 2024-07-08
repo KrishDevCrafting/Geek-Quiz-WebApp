@@ -1,13 +1,14 @@
 import React from "react";
 import "./Cards.css";
+import "../../components/style.css";
 const Cards = () => {
   return (
     <>
-      <section className="grand-parent">
-        <div className="main-box">
+      <section className="grand-parent ">
+        <div className="main-box sm:flex-col">
           {/* box-1 */}
 
-          <div class="card card-1">
+          <div class="card card-1 ">
             <div class="border"></div>
             <div class="content">
               <div class="logo">

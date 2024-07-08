@@ -246,7 +246,8 @@
   .GeekLogo a {
 
     position: relative;
-    left: 20rem;
+    left: 1rem;
+    bottom: 1rem;
   }
 
 
