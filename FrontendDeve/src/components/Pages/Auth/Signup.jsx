@@ -53,7 +53,7 @@ setName(e.target.value)
 
   return (
     <>
-      <div className="container-box flex items-center justify-center border-rose-500">
+      <div className="container-box flex items-center justify-center border-red-500">
         <div className="px-8">
           <form onSubmit={handleSubmit}>
             <h1 className="text-blue-800 text-3xl">
@@ -141,11 +141,11 @@ setName(e.target.value)
             </div>
           </form>
         </div>
-        <div className="rock">
+        {/* <div className="rock">
           <Link to="/login">
             <button className="text-blue-400"> Already have an account?</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );
