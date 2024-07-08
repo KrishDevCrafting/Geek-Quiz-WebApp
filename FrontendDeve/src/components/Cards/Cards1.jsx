@@ -4,8 +4,8 @@ import "../../components/style.css";
 const Cards = () => {
   return (
     <>
-      <section className="grand-parent ">
-        <div className="main-box sm:flex-col">
+      <section className="grand-parent">
+        <div className="main-box">
           {/* box-1 */}
 
           <div class="card card-1 ">
