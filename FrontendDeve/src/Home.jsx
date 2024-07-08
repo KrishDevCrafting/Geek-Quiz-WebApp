@@ -11,7 +11,7 @@ export const Home = () => {
       <div className="main-home">
         <NavBar />
         <DynamicName />
-        {/* <Card2 /> */}
+        <Card2 />
         <Cards />
         <SpeedInsights />
       </div>
