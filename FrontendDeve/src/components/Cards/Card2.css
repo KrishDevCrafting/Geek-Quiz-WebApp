@@ -14,6 +14,7 @@
   /* background-color: aquamarine; */
   border: 1px solid red;
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-around;
 }
 
@@ -230,7 +231,7 @@ body {
 
 #text {
   font-size: 2rem;
-  color: #fff;
+  /* color: #fff; */
   font-family: "Dashhorizon";
   display: inline-block;
   overflow: hidden;

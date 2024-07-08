@@ -4,11 +4,11 @@ import ".././styles.css";
 const Card2 = () => {
   return (
     <>
-      <div className="align-text">
+      <div className="align-text sm:text-blue-500 lg:text-red-800">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
-      <div className="main-card">
+      <div className="main-card sm: flex-col lg:flex-row">
         {/* card-1   */}
 
         <section>
