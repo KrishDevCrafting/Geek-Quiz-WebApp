@@ -24,7 +24,7 @@
 }
 .card-2 {
   margin: 50px 10px 50px 10px;
-  color: white;
+  color: #ffff !important;
   width: 400px;
   height: 200px;
 
@@ -44,14 +44,15 @@
   background-position: 100%;
   backdrop-filter: opacity(0.9);
   background-size: 100%;
-  background-image: url("../../assets/Supra-img.gif") !important;
+
+  background-image: url("../../assets/GTR-car-img.webp") !important;
 }
 
 .box-card-3 {
   background-position: 100%;
   backdrop-filter: opacity(0.9);
-  background-size: 100%;
-  background-image: url("../../assets/GTR-car-img.webp") !important;
+
+  background-image: url("../../assets/Supra-img.gif") !important;
 }
 
 .border-2 {
@@ -308,3 +309,12 @@ body {
 }
 
 /* End of the Text Animation */
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  .card-2 {
+    margin-left: 10vw;
+    width: 300px;
+  }
+}
