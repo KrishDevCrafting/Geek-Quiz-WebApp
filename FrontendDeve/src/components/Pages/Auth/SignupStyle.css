@@ -66,4 +66,15 @@
   }
 }
 
-/* hghjgh */
+/* Toggle  css */
+
+.light-mode {
+  background-color: azure;
+}
+
+.dark-mode {
+  background-color: #191919;
+}
+.container-box {
+  height: 100vh;
+}

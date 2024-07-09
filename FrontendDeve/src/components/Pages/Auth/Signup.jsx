@@ -6,6 +6,7 @@ import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
 
 const Signup = () => {
+  const [toggle, setToogle] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -20,6 +21,10 @@ const Signup = () => {
   };
   const handleNamechange = (e) => {
     setName(e.target.value);
+  };
+
+  const handleToggle = () => {
+    setToogle(!toggle);
   };
 
   const handleSubmit = async (e) => {
@@ -53,100 +58,110 @@ const Signup = () => {
 
   return (
     <>
-      <div className="container-box flex items-center justify-center">
-        <div className="px-8">
-          <form onSubmit={handleSubmit}>
-            <h1
-              className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
-              id="heading">
-              Join & Connect the Fastest Growing Online Community
-            </h1>
-            <h1 className="heading-signUp">Sign Up</h1>
-            <div className="text-center">
-              <span className="mx-8 display">
-                <button
-                  type="button"
-                  className="bg-slate-100 p-2 rounded-2xl px-4">
-                  <img
-                    src={GoogleImg}
-                    alt="img"
-                    width="26px"
-                    height="36px"
-                    style={{ display: "inline", marginRight: "20px" }}
-                  />
-                  Sign up with Google
-                </button>
-              </span>
-              <span className="display">
-                <button
-                  type="button"
-                  className="bg-slate-100 p-2 rounded-2xl px-4">
-                  <img
-                    src={githubImg}
-                    alt="img"
-                    width="26px"
-                    height="36px"
-                    style={{ display: "inline", marginRight: "20px" }}
-                  />
-                  Sign up with Github
-                </button>
-              </span>
-            </div>
-            <div className="ml-36">
-              <div className="label-text-color my-8">
-                <label htmlFor="username" className="text-sm">
-                  Username:
-                </label>
-                <input
-                  onChange={handleNamechange}
-                  className="block w-96 py-1 border-0 focus:outline-none my-2"
-                  name="username"
-                  placeholder="Enter email or username"
-                  type="text"
-                />
-              </div>
-
-              <div className="label-text-color">
-                <label htmlFor="email" className="text-sm">
-                  Email:
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  required
-                  onChange={handleEmailChange}
-                  className="block w-96 py-1 border-0 focus:outline-none my-2"
-                />
-              </div>
-
-              <div className="label-text-color">
-                <label htmlFor="password" className="text-sm">
-                  Password:
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  onChange={handlePasswordChange}
-                  placeholder="Password"
-                  className="block w-96 py-1 border-0 focus:outline-none my-2"
-                />
-              </div>
-              <div>
-                <button id="login-btn" type="submit">
-                  Submit-here
-                </button>
-              </div>
-            </div>
-          </form>
+      <div>
+        <div className="text-right">
+          <button onClick={handleToggle} className="text-red-700">
+            Mode
+          </button>
         </div>
-        {/* <div className="rock">
+      </div>
+      <div className={toggle ? "light-mode" : "dark-mode"}>
+        <div className="container-box flex items-center justify-center">
+          <div className="px-8">
+            <form onSubmit={handleSubmit}>
+              <h1
+                className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
+                id="heading">
+                Join & Connect the Fastest Growing Online Community
+              </h1>
+              <h1 className="heading-signUp">Sign Up</h1>
+              <div className="text-center">
+                <span className="mx-8 display">
+                  <button
+                    type="button"
+                    className="bg-slate-100 p-2 rounded-2xl px-4">
+                    <img
+                      src={GoogleImg}
+                      alt="img"
+                      width="26px"
+                      height="36px"
+                      style={{ display: "inline", marginRight: "20px" }}
+                    />
+                    Sign up with Google
+                  </button>
+                </span>
+                <span className="display">
+                  <button
+                    type="button"
+                    className="bg-slate-100 p-2 rounded-2xl px-4">
+                    <img
+                      src={githubImg}
+                      alt="img"
+                      width="26px"
+                      height="36px"
+                      style={{ display: "inline", marginRight: "20px" }}
+                    />
+                    Sign up with Github
+                  </button>
+                </span>
+              </div>
+              <div className="ml-36">
+                <div className="label-text-color my-8">
+                  <label htmlFor="username" className="text-sm">
+                    Username:
+                  </label>
+                  <input
+                    onChange={handleNamechange}
+                    className="block w-96 py-1 border-0 focus:outline-none my-2"
+                    name="username"
+                    placeholder="Enter email or username"
+                    type="text"
+                  />
+                </div>
+
+                <div className="label-text-color">
+                  <label htmlFor="email" className="text-sm">
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                    onChange={handleEmailChange}
+                    className="block w-96 py-1 border-0 focus:outline-none my-2"
+                  />
+                </div>
+
+                <div className="label-text-color">
+                  <label htmlFor="password" className="text-sm">
+                    Password:
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    onChange={handlePasswordChange}
+                    placeholder="Password"
+                    className="block w-96 py-1 border-0 focus:outline-none my-2"
+                  />
+                </div>
+                <div>
+                  <button id="login-btn" type="submit">
+                    Submit-here
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          {/* <div className="rock">
           <Link to="/login">
             <button className="text-blue-400"> Already have an account?</button>
           </Link>
         </div> */}
+        </div>
       </div>
     </>
   );
