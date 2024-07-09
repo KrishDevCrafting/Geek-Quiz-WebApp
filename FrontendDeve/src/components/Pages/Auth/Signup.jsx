@@ -53,15 +53,17 @@ const Signup = () => {
 
   return (
     <>
-      <div className="container-box flex items-center justify-center ">
+      <div className="container-box flex items-center justify-center">
         <div className="px-8">
           <form onSubmit={handleSubmit}>
-            <h1 className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500">
+            <h1
+              className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
+              id="heading">
               Join & Connect the Fastest Growing Online Community
             </h1>
-
+            <h1 className="heading-signUp">Sign Up</h1>
             <div className="text-center">
-              <span className="mx-8">
+              <span className="mx-8 display">
                 <button
                   type="button"
                   className="bg-slate-100 p-2 rounded-2xl px-4">
@@ -75,7 +77,7 @@ const Signup = () => {
                   Sign up with Google
                 </button>
               </span>
-              <span>
+              <span className="display">
                 <button
                   type="button"
                   className="bg-slate-100 p-2 rounded-2xl px-4">

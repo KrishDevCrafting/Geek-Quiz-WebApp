@@ -45,3 +45,23 @@
 .label-text-color {
   color: #757575;
 }
+.heading-signUp {
+  display: none;
+}
+@media screen and (max-width: 320px) {
+  #heading {
+    display: none;
+  }
+  .heading-signUp {
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    color: #691a66;
+    margin: 20px;
+    margin-left: 10rem;
+  }
+  .display {
+    margin: 10px 0px 20px 8rem;
+    display: block;
+  }
+}
