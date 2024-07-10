@@ -58,20 +58,25 @@ const Signup = () => {
 
   return (
     <>
-      <div>
-        <div className="text-right">
-          <button onClick={handleToggle} className="text-red-700">
-            Mode
-          </button>
+       <div className={toggle ? "light-mode" : "dark-mode"}>
+      <div className="">
+        <div className="toggle-position">
+          <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox" onClick={handleToggle} />
+              <span class="slider"></span>
+            </label>
+          </div>
         </div>
       </div>
-      <div className={toggle ? "light-mode" : "dark-mode"}>
+   
         <div className="container-box flex items-center justify-center">
           <div className="px-8">
             <form onSubmit={handleSubmit}>
               <h1
                 className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
-                id="heading">
+                id="heading"
+              >
                 Join & Connect the Fastest Growing Online Community
               </h1>
               <h1 className="heading-signUp">Sign Up</h1>
@@ -79,7 +84,8 @@ const Signup = () => {
                 <span className="mx-8 display">
                   <button
                     type="button"
-                    className="bg-slate-100 p-2 rounded-2xl px-4">
+                    className="bg-slate-100 p-2 rounded-2xl px-4"
+                  >
                     <img
                       src={GoogleImg}
                       alt="img"
@@ -93,7 +99,8 @@ const Signup = () => {
                 <span className="display">
                   <button
                     type="button"
-                    className="bg-slate-100 p-2 rounded-2xl px-4">
+                    className="bg-slate-100 p-2 rounded-2xl px-4"
+                  >
                     <img
                       src={githubImg}
                       alt="img"
@@ -105,7 +112,7 @@ const Signup = () => {
                   </button>
                 </span>
               </div>
-              <div className="ml-36">
+              <div className="ml-48">
                 <div className="label-text-color my-8">
                   <label htmlFor="username" className="text-sm">
                     Username:
