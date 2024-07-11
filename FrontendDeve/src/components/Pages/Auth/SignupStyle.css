@@ -149,9 +149,11 @@
   box-shadow: none;
 }
 
-.toggle-position {
-  display: flex;
-  padding: 10px 20px 0px 10px;
-  justify-content: flex-end;
+ .toggle{
+
+ display: inline-block;
+ position: absolute;
+left: 90%;
+top: 2%; 
 
 }

@@ -59,7 +59,8 @@ const Signup = () => {
   return (
     <>
       <div className={toggle ? "light-mode" : "dark-mode"}>
-        <div className="">
+      
+        <div className="toggle">
           <div className="toggle-position">
             <div class="toggle-switch">
               <label class="switch-label">
@@ -75,8 +76,8 @@ const Signup = () => {
         </div>
 
         <div className="container-box flex items-center justify-end">
-          <div>
-            <img className="h-screen w-screen" src={img} alt="img" />
+          <div className="">
+            <img className="h-screen" src={img} alt="img" style={{width: "50rem"}} />
           </div>
 
           <div className="px-8">
@@ -120,7 +121,7 @@ const Signup = () => {
                   </button>
                 </span>
               </div>
-              <div className="ml-48">
+              <div className="ml-28">
                 <div className="label-text-color my-8">
                   <label htmlFor="username" className="text-sm">
                     Username:
