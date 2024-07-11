@@ -4,7 +4,7 @@ import "../../../components/style.css";
 import "./SignupStyle.css";
 import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
-
+import img from "../../../assets/faridunsplash.jpg";
 const Signup = () => {
   const [toggle, setToogle] = useState(false);
   const [email, setEmail] = useState("");
@@ -58,19 +58,27 @@ const Signup = () => {
 
   return (
     <>
-       <div className={toggle ? "light-mode" : "dark-mode"}>
-      <div className="">
-        <div className="toggle-position">
-          <div class="toggle-switch">
-            <label class="switch-label">
-              <input type="checkbox" class="checkbox" onClick={handleToggle} />
-              <span class="slider"></span>
-            </label>
+      <div className={toggle ? "light-mode" : "dark-mode"}>
+        <div className="">
+          <div className="toggle-position">
+            <div class="toggle-switch">
+              <label class="switch-label">
+                <input
+                  type="checkbox"
+                  class="checkbox"
+                  onClick={handleToggle}
+                />
+                <span class="slider"></span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-   
-        <div className="container-box flex items-center justify-center">
+
+        <div className="container-box flex items-center justify-end">
+          <div>
+            <img className="h-screen w-screen" src={img} alt="img" />
+          </div>
+
           <div className="px-8">
             <form onSubmit={handleSubmit}>
               <h1

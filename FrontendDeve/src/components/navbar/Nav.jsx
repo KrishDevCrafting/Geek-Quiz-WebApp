@@ -39,7 +39,7 @@ const NavBar = () => {
                 rel="noopener noreferrer"
                 className="hidden md:flex space-x-4"
               >
-                Features
+                General
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 Pricing
