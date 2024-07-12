@@ -1,0 +1,76 @@
+/* LoginComponent.css */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+}
+
+.login-content {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; /* equivalent to text-5xl in Tailwind */
+    font-weight: bold;
+    color: #7c3aed; /* equivalent to text-purple-500 in Tailwind */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Center inputs under the title */
+}
+
+.input-group label {
+    font-size: 1.125rem; /* equivalent to text-lg in Tailwind */
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.login-input:focus {
+    border-color: #6366f1;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6366f1;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #4f46e5;
+}
