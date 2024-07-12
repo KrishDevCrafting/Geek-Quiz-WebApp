@@ -5,6 +5,15 @@ const LoginComponent = () => {
   const [data, setdata] = React.useState("");
   const [email, setemail] = React.useState("");
   const [password, setPassword] = React.State("");
+  const dataFetch = "http://localhost:7000/user/login";
+  const handleEmail = (e) => {
+    setemail(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div className="login-container flex items-center justify-center">
       <div className="login-content">
@@ -22,6 +31,7 @@ const LoginComponent = () => {
               type="email"
               autoComplete="email"
               required
+              onChange={handleEmail}
               className="block"
               placeholder="Email address"
             />
@@ -36,6 +46,7 @@ const LoginComponent = () => {
               type="password"
               autoComplete="current-password"
               required
+              onChange={handlePassword}
               className="block"
               placeholder="Password"
             />
