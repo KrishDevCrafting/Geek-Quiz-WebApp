@@ -1,16 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../../components/style.css";
 import "./SignupStyle.css";
 import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
 import img from "../../../assets/faridunsplash.jpg";
+
 const Signup = () => {
-  const [toggle, setToogle] = useState(false);
+  const [toggle, setToggle] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const userFetch = "http://localhost:7000/user/register";
+
+  useEffect(() => {
+    console.log("Signup component mounted or updated");
+
+    return () => {
+      console.log("Signup component will unmount");
+    };
+  }, []);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -19,12 +28,13 @@ const Signup = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  const handleNamechange = (e) => {
+
+  const handleNameChange = (e) => {
     setName(e.target.value);
   };
 
   const handleToggle = () => {
-    setToogle(!toggle);
+    setToggle(!toggle);
   };
 
   const handleSubmit = async (e) => {
@@ -59,25 +69,29 @@ const Signup = () => {
   return (
     <>
       <div className={toggle ? "light-mode" : "dark-mode"}>
-      
         <div className="toggle">
           <div className="toggle-position">
-            <div class="toggle-switch">
-              <label class="switch-label">
+            <div className="toggle-switch">
+              <label className="switch-label">
                 <input
                   type="checkbox"
-                  class="checkbox"
+                  className="checkbox"
                   onClick={handleToggle}
                 />
-                <span class="slider"></span>
+                <span className="slider"></span>
               </label>
             </div>
           </div>
         </div>
 
         <div className="container-box flex items-center justify-end">
-          <div className="">
-            <img className="h-screen" src={img} alt="img" style={{width: "50rem"}} />
+          <div>
+            <img
+              className="h-screen"
+              src={img}
+              alt="img"
+              style={{ width: "50rem" }}
+            />
           </div>
 
           <div className="px-8">
@@ -127,7 +141,7 @@ const Signup = () => {
                     Username:
                   </label>
                   <input
-                    onChange={handleNamechange}
+                    onChange={handleNameChange}
                     className="block w-96 py-1 border-0 focus:outline-none my-2"
                     name="username"
                     placeholder="Enter email or username"
@@ -171,12 +185,10 @@ const Signup = () => {
               </div>
             </form>
           </div>
-
-          
         </div>
         <div className="rock">
           <Link to="/login">
-            <button className="text-blue-400"> Already have an account?</button>
+            <button className="text-blue-400">Already have an account?</button>
           </Link>
         </div>
       </div>
