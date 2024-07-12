@@ -1,7 +1,10 @@
 import React from "react";
 import "../../../components/style.css"; // Import your CSS file for styling
-import "../../../components/Pages/Auth/Login.css"
+import "../../../components/Pages/Auth/Login.css";
 const LoginComponent = () => {
+  const [data, setdata] = React.useState("");
+  const [email, setemail] = React.useState("");
+  const [password, setPassword] = React.State("");
   return (
     <div className="login-container flex items-center justify-center">
       <div className="login-content">
