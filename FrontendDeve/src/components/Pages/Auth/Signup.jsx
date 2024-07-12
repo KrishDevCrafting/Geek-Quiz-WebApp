@@ -172,11 +172,12 @@ const Signup = () => {
             </form>
           </div>
 
-          {/* <div className="rock">
+          
+        </div>
+        <div className="rock">
           <Link to="/login">
             <button className="text-blue-400"> Already have an account?</button>
           </Link>
-        </div> */}
         </div>
       </div>
     </>

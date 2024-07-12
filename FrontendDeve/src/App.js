@@ -1,6 +1,6 @@
 import React from "react";
 import Signup from "./components/Pages/Auth/Signup.jsx";
-import { LoginComponent } from "./components/Pages/Auth/Login.jsx";
+import LoginComponent from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home } from "./Home.jsx";

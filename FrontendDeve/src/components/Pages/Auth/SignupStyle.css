@@ -157,3 +157,8 @@ left: 90%;
 top: 2%; 
 
 }
+.rock{
+  position: absolute;
+  bottom: 4%;
+  left: 82%;
+}
