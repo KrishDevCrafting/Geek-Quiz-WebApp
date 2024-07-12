@@ -26,19 +26,20 @@ const loginUser = async (req, res) => {
   try {
     const user = await User.findOne({ email });
     if (!user) {
-      console.log('User not found:', email);
-      return res.status(400).send({ message: 'Invalid email or password' });
+      console.log("User not found:", email);
+      return res.status(400).send({ message: "Invalid email or password" });
     }
 
     if (password !== user.password) {
-      console.log('Password mismatch for user:', email);
-      return res.status(400).send({ message: 'Invalid email or password' });
+      console.log("Password mismatch for user:", email);
+      return res.status(400).send({ message: "Invalid email or password" });
     }
 
-    res.status(200).send({ message: 'Login successful', user });
+    res.status(200).send({ message: "Login successful", user });
+    console.log(user);
   } catch (error) {
-    console.error('Error during login:', error);
-    res.status(500).send({ message: 'Server error', error });
+    console.error("Error during login:", error);
+    res.status(500).send({ message: "Server error", error });
   }
 };
 // Signup User
@@ -52,12 +53,13 @@ const signupUser = async (req, res) => {
 const getUsers = async (req, res) => {
   try {
     const users = await User.find();
-    res.status(200).send(users)
+    res.status(200).send(users);
   } catch (err) {
     res.status(500).send({
-      message: 'error Fetching the Users', err
-    })
+      message: "error Fetching the Users",
+      err,
+    });
   }
-}
+};
 
-module.exports = { signupUser, loginUser, createUser,getUsers };
+module.exports = { signupUser, loginUser, createUser, getUsers };

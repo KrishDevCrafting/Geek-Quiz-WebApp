@@ -1,63 +1,82 @@
-// import React from "react";
-// import "../../../components/style.css"; // Import your CSS file for styling
-// import "../../../components/Pages/Auth/Login.css";
-// const LoginComponent = () => {
-//   const [data, setdata] = React.useState("");
-//   const [email, setemail] = React.useState("");
-//   const [password, setPassword] = React.State("");
-//   const dataFetch = "http://localhost:7000/user/login";
-//   const handleEmail = (e) => {
-//     setemail(e.target.value);
-//   };
+import React, { useState } from "react";
+import axios from "axios";
+import "../../../components/style.css"; // Import your CSS file for styling
+import "../../../components/Pages/Auth/Login.css";
+const LoginComponent = () => {
+  // const [data, setdata] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setPassword] = useState("");
 
-//   const handlePassword = (e) => {
-//     setPassword(e.target.value);
-//   };
+  const dataFetch = "http://localhost:7000/user/login";
 
-//   return (
-//     <div className="login-container flex items-center justify-center">
-//       <div className="login-content">
-//         <h2 className="login-title text-purple-500 text-5xl">
-//           Sign in to your account
-//         </h2>
-//         <form className="login-form">
-//           <div className="input-group">
-//             <label htmlFor="email-address" className="text-lg">
-//               Email address
-//             </label>
-//             <input
-//               id="email-address"
-//               name="email"
-//               type="email"
-//               autoComplete="email"
-//               required
-//               onChange={handleEmail}
-//               className="block"
-//               placeholder="Email address"
-//             />
-//           </div>
-//           <div className="input-group">
-//             <label htmlFor="password" className="text-lg">
-//               Password
-//             </label>
-//             <input
-//               id="password"
-//               name="password"
-//               type="password"
-//               autoComplete="current-password"
-//               required
-//               onChange={handlePassword}
-//               className="block"
-//               placeholder="Password"
-//             />
-//           </div>
-//           <button type="submit" className="login-button">
-//             Sign in
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post(dataFetch, { email, password })
+      .then((result) => {
+        console.log(result);
+        if (result.data === email) {
+          console.log("success");
+        } else {
+          console.log("not success");
+          alert("You are not registered to this service");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
 
-// export default LoginComponent;
+  const handleEmail = (e) => {
+    setemail(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  return (
+    <div className="login-container flex items-center justify-center">
+      <div className="login-content">
+        <h2 className="login-title text-purple-500 text-5xl">
+          Sign in to your account
+        </h2>
+        <form className="login-form" onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="email-address" className="text-lg">
+              Email address
+            </label>
+            <input
+              id="email-address"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              onChange={handleEmail}
+              className="block"
+              placeholder="Email address"
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password" className="text-lg">
+              Password
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autoComplete="current-password"
+              required
+              onChange={handlePassword}
+              className="block"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" className="login-button">
+            Sign in
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default LoginComponent;
