@@ -17,6 +17,25 @@
   position: relative;
 }
 
+#loginDark-btn {
+  --color: white;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 20px;
+  /* margin: 20px; */
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
 #login-btn::before {
   position: absolute;
   content: "";
@@ -28,7 +47,7 @@
 }
 
 #login-btn:hover {
-  color: white;
+  color: #fff;
 }
 
 #login-btn:before {
@@ -42,6 +61,7 @@
   left: -30px;
 }
 
+/*  End */
 .label-text-color {
   color: #757575;
 }
@@ -149,15 +169,17 @@
   box-shadow: none;
 }
 
- .toggle{
+/* tooggle btn css end */
+.toggle {
 
- display: inline-block;
- position: absolute;
-left: 90%;
-top: 2%; 
+  display: inline-block;
+  position: absolute;
+  left: 90%;
+  top: 2%;
 
 }
-.rock{
+
+.rock {
   position: absolute;
   bottom: 4%;
   left: 82%;

@@ -26,8 +26,6 @@ const Signup = () => {
   };
   //basic login to set name,email,password to database..!
   const handleSubmit = async (e) => {
-    
-
     const user = {
       email: email,
       password: password,
@@ -167,7 +165,7 @@ const Signup = () => {
                 </div>
                 <div>
                   <button
-                    id="login-btn"
+                    id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
                     title="button"
                     onClick={handleSubmit}
