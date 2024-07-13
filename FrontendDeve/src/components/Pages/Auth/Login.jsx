@@ -19,6 +19,7 @@ const LoginComponent = () => {
         if (result.status === 200) {
           console.log("success");
           alert("success")
+          Navigate("/signup")
         } else {
           console.log("not success");
           Navigate("/");
