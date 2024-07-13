@@ -7,9 +7,9 @@ import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
 import img from "../../../assets/faridunsplash.jpg";
 
-const Signup = () => { 
+const Signup = () => {
   // Initialized the navigate into use navigate..!
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +28,8 @@ const Signup = () => {
     setToggle(!toggle);
   };
   //basic login to set name,email,password to database..!
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const user = {
       email: email,
       password: password,
@@ -47,7 +48,7 @@ const Signup = () => {
       if (response.ok) {
         const data = await response.json();
         console.log("Success", data);
-        Navigate("/signup");
+        navigate("/");
       } else {
         console.error("Error", response.statusText);
       }
@@ -148,7 +149,6 @@ const Signup = () => {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    required
                     onChange={(e) => setEmail(e.target.value)}
                     className="block w-96 py-1 border-0 focus:outline-none my-2"
                   />
@@ -172,7 +172,6 @@ const Signup = () => {
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
                     title="button"
-                    onClick={handleSubmit}
                   >
                     Submit-here
                   </button>
