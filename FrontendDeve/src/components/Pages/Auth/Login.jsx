@@ -16,8 +16,9 @@ const LoginComponent = () => {
       .post(dataFetch, { email, password })
       .then((result) => {
         console.log(result);
-        if (result.data === email) {
+        if (result.status === 200) {
           console.log("success");
+          alert("success")
         } else {
           console.log("not success");
           Navigate("/");

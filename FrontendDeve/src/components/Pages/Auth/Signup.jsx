@@ -25,7 +25,7 @@ const Signup = () => {
     setToggle(!toggle);
   };
   //basic login to set name,email,password to database..!
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     const user = {
       email: email,
       password: password,
