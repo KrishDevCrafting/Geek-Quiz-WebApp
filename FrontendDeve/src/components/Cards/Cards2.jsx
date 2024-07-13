@@ -8,7 +8,7 @@ const Card2 = () => {
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
-      <div className="main-card sm: flex-col lg:flex-row">
+      <div className="main-card sm:flex-col lg:flex-row">
         {/* card-1   */}
 
         <section>

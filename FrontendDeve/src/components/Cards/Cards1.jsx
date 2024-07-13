@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <>
       <section className="grand-parent">
-        <div className="main-box">
+        <div className="main-box sm:flex-col lg:flex-row md:flex-row">
           {/* box-1 */}
 
           <div class="card card-1 ">

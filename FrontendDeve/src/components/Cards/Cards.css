@@ -234,3 +234,13 @@ different line */
 }
 
 /* For Testing...! */
+
+@media screen and (max-width: 600px) {
+  .card{
+    margin-left: 10vw;
+    width: 300px;
+  }
+  #text {
+    color: #ffff;
+  }
+}
