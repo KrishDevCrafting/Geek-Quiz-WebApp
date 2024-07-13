@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "../../../components/style.css"; // Import your CSS file for styling
 import "../../../components/Pages/Auth/Login.css";
 const LoginComponent = () => {
   // const [data, setdata] = useState("");
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
-
+  const Navigate = useNavigate();
   const dataFetch = "http://localhost:7000/user/login";
 
   const handleSubmit = (e) => {
@@ -19,6 +20,7 @@ const LoginComponent = () => {
           console.log("success");
         } else {
           console.log("not success");
+          Navigate("/");
           alert("You are not registered to this service");
         }
       })
