@@ -20,23 +20,11 @@ const Signup = () => {
       console.log("Signup component will unmount");
     };
   }, []);
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
+  // toggle fucntion..!
   const handleToggle = () => {
     setToggle(!toggle);
   };
-
+//basic login to set name,email,password to database..!
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -141,7 +129,7 @@ const Signup = () => {
                     Username:
                   </label>
                   <input
-                    onChange={handleNameChange}
+                    onChange={(e) => setName(e.target.value)}
                     className="block w-96 py-1 border-0 focus:outline-none my-2"
                     name="username"
                     placeholder="Enter email or username"
@@ -159,7 +147,7 @@ const Signup = () => {
                     id="email"
                     placeholder="Email"
                     required
-                    onChange={handleEmailChange}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="block w-96 py-1 border-0 focus:outline-none my-2"
                   />
                 </div>
@@ -172,13 +160,18 @@ const Signup = () => {
                     type="password"
                     name="password"
                     id="password"
-                    onChange={handlePasswordChange}
+                    onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
                     className="block w-96 py-1 border-0 focus:outline-none my-2"
                   />
                 </div>
                 <div>
-                  <button id="login-btn" type="submit" title="button">
+                  <button
+                    id="login-btn"
+                    type="submit"
+                    title="button"
+                    onClick={() => alert("login-success!")}
+                  >
                     Submit-here
                   </button>
                 </div>
