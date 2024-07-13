@@ -24,9 +24,9 @@ const Signup = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
-//basic login to set name,email,password to database..!
+  //basic login to set name,email,password to database..!
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    
 
     const user = {
       email: email,
@@ -170,7 +170,7 @@ const Signup = () => {
                     id="login-btn"
                     type="submit"
                     title="button"
-                    onClick={() => alert("login-success!")}
+                    onClick={handleSubmit}
                   >
                     Submit-here
                   </button>
