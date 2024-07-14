@@ -5,7 +5,10 @@ const Cards = () => {
   return (
     <>
       <section className="grand-parent">
-        <div className="main-box sm:flex-col lg:flex-row md:flex-row">
+      <div className="align-text lg:text-white">
+        <h1 id="text">Random-QUIZ</h1>
+      </div>
+        <div className="main-box sm:flex-col md:flex-row-reverse lg:flex-row">
           {/* box-1 */}
 
           <div class="card card-1 ">
