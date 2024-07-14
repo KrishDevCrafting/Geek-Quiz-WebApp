@@ -22,6 +22,7 @@
   text-align: center;
   color: white;
 }
+
 .card-2 {
   margin: 50px 10px 50px 10px;
   color: #ffff !important;
@@ -35,6 +36,7 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
+
 .box-card {
   background-image: url("https://i.pinimg.com/originals/10/65/bc/1065bc662c55648c454c462f208d920e.gif") !important;
   background-position: center;
@@ -175,44 +177,37 @@
 
 @keyframes trail-2 {
   0% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 90%,
-      rgb(189, 122, 103) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(189, 159, 103, 0) 90%,
+        rgb(189, 122, 103) 100%);
     opacity: 0;
   }
 
   30% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 70%,
-      rgb(219, 19, 5) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(189, 159, 103, 0) 70%,
+        rgb(219, 19, 5) 100%);
     opacity: 1;
   }
 
   70% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 70%,
-      rgb(179, 31, 5) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(189, 159, 103, 0) 70%,
+        rgb(179, 31, 5) 100%);
     opacity: 1;
   }
 
   95% {
-    background: linear-gradient(
-      90deg,
-      rgba(189, 159, 103, 0) 90%,
-      rgb(220, 44, 9) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(189, 159, 103, 0) 90%,
+        rgb(220, 44, 9) 100%);
     opacity: 0;
   }
 }
 
 /* Animated Text css */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
 /* 
 body {
   text-align:center;
@@ -261,12 +256,15 @@ body {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 1;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -276,12 +274,15 @@ body {
   0% {
     margin-left: -800px;
   }
+
   20% {
     margin-left: -800px;
   }
+
   35% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: 0px;
   }
@@ -292,16 +293,20 @@ body {
     opacity: 0;
     width: 0px;
   }
+
   20% {
     opacity: 1;
     width: 0px;
   }
+
   30% {
     width: 355px;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     width: 355px;
@@ -317,6 +322,11 @@ body {
     margin-left: 10vw;
     width: 300px;
   }
+
+  .main-card {
+    flex-direction: column;
+  }
+
   #text {
     color: #ffff;
   }
