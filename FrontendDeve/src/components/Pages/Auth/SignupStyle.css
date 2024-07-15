@@ -77,11 +77,11 @@
 
   .heading-signUp {
     font-size: 4rem;
-    text-align: center;
+    /* text-align: center; */
     display: block;
     color: #691a66;
     margin: 20px;
-    margin-left: 10rem;
+    
   }
   #img{
     display: hidden;
@@ -96,6 +96,12 @@
     position: relative;
     right: 100px;
   }
+  .form-responsive{
+    display: none;
+    position: absolute;
+    right: 100px;
+  }
+  
 }
 
 /* Toggle  css */

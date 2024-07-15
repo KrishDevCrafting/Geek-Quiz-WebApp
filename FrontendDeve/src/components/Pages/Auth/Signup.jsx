@@ -75,10 +75,10 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="container-box flex items-center justify-end">
+        <div className="container-box flex items-center justify-enda">
           <div>
             <img
-            id="img"
+              id="img"
               className="h-screen"
               src={img}
               alt="img"
@@ -127,8 +127,8 @@ const Signup = () => {
                   </button>
                 </span>
               </div>
-              <div className="ml-28">
-                <div className="label-text-color my-8">
+              <div className="ml-28  form-responsive">
+                <div className="label-text-color my-8 ">
                   <label htmlFor="username" className="text-sm">
                     Username:
                   </label>
