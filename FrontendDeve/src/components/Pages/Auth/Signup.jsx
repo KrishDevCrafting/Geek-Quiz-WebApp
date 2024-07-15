@@ -78,6 +78,7 @@ const Signup = () => {
         <div className="container-box flex items-center justify-end">
           <div>
             <img
+            id="img"
               className="h-screen"
               src={img}
               alt="img"

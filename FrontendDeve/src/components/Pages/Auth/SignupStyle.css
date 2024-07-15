@@ -70,7 +70,7 @@
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 455px) {
   #heading {
     display: none;
   }
@@ -83,10 +83,18 @@
     margin: 20px;
     margin-left: 10rem;
   }
+  #img{
+    display: hidden;
+  }
 
   .display {
     margin: 10px 0px 20px 8rem;
     display: block;
+  }
+  
+  .toggle-position{
+    position: relative;
+    right: 100px;
   }
 }
 
