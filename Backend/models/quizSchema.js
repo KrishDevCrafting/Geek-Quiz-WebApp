@@ -15,3 +15,7 @@ const quizSchma = new mongoose.String({
   category: { type: String, required: true },
   question: { questionScheme },
 });
+
+const Quiz = mongoose.model("Quiz", quizSchma);
+
+module.exports = Quiz;
