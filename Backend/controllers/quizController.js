@@ -34,3 +34,31 @@ const getQuizById = async (req, res) => {
     res.status(500).send(error);
   }
 };
+
+// Update quiz by ID
+const updateQuizBYId = async (req, res) => {
+  try {
+    const quiz = await Quiz.findByIdAndUpdate(req.params.id, req.body);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+};
+
+const deleteQuizeById = async (req, res) => {
+  try {
+    const quiz = await Quiz.findByIdAndDelete(req.params.id);
+    if (!quiz) {
+      return res.status(400).send();
+    }
+    res.status(200).send(quiz);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+};
+module.export = {
+  creatQuiz,
+  updateQuizBYId,
+  deleteQuizeById,
+  getAllQuizzes,
+  getQuizById,
+};
