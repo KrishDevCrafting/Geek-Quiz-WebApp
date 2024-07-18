@@ -6,6 +6,7 @@ require("dotenv").config();
 // Importing userController for handling user operations
 // const userController = require("./controllers/userController");
 const userRoutes = require("./routes/userRoutes");
+const userQuiz = require("./routes/QuizRouter");
 // Express App
 const app = express();
 
@@ -15,6 +16,8 @@ app.use(express.json()); // Middleware to parse JSON
 
 // Routes
 app.use("/user", userRoutes);
+app.use("/userq", userQuiz);
+
 // app.post("/register", userController.createUser); // Handle user registration
 // app.post("/login", userController.loginUser); // Handle user login
 
