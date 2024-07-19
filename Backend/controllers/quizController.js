@@ -1,15 +1,24 @@
 // controllers/quizController.js
 
-const Quiz = require('../models/quizSchema'); // Adjust the path if necessary
+const Quiz = require("../models/quizSchema"); // Adjust the path if necessary
 
 // Create a new quiz
 const createQuiz = async (req, res) => {
+  const { title } = req.body;
   try {
-    const quiz = new Quiz(req.body);
+    const quiz = new Quiz({
+      title,
+    });
     await quiz.save();
-    res.status(201).send(quiz);
+    res.status(201).send({
+      message: "Quiz is add",
+      quiz,
+    });
   } catch (error) {
-    res.status(400).send(error);
+    res.status(400).send({
+      message: "error",
+      error,
+    });
   }
 };
 
@@ -39,7 +48,10 @@ const getQuizById = async (req, res) => {
 // Update a quiz by ID
 const updateQuizById = async (req, res) => {
   try {
-    const quiz = await Quiz.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
+    const quiz = await Quiz.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
     if (!quiz) {
       return res.status(404).send();
     }
@@ -67,5 +79,5 @@ module.exports = {
   getAllQuizzes,
   getQuizById,
   updateQuizById,
-  deleteQuizById
+  deleteQuizById,
 };
