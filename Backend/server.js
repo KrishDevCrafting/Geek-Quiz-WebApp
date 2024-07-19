@@ -16,7 +16,7 @@ app.use(express.json()); // Middleware to parse JSON
 
 // Routes
 app.use("/user", userRoutes);
-app.use("/userq", userQuiz);
+app.use("/user", userQuiz);
 
 // app.post("/register", userController.createUser); // Handle user registration
 // app.post("/login", userController.loginUser); // Handle user login
