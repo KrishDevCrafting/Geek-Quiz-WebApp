@@ -12,6 +12,7 @@ router.post("/Create", function (req, res) {
 //Get all Quizzes
 router.get("/Quizget", function (req, res) {
   quizController.getAllQuizzes;
+  res.send("server is running");
 });
 
 //Get a single Quiz bu Id

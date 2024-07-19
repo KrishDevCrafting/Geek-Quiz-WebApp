@@ -17,6 +17,11 @@ app.use(express.json()); // Middleware to parse JSON
 // Routes
 app.use("/user", userRoutes);
 app.use("/user", userQuiz);
+// Example test route
+app.get('/test', (req, res) => {
+  res.send('Server is working!');
+});
+
 
 // app.post("/register", userController.createUser); // Handle user registration
 // app.post("/login", userController.loginUser); // Handle user login
