@@ -52,7 +52,7 @@ const updateQuizById = async (req, res) => {
 // Delete a quiz by ID
 const deleteQuizById = async (req, res) => {
   try {
-    const quiz = await Quiz.findByIdAndDelete(req.params.id);
+    const quiz = await Quiz.findOneAndDelete(req.params.id);
     if (!quiz) {
       return res.status(404).send();
     }
