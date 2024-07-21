@@ -19,7 +19,7 @@ const Card2 = () => {
                 <div class="card-logo-2">
                   <div class="logo2">
                     <div className="logo2">
-                      <h1>Sport-Car</h1>
+                      <h1>BMW' Werke</h1>
                     </div>
                   </div>
                   <span class="trail-2"></span>
