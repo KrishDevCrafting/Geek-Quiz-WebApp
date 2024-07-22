@@ -4,7 +4,7 @@ export const QuizComponent = () => {
   return (
     <>
       <div>
-        <h1>Quiz-Page</h1>
+        <h1 className="text-rose-700 text-9xl">Quiz-Page</h1>
       </div>
     </>
   );
