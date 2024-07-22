@@ -1,20 +1,30 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Card2.css";
 import ".././styles.css";
 const Card2 = () => {
+  const handleNavigate = () => {
+    Navigate("/quizPage");
+  };
+
+  const Navigate = useNavigate();
   return (
     <>
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
-      <div className="main-card sm:flex-col lg:flex-row">
+      <div
+        className="main-card sm:flex-col lg:flex-row"
+        onClick={handleNavigate}
+      >
         {/* card-1   */}
 
         <section>
           <div className="main-container-2">
             <div class="box-card card-2 w-3">
               <div class="border-2"></div>
+
               <div class="content-2">
                 <div class="card-logo-2">
                   <div class="logo2">
@@ -29,7 +39,9 @@ const Card2 = () => {
               <span class="bottom-text-2">Space.io</span>
             </div>
           </div>
+          {Navigate("/quizPage")}
         </section>
+
         {/* End-card-1 */}
         {/* Card-2 */}
         <section>
@@ -51,6 +63,7 @@ const Card2 = () => {
             </div>
           </div>
         </section>
+
         {/* card-End-2 */}
 
         <section>
