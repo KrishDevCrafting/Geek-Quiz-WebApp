@@ -7,13 +7,20 @@ export const QuizComponent = () => {
         className="flex justify-center  items-center"
         style={{ border: "1px solid red", height: "50vh" }}>
         <form action="">
+          <div className="text-center my-4">
+            <h1 className="text-4xl"> Which book is writen by Napoleon Hill</h1>
+          </div>
           <div id="checklist">
-            <input checked="" value="1" name="r" type="checkbox" id="01" />
-            <label for="01">Think </label>
+            <input value="1" name="r" type="checkbox" id="01" />
+            <label for="01" className="">
+              Think and Grow Rich
+            </label>
             <input value="2" name="r" type="checkbox" id="02" />
-            <label for="02">Cheese</label>
+            <label for="02">48 Laws Power</label>
             <input value="3" name="r" type="checkbox" id="03" />
-            <label for="03">Coffee</label>
+            <label for="03">Rich Dad and Poor Dad</label>
+            <input value="3" name="r" type="checkbox" id="04" />
+            <label for="04">Dark Psychology</label>
           </div>
 
           {/* <label>
