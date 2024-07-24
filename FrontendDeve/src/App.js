@@ -4,6 +4,7 @@ import LoginComponent from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home.jsx";
 import { QuizComponent } from "./components/home/QuizPage.jsx";
+import { Fixerror } from "./components/Test/fetchtest.js";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/QuizPage" element={<QuizComponent />} />
+            <Route path="/test" element={<Fixerror />} />
           </Routes>
         </BrowserRouter>
       </div>

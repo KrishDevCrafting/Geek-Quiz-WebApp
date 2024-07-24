@@ -44,9 +44,7 @@ const NavBar = () => {
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 Pricing
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                FAQ
-              </a>
+              <Link to="/test">FAQ</Link>
               <Link to="/signup">Log-in</Link>
             </div>
             <div>
