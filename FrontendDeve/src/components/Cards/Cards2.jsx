@@ -1,23 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card2.css";
 import ".././styles.css";
 const Card2 = () => {
-  const [data, setdata] = React.useState([]);
   const handleNavigate = () => {
     Navigate("/quizPage");
   };
-  const fetchData = "http://localhost:7000/user/get";
-  useEffect(() => {
-    const fetchPromise = () => {
-      fetch(fetchData)
-        .then((res) => res.json())
-        .then((data) => {
-          setdata(data);
-        });
-    };
-    fetchPromise();
-  }, []);
+
   const Navigate = useNavigate();
   return (
     <>
