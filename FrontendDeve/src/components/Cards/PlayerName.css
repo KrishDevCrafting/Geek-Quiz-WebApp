@@ -1,11 +1,12 @@
 /* section 2 */
 .section2 {
   display: flex;
-  justify-content: space-between;
-  border: 2px solid red;
+  justify-content: center;
+
   color: white;
 }
-#text-align {
+
+.text-align {
   height: fit-content;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
