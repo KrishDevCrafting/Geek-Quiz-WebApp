@@ -17,9 +17,9 @@ const createQuiz = async (req, res) => {
 const getAllQuizzes = async (req, res) => {
   try {
     const quizzes = await Quiz.find({});
-    res.status(200).send(quizzes);
+    return quizzes;
   } catch (error) {
-    res.status(500).send(error);
+    throw new Error("error fetching quizzes");
   }
 };
 
