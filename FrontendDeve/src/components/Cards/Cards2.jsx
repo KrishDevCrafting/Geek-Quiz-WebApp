@@ -12,9 +12,7 @@ const Card2 = () => {
     <>
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
-        {/* {data.map((e) => (
-          <h1>{e.id}</h1>
-        ))} */}
+    
       </div>
 
       <div

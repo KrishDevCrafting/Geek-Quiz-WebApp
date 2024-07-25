@@ -1,8 +1,6 @@
 import React from "react";
 import "../Cards/PlayerName.css";
 const DynamicName = () => {
-  
-
   return (
     <>
       {/* section 2 started here */}
@@ -10,15 +8,8 @@ const DynamicName = () => {
         <div className="section2">
           <h1 id="text-align">
             <ul>
-              <li>
-                Top Players - 🎮
-                
-              </li>
-              <li>Jeo
-
-              
-
-              </li>
+              <li>Top Players - 🎮</li>
+              <li>Jeo</li>
               <li>Sam</li>
               <li>siddhart Damm</li>
             </ul>
