@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 export const Fixerror = () => {
   const [data, setdata] = React.useState([]);
-  const fetchData =
-    "https://raw.githubusercontent.com/KrishDevCrafting/review-sentiment-analysis/main/reviewsData.json";
+  // const fetchData = "http://localhost:7000/user/getdata";
+  const fetchData = "http://localhost:7000/user/get";
   useEffect(() => {
     const fetchPromise = () => {
       fetch(fetchData)
@@ -19,18 +19,13 @@ export const Fixerror = () => {
       <div>
         <h1 className="text-red-400">work.. !</h1>
       </div>
-      <table className="table-auto text-center">
-        <tr className=" border-collapse">
+      <div className="flex justify-center">
+        <ul>
           {data.map((e) => (
-            <td>{e.category}</td>
+            <li>{e.title}</li>
           ))}
-        </tr>
-        <tr>
-          {data.map((i) => (
-            <td>{i.reviewer_name}</td>
-          ))}
-        </tr>
-      </table>
+        </ul>
+      </div>
     </>
   );
 };

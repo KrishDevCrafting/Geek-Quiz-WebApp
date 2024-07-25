@@ -22,7 +22,7 @@ export const QuizComponent = () => {
             <input value="3" name="r" type="checkbox" id="04" />
             <label for="04">Dark Psychology</label>
           </div>
-
+          {/* https://www.hyperui.dev/components/application-ui/checkboxes */}
           {/* <label>
             <h1>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
