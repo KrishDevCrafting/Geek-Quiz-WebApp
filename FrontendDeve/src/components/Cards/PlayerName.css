@@ -20,3 +20,8 @@ li {
   padding: 5px;
   list-style: none;
 }
+
+.box li{
+display: inline-block;
+
+}

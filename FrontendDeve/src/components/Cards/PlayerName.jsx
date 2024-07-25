@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "../Cards/PlayerName.css";
 const DynamicName = () => {
   const [data, setdata] = React.useState([]);
-  const holdData = "http://localhost:7000/user/get";
-
+  // const holdData = "http://localhost:7000/user/get";
+  const holdData = "http://localhost:7000/user/getdata";
   useEffect(() => {
     const dynamicData = async () => {
       const response = await fetch(holdData);
@@ -17,11 +17,11 @@ const DynamicName = () => {
     <>
       {/* section 2 started here */}
       <section className="section2">
-        <div className="">
+        <div className="box">
           <h1 id="">Top player 🎮</h1>
           <ul>
             {data.map((e) => (
-              <li>{e.title}</li>
+              <li>{e.name}</li>
             ))}
           </ul>
         </div>
