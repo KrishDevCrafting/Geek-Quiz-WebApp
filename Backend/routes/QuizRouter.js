@@ -44,16 +44,16 @@ router.get("/:id", async (req, res) => {
 });
 
 // Update a quiz by ID
-router.patch("/:id", async (req, res) => {
+router.put("/:id", async (req, res) => {
   try {
-    const quiz = await updateQuizById(req, res);
-    if (!quiz) {
-      res.status(404).send("Quiz not found");
-    } else {
-      res.status(200).send(quiz);
-    }
+    const quiz = await updateQuizById(req.params.id, req.body);
+    res.send(200).send(quiz);
   } catch (error) {
-    res.status(400).send(error.message);
+    if (error.message === "quiz not found") {
+      res.status(404).send(error.message);
+    } else {
+      res.status(400).send(error.message);
+    }
   }
 });
 
