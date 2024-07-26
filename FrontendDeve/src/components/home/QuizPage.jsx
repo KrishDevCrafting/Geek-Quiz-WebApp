@@ -1,11 +1,14 @@
 import React from "react";
 import "./quizStyle.css";
 export const QuizComponent = () => {
+  const [value, setvalue] = React.useState([]);
+
   return (
     <>
       <div
         className="flex justify-center  items-center"
-        style={{ border: "1px solid red", height: "50vh" }}>
+        style={{ border: "1px solid red", height: "50vh" }}
+      >
         <form action="">
           <div className="text-center my-4">
             <h1 className="text-4xl"> Which book is writen by Napoleon Hill</h1>
