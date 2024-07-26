@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./quizStyle.css";
 export const QuizComponent = () => {
   const [value, setvalue] = React.useState([]);
+  const hello = "http://localhost:7000/user/get";
+
+  useEffect(() => {
+    const fetchdata = async () => {
+      const response = await fetch(hello);
+      const res = await response.json();
+      setvalue(res);
+    };
+    fetchdata();
+  }, []);
 
   return (
     <>
@@ -25,31 +35,6 @@ export const QuizComponent = () => {
             <input value="3" name="r" type="checkbox" id="04" />
             <label for="04">Dark Psychology</label>
           </div>
-          {/* https://www.hyperui.dev/components/application-ui/checkboxes */}
-          {/* <label>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              ea.
-            </h1>
-          </label>
-          <section className="text-center">
-            <div>
-              <h3 className="inline-block">option-1</h3>
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div>
-              <h3 className="inline-block">option-2</h3>
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div>
-              <h3 className="inline-block">option-3</h3>
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div>
-              <h3 className="inline-block">option-4</h3>
-              <input type="checkbox" name="" id="" />
-            </div>
-          </section> */}
         </form>
       </div>
     </>
