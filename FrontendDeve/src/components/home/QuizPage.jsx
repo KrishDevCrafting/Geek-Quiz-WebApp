@@ -36,6 +36,13 @@ export const QuizComponent = () => {
             <label for="04">Dark Psychology</label>
           </div>
         </form>
+        <div>
+          <ul>
+            {value.map((e) => (
+              <li>{}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );
