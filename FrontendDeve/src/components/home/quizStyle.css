@@ -3,8 +3,8 @@
   --text: #5d6474;
   --check: #cc29f0;
   --disabled: #d3c8de;
-  --width: 40%;
-  --height: 40%;
+  --width: auto;
+  --height: 180px;
   --border-radius: 10px;
   background: var(--background);
   width: var(--width);
@@ -18,6 +18,53 @@
   align-items: center;
   justify-content: center;
 }
+
+.check-out {
+  background: var(--background);
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  padding: 30px 85px;
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.check-out label {
+  color: var(--text);
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+
+.check-out,
+.label-box {
+  color: var(--text);
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+
+.check-out .label-box::before,
+.check-out .label-box::after {
+  content: "";
+  position: absolute;
+}
+
+
+
+
 
 #checklist label {
   color: var(--text);
@@ -99,17 +146,17 @@
   animation: check-02 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label {
+#checklist input[type="checkbox"]:checked+label {
   color: var(--disabled);
   animation: move 0.3s ease 0.1s forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label::before {
+#checklist input[type="checkbox"]:checked+label::before {
   background: var(--disabled);
   animation: slice 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label::after {
+#checklist input[type="checkbox"]:checked+label::after {
   animation: firework 0.5s ease forwards 0.1s;
 }
 

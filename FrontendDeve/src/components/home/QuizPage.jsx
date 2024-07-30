@@ -76,9 +76,9 @@ export const QuizComponent = () => {
               {questions[currentQuestionIndex].questionText}
             </h1>
             {questions[currentQuestionIndex].options.map((option, index) => (
-              <div id="checklist">
-                <label
-                  for="01"
+              <div className="check-out">
+                <label className="label-box"
+                
                   key={index}
                   onClick={() => handleAnswerSelection(index)}
                 >
