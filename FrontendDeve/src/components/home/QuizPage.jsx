@@ -76,9 +76,16 @@ export const QuizComponent = () => {
               {questions[currentQuestionIndex].questionText}
             </h1>
             {questions[currentQuestionIndex].options.map((option, index) => (
-              <li key={index} onClick={() => handleAnswerSelection(index)}>
-                {option}
-              </li>
+              <div id="checklist">
+                <label
+                  for="01"
+                  key={index}
+                  onClick={() => handleAnswerSelection(index)}
+                >
+                  {option}
+                </label>
+                <input value="1" name="r" type="checkbox" id="01" />
+              </div>
             ))}
           </>
         ) : (
@@ -88,7 +95,7 @@ export const QuizComponent = () => {
             <ul>
               {userAnswers.map((answer, index) => (
                 <li key={index}>
-                  {answer.question} - Your answer: {answer.answer} -{" "}
+                  {answer.question} - Your answer: {answer.answer}
                   {answer.isCorrect ? "Correct" : "Incorrect"}
                 </li>
               ))}
@@ -99,7 +106,8 @@ export const QuizComponent = () => {
 
       <div
         className="flex justify-center  items-center"
-        style={{ border: "1px solid red", height: "50vh" }}>
+        style={{ border: "1px solid red", height: "50vh" }}
+      >
         <form action="">
           <div className="text-center my-4">
             <h1 className="text-4xl">Heading</h1>
