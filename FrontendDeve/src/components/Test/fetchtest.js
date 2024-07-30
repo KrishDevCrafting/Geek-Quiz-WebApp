@@ -73,7 +73,7 @@ const QuizApp = () => {
             <button key={index} onClick={() => handleAnswerSelection(index)}>
               {option}
             </button>
-          ))}
+          ))} 
         </>
       ) : (
         <div>
