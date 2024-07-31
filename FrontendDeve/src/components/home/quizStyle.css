@@ -19,7 +19,10 @@
   justify-content: center;
 }
 
+/* Our Code */
 .check-out {
+  align-items: center;
+  justify-content: center;
   background: var(--background);
   width: var(--width);
   height: var(--height);
@@ -29,6 +32,10 @@
   padding: 30px 85px;
   display: grid;
   grid-template-columns: 30px auto;
+  --background: #303952;
+  --text: #5d6474;
+  --check: #cc29f0;
+  --disabled: #d3c8de;
 }
 
 .check-out label {
@@ -43,27 +50,110 @@
 }
 
 
-.check-out,
-.label-box {
-  color: var(--text);
-  position: relative;
-  cursor: pointer;
-  display: grid;
-  align-items: center;
-  width: fit-content;
-  transition: color 0.3s ease;
-  margin-right: 20px;
-}
-
-
-.check-out .label-box::before,
-.check-out .label-box::after {
+.check-out label::before,
+.check-out label::after {
   content: "";
   position: absolute;
 }
 
 
 
+
+.check-out label::before {
+  height: 2px;
+  width: 8px;
+  left: -27px;
+  background: var(--check);
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.check-out label:after {
+  height: 4px;
+  width: 4px;
+  top: 8px;
+  left: -25px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.check-out input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  border: 0;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  background: var(--background);
+  display: grid;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.check-out input[type="checkbox"]::before,
+.check-out input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  background: var(--check);
+  border-radius: 2px;
+}
+
+.check-out input[type="checkbox"]::before {
+  width: 0px;
+  right: 60%;
+  transform-origin: right bottom;
+}
+
+.check-out input[type="checkbox"]::after {
+  width: 0px;
+  left: 40%;
+  transform-origin: left bottom;
+}
+
+.check-out input[type="checkbox"]:checked::before {
+  animation: check-01 0.4s ease forwards;
+}
+
+.check-out input[type="checkbox"]:checked::after {
+  animation: check-02 0.4s ease forwards;
+}
+
+.check-out input[type="checkbox"]:checked+label {
+  color: var(--disabled);
+  animation: move 0.3s ease 0.1s forwards;
+}
+
+.check-out input[type="checkbox"]:checked+label::before {
+  background: var(--disabled);
+  animation: slice 0.4s ease forwards;
+}
+
+.check-out input[type="checkbox"]:checked+label::after {
+  animation: firework 0.5s ease forwards 0.1s;
+}
+
+
+
+
+
+
+
+
+/* our Code */
 
 
 #checklist label {

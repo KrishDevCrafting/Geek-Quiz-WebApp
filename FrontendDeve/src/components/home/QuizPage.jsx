@@ -77,10 +77,13 @@ export const QuizComponent = () => {
             </h1>
             {questions[currentQuestionIndex].options.map((option, index) => (
               <div className="check-out">
-                <label className="label-box"
-                
+                <label
                   key={index}
-                  onClick={() => handleAnswerSelection(index)}
+                  onClick={() =>
+                    setInterval(() => {
+                      handleAnswerSelection(index);
+                    }, 1000)
+                  }
                 >
                   {option}
                 </label>
