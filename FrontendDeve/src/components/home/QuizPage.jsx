@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./quizStyle.css";
+
 export const QuizComponent = () => {
   const [quizData, setQuizData] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -47,9 +48,13 @@ export const QuizComponent = () => {
     ]);
 
     if (currentQuestionIndex < quizData.questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setTimeout(() => {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+      }, 1000); // Delay of 1 second
     } else {
-      setQuizCompleted(true);
+      setTimeout(() => {
+        setQuizCompleted(true);
+      }, 1000); // Delay of 1 second
     }
   };
 
@@ -68,68 +73,105 @@ export const QuizComponent = () => {
   const questions = quizData.questions;
 
   return (
-    <>
-      <div>
-        {!quizCompleted ? (
-          <>
-            <h1 className="text-4xl">
-              {questions[currentQuestionIndex].questionText}
-            </h1>
-            {questions[currentQuestionIndex].options.map((option, index) => (
-              <div className="check-out">
-                <label
-                  key={index}
-                  onClick={() =>
-                    setInterval(() => {
-                      handleAnswerSelection(index);
-                    }, 1000)
-                  }
-                >
-                  {option}
-                </label>
-                <input value="1" name="r" type="checkbox" id="01" />
-              </div>
+    <div>
+      {!quizCompleted ? (
+        <>
+          <h1 className="text-4xl">
+            {questions[currentQuestionIndex].questionText}
+          </h1>
+          {questions[currentQuestionIndex].options.map((option, index) => (
+            <div key={index} className="check-out">
+              <label onClick={() => handleAnswerSelection(index)}>
+                {option}
+              </label>
+              <input
+                value="1"
+                name={`option-${index}`}
+                type="checkbox"
+                id={`option-${index}`}
+              />
+            </div>
+          ))}
+        </>
+      ) : (
+        <div>
+          <h2>Quiz Completed!</h2>
+          <h3>Your Results:</h3>
+          <ul>
+            {userAnswers.map((answer, index) => (
+              <li key={index}>
+                {answer.question} - Your answer: {answer.answer} -{" "}
+                {answer.isCorrect ? "Correct" : "Incorrect"}
+              </li>
             ))}
-          </>
-        ) : (
-          <div>
-            <h2>Quiz Completed!</h2>
-            <h3>Your Results:</h3>
-            <ul>
-              {userAnswers.map((answer, index) => (
-                <li key={index}>
-                  {answer.question} - Your answer: {answer.answer}
-                  {answer.isCorrect ? "Correct" : "Incorrect"}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
+          </ul>
+        </div>
+      )}
+    </div>
 
-      <div
-        className="flex justify-center  items-center"
-        style={{ border: "1px solid red", height: "50vh" }}
-      >
-        <form action="">
-          <div className="text-center my-4">
-            <h1 className="text-4xl">Heading</h1>
-          </div>
-          <div id="checklist">
-            <input value="1" name="r" type="checkbox" id="01" />
-            <label for="01" className="">
-              {/* {questions[currentQuestionIndex]} */}
-            </label>
-            <input value="2" name="r" type="checkbox" id="02" />
-            <label for="02">48 Laws Power</label>
-            <input value="3" name="r" type="checkbox" id="03" />
-            <label for="03">Rich Dad and Poor Dad</label>
-            <input value="3" name="r" type="checkbox" id="04" />
-            <label for="04">Dark Psychology</label>
-          </div>
-        </form>
-        <div></div>
-      </div>
-    </>
+    
   );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div
+  className="flex justify-center  items-center"
+  style={{ border: "1px solid red", height: "50vh" }}
+>
+  <form action="">
+    <div className="text-center my-4">
+      <h1 className="text-4xl">Heading</h1>
+    </div>
+    <div id="checklist">
+      <input value="1" name="r" type="checkbox" id="01" />
+      <label for="01" className="">
+        {/* {questions[currentQuestionIndex]} */}
+      </label>
+      <input value="2" name="r" type="checkbox" id="02" />
+      <label for="02">48 Laws Power</label>
+      <input value="3" name="r" type="checkbox" id="03" />
+      <label for="03">Rich Dad and Poor Dad</label>
+      <input value="3" name="r" type="checkbox" id="04" />
+      <label for="04">Dark Psychology</label>
+    </div>
+  </form>
+  <div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
+
+export default QuizComponent;
