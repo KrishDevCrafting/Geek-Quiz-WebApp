@@ -18,8 +18,8 @@ const LoginComponent = () => {
         console.log(result);
         if (result.status === 200) {
           console.log("success");
-          alert("success")
-          Navigate("/signup")
+          alert("success");
+          Navigate("/signup");
         } else {
           console.log("not success");
           Navigate("/");
@@ -40,10 +40,9 @@ const LoginComponent = () => {
   return (
     <div className="login-container flex items-center justify-center">
       <div className="login-content">
-        <h2 className="login-title text-purple-500 text-5xl">
-          Sign in to your account
-        </h2>
+        <h2 className="login-title text-purple-500 text-5xl">Welcome back</h2>
         <form className="login-form" onSubmit={handleSubmit}>
+          <h3 className="text-white">Login</h3>
           <div className="input-group">
             <label htmlFor="email-address" className="text-lg">
               Email address
