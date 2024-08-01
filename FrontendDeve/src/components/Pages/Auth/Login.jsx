@@ -54,7 +54,7 @@ const LoginComponent = () => {
               autoComplete="email"
               required
               onChange={handleEmail}
-              className="block"
+              className="block py-2"
               placeholder="Email address"
             />
           </div>
@@ -69,7 +69,7 @@ const LoginComponent = () => {
               autoComplete="current-password"
               required
               onChange={handlePassword}
-              className="block"
+              className="block py-2"
               placeholder="Password"
             />
           </div>

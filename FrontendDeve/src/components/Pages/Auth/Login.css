@@ -36,7 +36,7 @@
 }
 
 .input-group {
-    color: #ffffff;
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,7 +55,7 @@
     width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid #0c5bd3;
     border-radius: 4px;
     outline: none;
     transition: border-color 0.2s ease-in-out;
@@ -79,4 +79,8 @@
 
 .login-button:hover {
     background-color: #4f46e5;
+}
+
+.input-group label {
+    color: #ffffff;
 }
