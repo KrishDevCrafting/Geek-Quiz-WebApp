@@ -80,18 +80,23 @@ export const QuizComponent = () => {
             {questions[currentQuestionIndex].questionText}
           </h1>
           {questions[currentQuestionIndex].options.map((option, index) => (
-            <div key={index} className="space-y-2">
-              <label className="flex cursor-pointer items-start">
-                {option}
-              </label>
-              <div className="flex items-center">
+            <div
+              key={index}
+              className="space-y-2 flex justify-items-start div-box"
+            >
+              <div className="">
                 <input
-                  value="1"
-                  className="size-4 rounded border-gray-300"
+                  id={`option-${index}`}
+                  value={index}
+                  name={`question-${currentQuestionIndex}`}
+                  className="size-4 rounded"
                   onClick={() => handleAnswerSelection(index)}
-                  type="checkbox"
+                  type="radio"
                 />
               </div>
+              <label className="label-option" htmlFor={`option-${index}`}>
+                {option}
+              </label>
             </div>
           ))}
         </>

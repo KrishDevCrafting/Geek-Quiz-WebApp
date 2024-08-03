@@ -344,3 +344,14 @@
       -14px -8px 0 0px #4f29f0;
   }
 }
+
+.label-option {
+  text-align: center;
+  border: 1px solid red;
+  width: 50%;
+  padding: 10px;
+}
+
+.div-box {
+  border: 1px solid blue  ;
+}
