@@ -80,16 +80,18 @@ export const QuizComponent = () => {
             {questions[currentQuestionIndex].questionText}
           </h1>
           {questions[currentQuestionIndex].options.map((option, index) => (
-            <div key={index} className="check-out">
-              <label onClick={() => handleAnswerSelection(index)}>
+            <div key={index} className="space-y-2">
+              <label className="flex cursor-pointer items-start">
                 {option}
               </label>
-              <input
-                value="1"
-                name={`option-${index}`}
-                type="checkbox"
-                id={`option-${index}`}
-              />
+              <div className="flex items-center">
+                <input
+                  value="1"
+                  className="size-4 rounded border-gray-300"
+                  onClick={() => handleAnswerSelection(index)}
+                  type="checkbox"
+                />
+              </div>
             </div>
           ))}
         </>
@@ -108,70 +110,31 @@ export const QuizComponent = () => {
         </div>
       )}
     </div>
-
-    
   );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div
-  className="flex justify-center  items-center"
-  style={{ border: "1px solid red", height: "50vh" }}
->
-  <form action="">
-    <div className="text-center my-4">
-      <h1 className="text-4xl">Heading</h1>
-    </div>
-    <div id="checklist">
-      <input value="1" name="r" type="checkbox" id="01" />
-      <label for="01" className="">
-        {/* {questions[currentQuestionIndex]} */}
-      </label>
-      <input value="2" name="r" type="checkbox" id="02" />
-      <label for="02">48 Laws Power</label>
-      <input value="3" name="r" type="checkbox" id="03" />
-      <label for="03">Rich Dad and Poor Dad</label>
-      <input value="3" name="r" type="checkbox" id="04" />
-      <label for="04">Dark Psychology</label>
-    </div>
-  </form>
-  <div></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    className="flex justify-center  items-center"
+    style={{ border: "1px solid red", height: "50vh" }}
+  >
+    <form action="">
+      <div className="text-center my-4">
+        <h1 className="text-4xl">Heading</h1>
+      </div>
+      <div id="checklist">
+        <input value="1" name="r" type="checkbox" id="01" />
+        <label for="01" className="">
+          {/* {questions[currentQuestionIndex]} */}
+        </label>
+        <input value="2" name="r" type="checkbox" id="02" />
+        <label for="02">48 Laws Power</label>
+        <input value="3" name="r" type="checkbox" id="03" />
+        <label for="03">Rich Dad and Poor Dad</label>
+        <input value="3" name="r" type="checkbox" id="04" />
+        <label for="04">Dark Psychology</label>
+      </div>
+    </form>
+    <div></div>
+  </div>;
 };
 
 export default QuizComponent;
