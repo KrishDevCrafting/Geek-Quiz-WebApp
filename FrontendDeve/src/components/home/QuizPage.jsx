@@ -73,29 +73,28 @@ export const QuizComponent = () => {
   const questions = quizData.questions;
 
   return (
-    <div>
+    <div className="parent-div">
       {!quizCompleted ? (
         <>
-          <h1 className="text-4xl">
+          <h1 className="text-4xl text-center my-4">
             {questions[currentQuestionIndex].questionText}
           </h1>
           {questions[currentQuestionIndex].options.map((option, index) => (
-            <div
-              key={index}
-              className="space-y-2 flex justify-items-start div-box"
-            >
-              <div className="">
-                <input
-                  id={`option-${index}`}
-                  value={index}
-                  name={`question-${currentQuestionIndex}`}
-                  className="size-4 rounded"
-                  onClick={() => handleAnswerSelection(index)} // Grouping radio buttons by question Groups radio buttons by the current question, ensuring only one can be selected at a time per question
-                  type="radio"
-                />
-              </div>
+            <div key={index} className="space-y-2 flex  div-box">
+             
+              <input
+                id={`option-${index}`}
+                value={index}
+                name={`question-${currentQuestionIndex}`}
+                className="size-4 mt-4 radio-input"
+                onClick={() => handleAnswerSelection(index)} // Grouping radio buttons by question Groups radio buttons by the current question, ensuring only one can be selected at a time per question
+                type="radio"
+              />
               <label className="label-option" htmlFor={`option-${index}`}>
-                {option}
+              <span class="radio-inner-circle"></span>
+                <h1 className="">{option}</h1>
+
+               
               </label>
             </div>
           ))}
