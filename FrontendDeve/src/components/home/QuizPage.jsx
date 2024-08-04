@@ -90,7 +90,7 @@ export const QuizComponent = () => {
                 onClick={() => handleAnswerSelection(index)} // Grouping radio buttons by question Groups radio buttons by the current question, ensuring only one can be selected at a time per question
                 type="radio"
               />
-              <label className="label-option" htmlFor={`option-${index}`}>
+              <label className="label-option radio-label" htmlFor={`option-${index}`}>
               <span class="radio-inner-circle"></span>
                 <h1 className="">{option}</h1>
 
