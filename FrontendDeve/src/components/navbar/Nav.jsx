@@ -104,12 +104,11 @@ const NavBar = () => {
               {/* Hamburger-code */}
 
               <div class="container">
-                <input class="label-check" id="label-check" type="checkbox" />
-                <label for="label-check" class="hamburger-label">
-                  <div class="line1"></div>
-                  <div class="line2"></div>
-                  <div class="line3"></div>
-                  <label></label>
+                <input id="checkbox" type="checkbox" />
+                <label class="toggle" for="checkbox">
+                  <div id="bar1" class="bars"></div>
+                  <div id="bar2" class="bars"></div>
+                  <div id="bar3" class="bars"></div>
                 </label>
               </div>
               {/* end hamburger-code */}
