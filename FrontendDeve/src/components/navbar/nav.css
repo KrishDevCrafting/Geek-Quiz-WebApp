@@ -216,14 +216,14 @@
 }
 
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:2048px) {
   #box-nav {
     color: red;
     margin-left: 20vw;
 
   }
-  .container .toggle {
-    display: flex;
+  .container{
+    display: none;
   }
   
 }
