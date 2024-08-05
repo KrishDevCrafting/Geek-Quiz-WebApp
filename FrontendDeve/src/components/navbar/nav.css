@@ -222,11 +222,15 @@
     margin-left: 20vw;
 
   }
+  .container .toggle {
+    display: flex;
+  }
+  
 }
 
 @media screen and (max-width: 796px) {
 
-
+  
 
   #box-nav a {
 
@@ -249,7 +253,7 @@
   .GeekLogo a {
 
     position: relative;
-left: 10rem;
+    left: 10rem;
     bottom: 1rem;
   }
 
