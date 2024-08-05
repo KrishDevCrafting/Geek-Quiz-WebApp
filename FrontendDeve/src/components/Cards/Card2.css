@@ -85,10 +85,10 @@
 }
 
 .content-2 .card-logo-2 {
-  height: 50px;
+  height: 33px;
   position: relative;
-  width: 100px;
-  overflow:visible;
+  width: 0px;
+  overflow:hidden;
   transition: all 1s ease-in-out;
 }
 
@@ -98,9 +98,10 @@
 } */
 
 .content-2 .card-logo-2 .logo2 {
-  height: 600px;
-  position: absolute;
-  left: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-2 .card-logo-2 .trail-2 {
