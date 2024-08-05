@@ -85,10 +85,10 @@
 }
 
 .content-2 .card-logo-2 {
-  height: 33px;
+  height: 50px;
   position: relative;
-  width: 10px;
-  overflow: hidden;
+  width: 100px;
+  overflow:visible;
   transition: all 1s ease-in-out;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .card-2:hover .card-logo-2 {
-  width: 134px;
+  width: 138px;
   animation: opacity 1s ease-in-out;
 }
 

@@ -12,7 +12,6 @@ const Card2 = () => {
     <>
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
-    
       </div>
 
       <div
@@ -23,21 +22,21 @@ const Card2 = () => {
 
         <section>
           <div className="main-container-2">
-            <div class="box-card card-2 w-3">
-              <div class="border-2"></div>
+            <div className="box-card card-2 w-3">
+              <div className="border-2"></div>
 
-              <div class="content-2">
-                <div class="card-logo-2">
-                  <div class="logo2">
+              <div className="content-2">
+                <div className="card-logo-2">
+                  <div className="logo2">
                     <div className="logo2">
-                      <h1>BMW' Werke</h1>
+                      <span>BMW' Werke</span>
                     </div>
                   </div>
-                  <span class="trail-2"></span>
+                  <span className="trail-2"></span>
                 </div>
-                <span class="logo-bottom-text-2">Krish.io</span>
+                <span className="logo-bottom-text-2">Krish.io</span>
               </div>
-              <span class="bottom-text-2">Space.io</span>
+              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
           {Navigate("/quizPage")}
@@ -47,20 +46,20 @@ const Card2 = () => {
         {/* Card-2 */}
         <section>
           <div className="main-container-2">
-            <div class="box-card-3 card-2">
-              <div class="border-2"></div>
-              <div class="content-2">
-                <div class="card-logo-2">
-                  <div class="logo2">
+            <div className="box-card-3 card-2">
+              <div className="border-2"></div>
+              <div className="content-2">
+                <div className="card-logo-2">
+                  <div className="logo2">
                     <div className="logo2">
                       <h1>Empty-Space</h1>
                     </div>
                   </div>
-                  <span class="trail-2"></span>
+                  <span className="trail-2"></span>
                 </div>
-                <span class="logo-bottom-text-2">Krish.io</span>
+                <span className="logo-bottom-text-2">Krish.io</span>
               </div>
-              <span class="bottom-text-2">Space.io</span>
+              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
         </section>
@@ -71,20 +70,20 @@ const Card2 = () => {
           {/* Card-3 */}
 
           <div className="main-container-2">
-            <div class="box-card-2 card-2">
-              <div class="border-2"></div>
-              <div class="content-2">
-                <div class="card-logo-2">
-                  <div class="logo2">
+            <div className="box-card-2 card-2">
+              <div className="border-2"></div>
+              <div className="content-2">
+                <div className="card-logo-2">
+                  <div className="logo2">
                     <div className="logo2">
                       <h1>Horror</h1>
                     </div>
                   </div>
-                  <span class="trail-2"></span>
+                  <span className="trail-2"></span>
                 </div>
-                <span class="logo-bottom-text-2">Krish.io</span>
+                <span className="logo-bottom-text-2">Krish.io</span>
               </div>
-              <span class="bottom-text-2">Space.io</span>
+              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
 
