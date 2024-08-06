@@ -141,4 +141,6 @@ export const QuizComponent = () => {
   </div>;
 };
 
+
+
 export default QuizComponent;
