@@ -19,7 +19,7 @@ export const QuizComponent = () => {
       })
       .then((data) => {
         if (data.length > 0) {
-          setQuizData(data[2]);
+          setQuizData(data[0]);
           
           // Assuming the first element contains the quiz data
         } else {
