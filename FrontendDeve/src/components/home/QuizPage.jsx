@@ -8,7 +8,7 @@ export const QuizComponent = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const { data, setdata } = React.useState([]);
   useEffect(() => {
     fetch("http://localhost:7000/user/get")
       .then((response) => {
@@ -19,7 +19,9 @@ export const QuizComponent = () => {
       })
       .then((data) => {
         if (data.length > 0) {
-          setQuizData(data[0]); // Assuming the first element contains the quiz data
+          setQuizData(data[2]);
+          
+          // Assuming the first element contains the quiz data
         } else {
           setError("No quiz data available");
         }
@@ -30,6 +32,7 @@ export const QuizComponent = () => {
         setError("Failed to load quiz data.");
         setLoading(false);
       });
+  
   }, []);
 
   const handleAnswerSelection = (answerIndex) => {
@@ -81,7 +84,6 @@ export const QuizComponent = () => {
           </h1>
           {questions[currentQuestionIndex].options.map((option, index) => (
             <div key={index} className="space-y-2 flex  div-box">
-             
               <input
                 id={`option-${index}`}
                 value={index}
@@ -90,11 +92,12 @@ export const QuizComponent = () => {
                 onClick={() => handleAnswerSelection(index)} // Grouping radio buttons by question Groups radio buttons by the current question, ensuring only one can be selected at a time per question
                 type="radio"
               />
-              <label className="label-option radio-label" htmlFor={`option-${index}`}>
-              <span class="radio-inner-circle"></span>
+              <label
+                className="label-option radio-label"
+                htmlFor={`option-${index}`}
+              >
+                <span class="radio-inner-circle"></span>
                 <h1 className="">{option}</h1>
-
-               
               </label>
             </div>
           ))}
@@ -106,41 +109,16 @@ export const QuizComponent = () => {
           <ul>
             {userAnswers.map((answer, index) => (
               <li key={index}>
-                {answer.question} - Your answer: {answer.answer} -{" "}
+                {answer.question} - Your answer: {answer.answer}
                 {answer.isCorrect ? "Correct" : "Incorrect"}
               </li>
             ))}
           </ul>
         </div>
       )}
+    
     </div>
   );
-
-  <div
-    className="flex justify-center  items-center"
-    style={{ border: "1px solid red", height: "50vh" }}
-  >
-    <form action="">
-      <div className="text-center my-4">
-        <h1 className="text-4xl">Heading</h1>
-      </div>
-      <div id="checklist">
-        <input value="1" name="r" type="checkbox" id="01" />
-        <label for="01" className="">
-          {/* {questions[currentQuestionIndex]} */}
-        </label>
-        <input value="2" name="r" type="checkbox" id="02" />
-        <label for="02">48 Laws Power</label>
-        <input value="3" name="r" type="checkbox" id="03" />
-        <label for="03">Rich Dad and Poor Dad</label>
-        <input value="3" name="r" type="checkbox" id="04" />
-        <label for="04">Dark Psychology</label>
-      </div>
-    </form>
-    <div></div>
-  </div>;
 };
-
-
 
 export default QuizComponent;
