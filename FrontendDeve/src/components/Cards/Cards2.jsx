@@ -2,7 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card2.css";
 import ".././styles.css";
+
 const Card2 = () => {
+  const [card, setcard] = React.useState(false);
+
+  const handleCard = () => {
+    setcard(!card);
+  };
+
   const handleNavigate = () => {
     Navigate("/quizPage");
   };
@@ -45,14 +52,14 @@ const Card2 = () => {
         {/* End-card-1 */}
         {/* Card-2 */}
         <section>
-          <div className="main-container-2">
+          <div className="main-container-2" onClick={handleCard}>
             <div className="box-card-3 card-2">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
                     <div className="logo2">
-                      <h1>Empty-Space</h1>
+                      <h1>Nissan-Supra</h1>
                     </div>
                   </div>
                   <span className="trail-2"></span>
@@ -90,6 +97,7 @@ const Card2 = () => {
           {/* End-card-3 */}
         </section>
       </div>
+    
     </>
   );
 };

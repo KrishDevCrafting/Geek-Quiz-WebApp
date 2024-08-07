@@ -8,7 +8,7 @@ export const QuizComponent = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { data, setdata } = React.useState([]);
+  // const { data, setdata } = React.useState([]);
   useEffect(() => {
     fetch("http://localhost:7000/user/get")
       .then((response) => {
