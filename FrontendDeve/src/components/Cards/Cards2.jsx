@@ -83,7 +83,7 @@ const Card2 = () => {
                 <div className="card-logo-2">
                   <div className="logo2">
                     <div className="logo2">
-                      <h1>Horror</h1>
+                      <h1>Nissan GT-R</h1>
                     </div>
                   </div>
                   <span className="trail-2"></span>
