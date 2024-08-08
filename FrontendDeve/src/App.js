@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home.jsx";
 import { QuizComponent } from "./components/home/QuizPage.jsx";
 import QuizApp from "./components/Test/fetchtest.js";
+import NavbarA from "./components/Cards/testNav.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/QuizPage" element={<QuizComponent />} />
             <Route path="/test" element={<QuizApp />} />
+            <Route path="/value" element={<NavbarA />} />
           </Routes>
         </BrowserRouter>
       </div>
