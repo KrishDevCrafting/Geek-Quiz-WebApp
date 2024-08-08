@@ -15,7 +15,6 @@
   color: #fff;
 }
 
-
 #style {
   padding: 10px 20px 10px 20px;
   width: 100vw;
@@ -33,9 +32,12 @@
 }
 
 #box-nav {
-  margin-left: 45vw;
   display: flex;
   gap: 50px;
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 25px 25px 25px 25px;
 }
 
 /* #btncss-play {
@@ -64,7 +66,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .bars {
@@ -72,29 +74,29 @@
   height: 4px;
   background-color: rgb(253, 255, 243);
   border-radius: 5px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 /* #checkbox:checked + .toggle .bars {
   margin-left: 13px;
 } */
 
-#checkbox:checked+.toggle #bar2 {
+#checkbox:checked + .toggle #bar2 {
   transform: translateY(14px) rotate(60deg);
   margin-left: 0;
   transform-origin: right;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   z-index: 2;
 }
 
-#checkbox:checked+.toggle #bar1 {
+#checkbox:checked + .toggle #bar1 {
   transform: translateY(28px) rotate(-60deg);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transform-origin: left;
   z-index: 1;
 }
 
-#checkbox:checked+.toggle {
+#checkbox:checked + .toggle {
   transform: rotate(-90deg);
 }
 
@@ -145,12 +147,7 @@
 }
 
 /* for color-style */
-#box-nav {
-  border: 1px solid black;
-  padding: 10px 20px 10px 20px;
-  background-color: rgb(0, 0, 0, 0.6);
-  border-radius: 25px 25px 25px 25px;
-}
+
 
 /* #btn:hover {
   background-color: rgb(0, 0, 0, 0.8);
@@ -215,27 +212,19 @@
   transition-delay: 300ms;
 }
 
-
-@media screen and (max-width:2048px) {
+@media screen and (max-width: 2048px) {
   #box-nav {
     color: red;
-    margin-left: 20vw;
-
+    margin-left: 45vw;
   }
-  .container{
+  .container {
     display: none;
   }
-  
 }
 
 @media screen and (max-width: 796px) {
-
-  
-
   #box-nav a {
-
     display: none;
-
   }
 
   #box-nav {
@@ -247,17 +236,13 @@
     /* Remove background color */
     border-radius: 0;
     display: none;
-
   }
 
   .GeekLogo a {
-
     position: relative;
     left: 10rem;
     bottom: 1rem;
   }
-
-
 
   .container {
     display: block;
@@ -280,6 +265,4 @@
     border: none;
     cursor: pointer;
   } */
-
-
 }
