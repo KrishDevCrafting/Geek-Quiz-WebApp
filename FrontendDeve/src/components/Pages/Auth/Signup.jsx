@@ -79,10 +79,9 @@ const Signup = () => {
           <div className="px-8" id="sign-page">
             <form onSubmit={handleSubmit}>
               <h1
-                className={
-                  (toggle ? "text-color-black" : "text-color-white") +
-                  "text-4xl m-10"
-                }
+                className={`${
+                  toggle ? "text-color-black" : "text-color-white"
+                } text-4xl m-10`}
                 id="heading"
               >
                 Welcome Mother' Fucker!
