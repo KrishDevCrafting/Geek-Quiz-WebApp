@@ -4,10 +4,14 @@ import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
-
-//import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
 const NavBar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {/* src/Testing/ComponentA.jsx */}
@@ -92,13 +96,22 @@ const NavBar = () => {
               {/* Hamburger-code */}
 
               <div class="container">
-                <input id="checkbox" type="checkbox" />
+                <input id="checkbox" type="checkbox" onClick={handleToggle} />
                 <label class="toggle" for="checkbox">
                   <div id="bar1" class="bars"></div>
                   <div id="bar2" class="bars"></div>
                   <div id="bar3" class="bars"></div>
                 </label>
-                {/* Hambuger-bar */}
+              </div>
+              <div className="hamburger-navbar">
+                <nav className={`${isOpen ? "block" : "hidden"}`}>
+                  <ul>
+                    <li>home</li>
+                    <li>general</li>
+                    <li>log-in</li>
+                    <li>log-out</li>
+                  </ul>
+                </nav>
               </div>
               {/* end hamburger-code */}
             </div>

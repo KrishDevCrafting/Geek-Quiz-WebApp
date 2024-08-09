@@ -321,6 +321,9 @@
   .container {
     display: none;
   }
+  .hamburger-navbar{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 796px) {
@@ -328,6 +331,9 @@
     display: none;
   }
   .hamburger {
+    display: block;
+  }
+  .hamburger-navbar{
     display: block;
   }
   #box-nav {
@@ -372,4 +378,9 @@
 
 .hamburger {
   display: none;
+}
+
+.hamburger-navbar{
+  position: absolute;
+right: 21rem;
 }
