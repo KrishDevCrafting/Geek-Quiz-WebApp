@@ -1,33 +1,44 @@
-import React, { useState } from 'react';
-
+import React from "react";
+import "./Navbar.css";
 const NavbarA = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-    <nav className="bg-gray-800 text-red-500">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-        <div className="text-xl font-bold">Brand</div>
-        <button
-          onClick={toggleMenu}
-          className="block lg:hidden px-2 py-1 text-gray-400 hover:text-white"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-        <div className={`lg:flex flex-grow items-center justify-center space-x-4 ${isOpen ? 'flex' : 'hidden'}`}>
-          <a href="#" className="hover:text-gray-400">Home</a>
-          <a href="#" className="hover:text-gray-400">About</a>
-          <a href="#" className="hover:text-gray-400">Services</a>
-          <a href="#" className="hover:text-gray-400">Contact</a>
+      <div className="flex justify-center mt-4">
+        <div class="select">
+          <div
+            class="selected"
+            data-default="All"
+            data-one="Vaishuu"
+            data-two="option-2"
+            data-three="option-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="arrow">
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+            </svg>
+          </div>
+          <div class="options">
+            <div title="all">
+              <input id="all" name="option" type="radio" checked="" />
+              <label class="option" for="all" data-txt="All"></label>
+            </div>
+            <div title="my-Love">
+              <input id="option" name="option" type="radio" />
+              <label class="option" for="option-1" data-txt="vaishu"></label>
+            </div>
+            <div title="Name">
+              <input id="option-2" name="option" type="radio" />
+              <label class="option" for="option-2" data-txt="Krish"></label>
+            </div>
+            <div title="My-plan">
+              <input id="option-3" name="option" type="radio" />
+              <label class="option" for="option-3" data-txt="Bmw M5 cs Competition"></label>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
     </>
   );
 };
