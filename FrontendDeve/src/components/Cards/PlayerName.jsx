@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../Cards/PlayerName.css";
+
 const DynamicName = () => {
   const [data, setdata] = React.useState([]);
   // const holdData = "http://localhost:7000/user/get";
@@ -15,6 +16,7 @@ const DynamicName = () => {
 
   return (
     <>
+      
       {/* section 2 started here */}
       <section className="section2">
         <div className="box">

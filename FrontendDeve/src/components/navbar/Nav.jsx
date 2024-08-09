@@ -103,13 +103,21 @@ const NavBar = () => {
                   <div id="bar3" class="bars"></div>
                 </label>
               </div>
-              <div className="hamburger-navbar">
+              <div className="hamburger-navbar text-white">
                 <nav className={`${isOpen ? "block" : "hidden"}`}>
                   <ul>
-                    <li>home</li>
-                    <li>general</li>
-                    <li>log-in</li>
-                    <li>log-out</li>
+                    <a href="https://www.google.co.in/" target="_self">
+                      <li>Home</li>
+                    </a>
+                    <a href="https://www.github.com" target="_self">
+                      <li>General</li>
+                    </a>
+                    <Link to="/login">
+                      <li>SignUp</li>
+                    </Link>
+                    <Link to="/signup">
+                      <li>Log-out</li>
+                    </Link>
                   </ul>
                 </nav>
               </div>

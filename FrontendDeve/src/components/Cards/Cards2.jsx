@@ -17,14 +17,14 @@ const Card2 = () => {
   const Navigate = useNavigate();
   return (
     <>
+     
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
       <div
         className="main-card sm:flex-col lg:flex-row"
-        onClick={handleNavigate}
-      >
+        onClick={handleNavigate}>
         {/* card-1   */}
 
         <section>
@@ -97,7 +97,6 @@ const Card2 = () => {
           {/* End-card-3 */}
         </section>
       </div>
-    
     </>
   );
 };
