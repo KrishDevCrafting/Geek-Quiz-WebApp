@@ -202,8 +202,9 @@
 }
 
 #sign-page {
-  
-  border: 1px solid red;
+  background: rgba(245, 240, 240, 0.15);
+  backdrop-filter: blur(11px);
+  border-radius: 8px;
 }
 
 .userInput {
