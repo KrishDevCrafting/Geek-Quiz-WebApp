@@ -79,7 +79,7 @@ const Signup = () => {
           <div>
             <img
               id="img"
-              className="h-screen"
+            className="h-screen"
               src={img}
               alt="img"
               style={{ width: "50rem" }}
@@ -193,4 +193,5 @@ const Signup = () => {
 
 export default Signup;
 
-// Krish i kow you can do it just believe in you're self or have a faith on it.
+// Krish i know you can do it just believe in you're self or have a faith on it.
+// for tersting
