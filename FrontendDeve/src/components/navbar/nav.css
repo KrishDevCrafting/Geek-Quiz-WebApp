@@ -335,6 +335,9 @@
   .hamburger-navbar {
     display: block;
   }
+  .responsive-btn{
+    margin-right: -10px;
+  }
   #box-nav {
     border: none;
     /* Remove border */
@@ -380,13 +383,16 @@
 }
 
 .hamburger-navbar {
- 
+    top: 20px;
   position: absolute;
-  right: 21rem;
-cursor: pointer;
+  right: 9rem;
+  cursor: pointer;
   border: 1px solid black;
 }
 .hamburger-navbar:hover {
-color: red;
+  color: red;
+}
 
+.hamburger-navbar li {
+  display: inline;
 }

@@ -50,7 +50,7 @@ const NavBar = () => {
               <Link to="/test">FAQ</Link>
               <Link to="/signup">Log-in</Link>
             </div>
-            <div className="mr-4">
+            <div className="mr-4 responsive-btn">
               <button
                 id="btncss-play"
                 className="buttonCss md:hidden flex items-center">
