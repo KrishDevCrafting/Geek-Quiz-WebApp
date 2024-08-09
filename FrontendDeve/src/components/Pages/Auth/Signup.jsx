@@ -82,7 +82,7 @@ const Signup = () => {
                 className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
                 id="heading"
               >
-                Welcome
+                Welcome Mother' Fucker!
               </h1>
               <h1 className="heading-signUp">Sign Up</h1>
               <div className="text-center">
@@ -158,7 +158,7 @@ const Signup = () => {
                     className="block w-96 py-1 border-0 focus:outline-none my-2 userInput"
                   />
                 </div>
-                <div>
+                <div className="my-2">
                   <button
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
@@ -167,14 +167,17 @@ const Signup = () => {
                     Submit-here
                   </button>
                 </div>
+
+                <div className="rock">
+                  <Link to="/login">
+                    <button className="text-blue-400">
+                      Already have an account?
+                    </button>
+                  </Link>
+                </div>
               </div>
             </form>
           </div>
-        </div>
-        <div className="rock">
-          <Link to="/login">
-            <button className="text-blue-400">Already have an account?</button>
-          </Link>
         </div>
       </div>
     </>
