@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { useNavigate } from "react-router-dom";
+
 const NavbarA = () => {
-  const Navigate = useNavigate();
+
   return (
     <>
       <div className="flex justify-center mt-4">

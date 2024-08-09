@@ -8,7 +8,6 @@ import ComponenetA from "../../Background-Star-Effect/ComponentA";
 //import "../../Testing/componentA.css"
 import Text from "./TextEffect/text";
 const NavBar = () => {
-  
   return (
     <>
       {/* src/Testing/ComponentA.jsx */}
@@ -99,8 +98,7 @@ const NavBar = () => {
                   <div id="bar2" class="bars"></div>
                   <div id="bar3" class="bars"></div>
                 </label>
-
-                
+                {/* Hambuger-bar */}
               </div>
               {/* end hamburger-code */}
             </div>
@@ -111,6 +109,40 @@ const NavBar = () => {
           <p>
             <Text />
           </p>
+        </div>
+      </div>
+      {/* hello */}
+      <div>
+        <div className="text-white hamburger">
+          <div class="select">
+            <div
+              class="selected"
+              data-default="All"
+              data-one="Vaishuu"
+              data-two="option-2"
+              data-three="option-3"></div>
+            <div class="options">
+              <div title="all">
+                <input id="all" name="option" type="radio" checked="" />
+                <label class="option" for="all" data-txt="All"></label>
+              </div>
+              <div title="my-Love">
+                <input id="option" name="option" type="radio" />
+                <label class="option" for="option-1" data-txt="vaishu"></label>
+              </div>
+              <div title="Name">
+                <input id="option-2" name="option" type="radio" />
+                <label class="option" for="option-2" data-txt="Krish"></label>
+              </div>
+              <div title="My-plan">
+                <input id="option-3" name="option" type="radio" />
+                <label
+                  class="option"
+                  for="option-3"
+                  data-txt="Bmw M5 cs Competition"></label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
