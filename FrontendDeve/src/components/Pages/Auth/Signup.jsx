@@ -75,24 +75,14 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="container-box flex items-center justify-enda">
-          <div>
-            <img
-              id="img"
-            className="h-screen"
-              src={img}
-              alt="img"
-              style={{ width: "50rem" }}
-            />
-          </div>
-
-          <div className="px-8">
+        <div className="container-box flex items-center justify-center">
+          <div className="px-8" id="sign-page">
             <form onSubmit={handleSubmit}>
               <h1
                 className="text-3xl m-10 sm:text-red-500 lg:text-blue-600 md:text-yellow-500"
                 id="heading"
               >
-                Join & Connect the Fastest Growing Online Community
+                Welcome
               </h1>
               <h1 className="heading-signUp">Sign Up</h1>
               <div className="text-center">
@@ -127,7 +117,7 @@ const Signup = () => {
                   </button>
                 </span>
               </div>
-              <div className="ml-28  form-responsive">
+              <div className="ml-20  form-responsive">
                 <div className="label-text-color my-8 ">
                   <label htmlFor="username" className="text-sm">
                     Username:
