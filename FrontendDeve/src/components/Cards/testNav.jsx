@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 const NavbarA = () => {
+  const Navigate = useNavigate();
   return (
     <>
       <div className="flex justify-center mt-4">
@@ -27,6 +29,7 @@ const NavbarA = () => {
             <div title="my-Love">
               <input id="option" name="option" type="radio" />
               <label class="option" for="option-1" data-txt="vaishu"></label>
+            
             </div>
             <div title="Name">
               <input id="option-2" name="option" type="radio" />
@@ -34,7 +37,10 @@ const NavbarA = () => {
             </div>
             <div title="My-plan">
               <input id="option-3" name="option" type="radio" />
-              <label class="option" for="option-3" data-txt="Bmw M5 cs Competition"></label>
+              <label
+                class="option"
+                for="option-3"
+                data-txt="Bmw M5 cs Competition"></label>
             </div>
           </div>
         </div>
