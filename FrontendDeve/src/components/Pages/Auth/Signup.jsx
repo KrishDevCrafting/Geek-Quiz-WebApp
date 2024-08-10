@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../../components/style.css";
 import "./SignupStyle.css";
-
 import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
-import img from "../../../assets/faridunsplash.jpg";
 
 const Signup = () => {
   // Initialized the navigate into use navigate..!
