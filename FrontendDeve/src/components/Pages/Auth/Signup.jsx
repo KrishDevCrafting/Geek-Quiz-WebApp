@@ -73,8 +73,8 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="container-box flex items-center justify-center">
-          <div className="px-8" id="sign-page">
+        <div className="container-box flex items-center justify-center whole-form">
+          <div className="px-8 h-screen" id="sign-page">
             <form onSubmit={handleSubmit}>
               <h1
                 className={`${
@@ -158,7 +158,7 @@ const Signup = () => {
                     className="block w-96 py-1 border-0 focus:outline-none my-2 userInput"
                   />
                 </div>
-                <div className="my-2">
+                <div className="my-2 res-btn">
                   <button
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"

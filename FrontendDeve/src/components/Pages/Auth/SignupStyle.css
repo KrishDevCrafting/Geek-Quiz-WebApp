@@ -69,6 +69,7 @@
 .heading-signUp {
   display: none;
 }
+
 /* Responsive for signpage */
 @media screen and (max-width: 455px) {
   #heading {
@@ -79,15 +80,13 @@
     font-size: 4rem;
     /* text-align: center; */
     display: block;
-    color: #691a66;
+    color: #c7bdc7;
     margin: 20px;
 
   }
 
- 
-
   .display {
-    margin: 10px 0px 20px 8rem;
+    margin: 10px 0px 20px 2rem;
     display: block;
   }
 
@@ -97,12 +96,31 @@
   }
 
   .form-responsive {
-    display: none;
-    position: absolute;
-    right: 100px;
+    display: block;
+    width: 15rem;
+    margin-left: 5rem;
+    margin-right: -50px;
   }
 
+  .form-responsive input {
+    width: 15rem;
+    margin: 5px 5px 10px -50px;
+  }
+
+  .rock {
+  
+  }
+
+  .res-btn {
+    margin-left: -50px;
+  }
+
+  #sign-page {
+    height: 40rem;
+    
+  }
 }
+
 /* Ending Point Media Q */
 /* Toggle  css */
 
@@ -199,7 +217,9 @@
   left: 55%;
 }
 
+
 #sign-page {
+
   background: rgba(245, 240, 240, 0.15);
   backdrop-filter: blur(11px);
   border-radius: 8px;
