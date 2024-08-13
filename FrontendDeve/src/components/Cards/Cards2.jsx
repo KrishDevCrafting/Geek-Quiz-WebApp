@@ -17,7 +17,6 @@ const Card2 = () => {
   const Navigate = useNavigate();
   return (
     <>
-     
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
