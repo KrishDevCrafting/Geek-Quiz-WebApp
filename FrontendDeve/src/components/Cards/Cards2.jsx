@@ -2,13 +2,15 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card2.css";
 import ".././styles.css";
-
+import { useDispatch } from "react-redux";
+import user from "../Features/user";
 const Card2 = () => {
   const [card, setcard] = React.useState(false);
+  const dispatch = useDispatch();
 
-  const handleCard = () => {
-    setcard(!card);
-  };
+  // const handleCard = () => {
+  //   setcard(!card);
+  // };
 
   const handleNavigate = () => {
     Navigate("/quizPage");
@@ -51,7 +53,11 @@ const Card2 = () => {
         {/* End-card-1 */}
         {/* Card-2 */}
         <section>
-          <div className="main-container-2" onClick={handleCard}>
+          <div
+            className="main-container-2"
+            onClick={() => {
+              dispatch(user(card));
+            }}>
             <div className="box-card-3 card-2">
               <div className="border-2"></div>
               <div className="content-2">

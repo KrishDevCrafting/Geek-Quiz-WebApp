@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./quizStyle.css";
-
+import { useSelector } from "react-redux";
 export const QuizComponent = () => {
+  const [value, setValue] = useState(2);
+  const user = useSelector((state) => state.user.value);
   const [quizData, setQuizData] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -9,6 +11,14 @@ export const QuizComponent = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   // const { data, setdata } = React.useState([]);
+
+  // if (user === false) {
+  //   setValue(2);
+  // } else {
+  //   setValue(0);
+  // }
+console.log(user,"hello");
+
   useEffect(() => {
     fetch("http://localhost:7000/user/get")
       .then((response) => {
@@ -19,8 +29,8 @@ export const QuizComponent = () => {
       })
       .then((data) => {
         if (data.length > 0) {
-          setQuizData(data[2]);
-          
+          setQuizData(data[value]);
+
           // Assuming the first element contains the quiz data
         } else {
           setError("No quiz data available");
@@ -32,7 +42,6 @@ export const QuizComponent = () => {
         setError("Failed to load quiz data.");
         setLoading(false);
       });
-  
   }, []);
 
   const handleAnswerSelection = (answerIndex) => {
@@ -94,8 +103,7 @@ export const QuizComponent = () => {
               />
               <label
                 className="label-option radio-label"
-                htmlFor={`option-${index}`}
-              >
+                htmlFor={`option-${index}`}>
                 <span class="radio-inner-circle"></span>
                 <h1 className="">{option}</h1>
               </label>
@@ -116,7 +124,6 @@ export const QuizComponent = () => {
           </ul>
         </div>
       )}
-    
     </div>
   );
 };
