@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./quizStyle.css";
 import { useSelector } from "react-redux";
 export const QuizComponent = () => {
-  const [value, setValue] = useState(2);
+  // const [value, setValue] = useState(2);
+
   const user = useSelector((state) => state.user.value);
   const [quizData, setQuizData] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -17,7 +18,7 @@ export const QuizComponent = () => {
   // } else {
   //   setValue(0);
   // }
-console.log(user,"hello");
+  console.log(user, "hello");
 
   useEffect(() => {
     fetch("http://localhost:7000/user/get")
@@ -28,8 +29,8 @@ console.log(user,"hello");
         return response.json();
       })
       .then((data) => {
-        if (data.length > 0) {
-          setQuizData(data[value]);
+        if (user >= 0 && user < data.length) {
+          setQuizData(data[user]);
 
           // Assuming the first element contains the quiz data
         } else {

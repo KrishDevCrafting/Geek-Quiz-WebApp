@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initiStateValue = "";
+const initiStateValue = 1;
 const QuizLogic = createSlice({
   name: "cardsLogic",
   initialState: {
