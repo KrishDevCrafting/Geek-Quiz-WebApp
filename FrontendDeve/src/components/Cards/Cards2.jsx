@@ -6,9 +6,9 @@ import { useDispatch } from "react-redux";
 import { userLogic } from "../Features/user"; // Import the correct action
 
 const Card2 = () => {
-  const [data, setData] = React.useState(2);
+  const [data, setData] = React.useState(1);
   const [bmw, setBmw] = React.useState(0);
-  const [random, setRandom] = React.useState(1);
+  const [random, setRandom] = React.useState(2);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
