@@ -336,3 +336,15 @@ body {
     color: #ffff;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  #text {
+    color: #ffff;
+  }
+  .main-card {
+    flex-direction: row;
+  }
+  .card-2{
+    width: 200px;
+  }
+  
+}

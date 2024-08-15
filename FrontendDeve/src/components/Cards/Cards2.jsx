@@ -7,6 +7,8 @@ import { userLogic } from "../Features/user"; // Import the correct action
 
 const Card2 = () => {
   const [data, setData] = React.useState(2);
+  const [bmw, setBmw] = React.useState(0);
+  const [random, setRandom] = React.useState(1);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -20,16 +22,24 @@ const Card2 = () => {
     handleNavigate(); // Navigate after dispatching the action
   };
 
+  const handlePower = () => {
+    dispatch(userLogic(bmw));
+  };
+
+  const handleRandom = () => {
+    dispatch(userLogic(random));
+  };
   return (
     <>
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
-      <div className="main-card sm:flex-col lg:flex-row">
+      <div className="main-card sm:flex-col lg:flex-row"
+      onClick={handleNavigate}>
         {/* Card-1 */}
-        <section onClick={handleNavigate}>
-          <div className="main-container-2">
+        <section>
+          <div className="main-container-2" onClick={handlePower}>
             <div className="box-card card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
@@ -70,7 +80,7 @@ const Card2 = () => {
         </section>
 
         {/* Card-3 */}
-        <section>
+        <section onClick={handleRandom}>
           <div className="main-container-2">
             <div className="box-card-2 card-2">
               <div className="border-2"></div>
