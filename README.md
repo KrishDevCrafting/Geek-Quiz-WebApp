@@ -101,7 +101,7 @@ Distributed under the MIT License. See LICENSE for more information.
 📬 Contact
 <br>
 
-hello
-Your Name  - krishgeek@gmail.com
+
+Contact- krishgeek@gmail.com
 <br>
 Project Link: https://KrishDevCrafting/Geek-Quiz-WebApp
