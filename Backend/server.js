@@ -19,8 +19,6 @@ app.use("/user", userRoutes);
 app.use("/user", userQuiz);
 // Example test route
 
-
-
 // app.post("/register", userController.createUser); // Handle user registration
 // app.post("/login", userController.loginUser); // Handle user login
 
