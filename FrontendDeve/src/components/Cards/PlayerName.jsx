@@ -4,7 +4,7 @@ import "../Cards/PlayerName.css";
 const DynamicName = () => {
   const [data, setdata] = React.useState([]);
   // const holdData = "http://localhost:7000/user/get";
-  const holdData = "http://localhost:7000/user/getdata";
+  const holdData = "https://geek-quiz.onrender.com/user/getdata";
   useEffect(() => {
     const dynamicData = async () => {
       const response = await fetch(holdData);
