@@ -12,7 +12,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const userFetch = "http://localhost:7000/user/register";
+  const userFetch = "https://geek-quiz.onrender.com/user/register";
 
   useEffect(() => {
     console.log("Signup component mounted or updated");
@@ -80,8 +80,7 @@ const Signup = () => {
                 className={`${
                   toggle ? "text-color-black" : "text-color-white"
                 } text-4xl m-10`}
-                id="heading"
-              >
+                id="heading">
                 Welcome Mother' Fucker!
               </h1>
               <h1 className="heading-signUp">Sign Up</h1>
@@ -89,8 +88,7 @@ const Signup = () => {
                 <span className="mx-8 display">
                   <button
                     type="button"
-                    className="bg-slate-100 p-2 rounded-2xl px-4"
-                  >
+                    className="bg-slate-100 p-2 rounded-2xl px-4">
                     <img
                       src={GoogleImg}
                       alt="img"
@@ -104,8 +102,7 @@ const Signup = () => {
                 <span className="display">
                   <button
                     type="button"
-                    className="bg-slate-100 p-2 rounded-2xl px-4"
-                  >
+                    className="bg-slate-100 p-2 rounded-2xl px-4">
                     <img
                       src={githubImg}
                       alt="img"
@@ -162,8 +159,7 @@ const Signup = () => {
                   <button
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
-                    title="button"
-                  >
+                    title="button">
                     Submit-here
                   </button>
                 </div>

@@ -8,7 +8,7 @@ const LoginComponent = () => {
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
   const Navigate = useNavigate();
-  const dataFetch = "http://localhost:7000/user/login";
+  const dataFetch = "https://geek-quiz.onrender.com/user/login";
 
   const handleSubmit = (e) => {
     e.preventDefault();
