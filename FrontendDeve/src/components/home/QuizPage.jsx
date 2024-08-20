@@ -21,7 +21,7 @@ export const QuizComponent = () => {
   console.log(user, "hello");
 
   useEffect(() => {
-    fetch("http://localhost:7000/user/get")
+    fetch("https://geek-quiz.onrender.com/user/get")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
