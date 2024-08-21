@@ -15,6 +15,20 @@
   color: #fff;
 }
 
+#hover-view {
+  color: red;
+  width: 100px;
+border: 2px solid white;
+  
+  position: absolute;
+  top: 50px;
+  display: none;
+  right: 32.5rem;
+}
+
+#hover-view:hover{
+display: block;
+}
 #style {
   padding: 10px 20px 10px 20px;
   width: 100vw;
@@ -325,8 +339,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 796px) {
   #box-nav a {
     display: none;
@@ -337,7 +349,7 @@
   .hamburger-navbar {
     display: block;
   }
-  .responsive-btn{
+  .responsive-btn {
     margin-right: -10px;
   }
   #box-nav {
@@ -385,7 +397,7 @@
 }
 
 .hamburger-navbar {
-    top: 20px;
+  top: 20px;
   position: absolute;
   right: 9rem;
   cursor: pointer;
@@ -408,7 +420,7 @@
   #box-nav a {
     display: block;
   }
-  #box-nav{
+  #box-nav {
     display: flex;
     border: 1px solid #000000;
     padding: 10px 10px 10px 10px;
@@ -417,11 +429,10 @@
     margin-right: 20px;
     gap: 10px;
   }
-  
-  .container{
+
+  .container {
     display: none;
   }
-
 }
 
 /* End Media Query */
