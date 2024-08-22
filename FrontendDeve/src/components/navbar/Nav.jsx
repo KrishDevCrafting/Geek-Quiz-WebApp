@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
@@ -6,11 +6,36 @@ import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
 import Text from "./TextEffect/text";
 const NavBar = () => {
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const ClickDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      switch (true) {
+        case !event.target.closest(".dropdown"):
+          closeDropdown();
+          break;
+
+        default:
+          break;
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -37,13 +62,21 @@ const NavBar = () => {
               </a>
             </div>
             <div id="box-nav">
-              <a
-                href="https://quickref.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden md:flex space-x-4">
-                General
-              </a>
+              <div>
+                <a onClick={ClickDropdown} className="hidden md:flex space-x-4">
+                  General
+                  {dropdownOpen && (
+                    <ul className="drop-down">
+                      <li>one</li>
+                      <li>two</li>
+                      <li>Three</li>
+                      <li>Four</li>
+                      <li>Five</li>
+                      <li>Six</li>
+                    </ul>
+                  )}
+                </a>
+              </div>
 
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 Pricing
@@ -113,6 +146,7 @@ const NavBar = () => {
                     <a href="https://www.github.com" target="_self">
                       <li>General</li>
                     </a>
+
                     <Link to="/login">
                       <li>SignUp</li>
                     </Link>
@@ -123,14 +157,6 @@ const NavBar = () => {
                 </nav>
               </div>
               {/* end hamburger-code */}
-            </div>
-            <div id="hover-view">
-              <ul>
-                <li>list-one</li>
-                <li>list-two</li>
-                <li>list-three</li>
-                <li>list-four</li>
-              </ul>
             </div>
           </nav>
         </div>

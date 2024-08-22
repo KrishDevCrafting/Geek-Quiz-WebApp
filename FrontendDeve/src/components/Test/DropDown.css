@@ -1,0 +1,46 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  list-style-type: none;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
