@@ -111,7 +111,7 @@ const NavBar = () => {
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 Pricing
               </a>
-              <Link to="/test">FAQ</Link>
+              <Link to="/value">FAQ</Link>
               <Link to="/signup">Log-in</Link>
             </div>
             <div className="mr-4 responsive-btn">

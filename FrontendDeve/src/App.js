@@ -4,9 +4,8 @@ import LoginComponent from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home.jsx";
 import { QuizComponent } from "./components/home/QuizPage.jsx";
-import QuizApp from "./components/Test/fetchtest.js";
 
-import DropDownBar from "./components/Test/fetchtest.js";
+import FeedBack from "./components/Test/FeedBack.jsx";
 
 const App = () => {
   return (
@@ -18,9 +17,8 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/QuizPage" element={<QuizComponent />} />
-            <Route path="/test" element={<QuizApp />} />
 
-            <Route path="/value" element={<DropDownBar />} />
+            <Route path="/value" element={<FeedBack />} />
           </Routes>
         </BrowserRouter>
       </div>
