@@ -5,6 +5,7 @@ import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
 import Text from "./TextEffect/text";
+
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -66,14 +67,28 @@ const NavBar = () => {
                 <a onClick={ClickDropdown} className="hidden md:flex space-x-4">
                   General
                   {dropdownOpen && (
-                    <ul className="drop-down">
-                      <li>one</li>
-                      <li>two</li>
-                      <li>Three</li>
-                      <li>Four</li>
-                      <li>Five</li>
-                      <li>Six</li>
-                    </ul>
+                    <div className="text-black drop-down">
+                      <div className="Drop-down-box">
+                        <h1>Quiz-categories</h1>
+                        <ul>
+                          <li>Anime</li>
+                          <li>Cars</li>
+                          <li>Techology</li>
+                          <li>Computer-Science</li>
+                          <li>Gaming</li>
+                          <li>Science</li>
+                          <li>Entertainment</li>
+                          <li>Movies</li>
+                          <li>Music</li>
+                        </ul>
+                      </div>
+                      <div className="Drop-down-box">
+                        <h1>Hello-us</h1>
+                      </div>
+                      <div className="Drop-down-box">
+                        <h1>Are You Okay</h1>
+                      </div>
+                    </div>
                   )}
                 </a>
               </div>
