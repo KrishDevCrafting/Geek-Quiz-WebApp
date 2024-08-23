@@ -50,6 +50,12 @@ const FeedBack = () => {
           distinctio eos quam, voluptates error doloremque sequi a sapiente
           iusto illum.
         </h1>
+        <a
+          className="text-red-500 text-4xl"
+          href="https://www.figma.com/design/iuAC5dXPsygVx7S4cb3i3f/Feedback-Forms---Free-to-use-(Community)?node-id=6-15&t=t5dQg8YFuh7nBI9e-0"
+          target="_blank">
+          Link
+        </a>
       </section>
     </>
   );
