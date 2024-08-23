@@ -83,10 +83,25 @@ const NavBar = () => {
                         </ul>
                       </div>
                       <div className="Drop-down-box">
-                        <h1>Hello-us</h1>
+                        <h1>Gain-Knowledge:</h1>
+                        <ul>
+                          <li>Science</li>
+                          <li>Technology</li>
+                          <li>Movies</li>
+                          <li>Computer-Science</li>
+                          <li>Anime</li>
+                          <li>Clothes</li>
+                          <li>Music</li>
+                        </ul>
                       </div>
                       <div className="Drop-down-box">
                         <h1>Are You Okay</h1>
+                        <ol>
+                          <li>Nah i win</li>
+                          <li>Nah i win</li>
+                          <li>Nah i win</li>
+                          <li>Nah i win</li>
+                        </ol>
                       </div>
                     </div>
                   )}
