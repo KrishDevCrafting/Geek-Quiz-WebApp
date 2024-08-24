@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./DropDown.css";
+
 const FeedBack = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -45,15 +46,25 @@ const FeedBack = () => {
       </nav>
 
       <section>
-        <h1>Feedback Form</h1>
-        <div>
+        <div className="flex justify-center items-center  container-form">
           <form action="">
-            <label>Name</label>
-            <input type="text" />
-            <label>Email Address</label>
-            <input type="email"></input>
-
-            <h1>Share your exprience in scaling</h1>
+            <h1 className="text-4xl text-center">Feedback Form</h1>
+            <div className="container-box-1">
+              <label>Name</label>
+              <br />
+              <input type="text" placeholder="Name" />
+              <br />
+              <label>Email Address</label>
+              <br />
+              <input type="email" placeholder="Email"></input>
+              <br />
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="50"
+                placeholder="Enter your comments here..."></textarea>
+            </div>
           </form>
         </div>
 

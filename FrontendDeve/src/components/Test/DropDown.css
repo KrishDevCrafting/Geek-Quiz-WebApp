@@ -44,3 +44,13 @@
 .dropdown-menu li:hover {
   background-color: #f1f1f1;
 }
+.container-form {
+  border: 1px solid red;
+  height: 100vh;
+}
+.container-box-1 {
+  background: #f1f1f1;
+  height: 565px;
+  width: 400px;
+  border: 1px solid red;
+}
