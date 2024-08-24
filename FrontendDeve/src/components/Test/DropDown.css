@@ -54,3 +54,10 @@
   width: 400px;
   border: 1px solid red;
 }
+
+.input-tag {
+  border: 1px solid blue;
+  width: 350px;
+  height: 45px;
+  border-radius: 9px;
+}

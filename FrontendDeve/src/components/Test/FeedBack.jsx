@@ -49,14 +49,17 @@ const FeedBack = () => {
         <div className="flex justify-center items-center  container-form">
           <form action="">
             <h1 className="text-4xl text-center">Feedback Form</h1>
-            <div className="container-box-1">
+            <div className="container-box-1 px-2">
               <label>Name</label>
               <br />
-              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Name" className="input-tag" />
               <br />
               <label>Email Address</label>
               <br />
-              <input type="email" placeholder="Email"></input>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input-tag"></input>
               <br />
               <textarea
                 id="comments"
