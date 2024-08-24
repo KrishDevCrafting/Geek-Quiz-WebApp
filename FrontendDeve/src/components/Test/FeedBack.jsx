@@ -45,17 +45,24 @@ const FeedBack = () => {
       </nav>
 
       <section>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          distinctio eos quam, voluptates error doloremque sequi a sapiente
-          iusto illum.
-        </h1>
-        <a
+        <h1>Feedback Form</h1>
+        <div>
+          <form action="">
+            <label>Name</label>
+            <input type="text" />
+            <label>Email Address</label>
+            <input type="email"></input>
+
+            <h1>Share your exprience in scaling</h1>
+          </form>
+        </div>
+
+        {/* <a
           className="text-red-500 text-4xl"
           href="https://www.figma.com/design/iuAC5dXPsygVx7S4cb3i3f/Feedback-Forms---Free-to-use-(Community)?node-id=6-15&t=t5dQg8YFuh7nBI9e-0"
           target="_blank">
           Link
-        </a>
+        </a> */}
       </section>
     </>
   );
