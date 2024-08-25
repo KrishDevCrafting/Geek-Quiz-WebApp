@@ -52,13 +52,14 @@ const FeedBack = () => {
             <div className="container-box-1 px-2">
               <div className="py-5">
                 <br />
+                <label className="ml-7 label-user">Name</label>
                 <input
                   type="text"
                   placeholder="Name"
                   className="input-tag input"
                   name="text"
                 />
-                <label className="ml-7 label-user">Name</label>
+
                 <br />
               </div>
               <div>
@@ -69,6 +70,10 @@ const FeedBack = () => {
                   placeholder="Email"
                   className="input-tag"></input>
                 <br />
+              </div>
+
+              <div>
+                <h1>Share your experience in scaling</h1>
               </div>
               <textarea
                 id="comments"
