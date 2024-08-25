@@ -50,17 +50,26 @@ const FeedBack = () => {
           <form action="">
             <h1 className="text-4xl text-center">Feedback Form</h1>
             <div className="container-box-1 px-2">
-              <label>Name</label>
-              <br />
-              <input type="text" placeholder="Name" className="input-tag" />
-              <br />
-              <label>Email Address</label>
-              <br />
-              <input
-                type="email"
-                placeholder="Email"
-                className="input-tag"></input>
-              <br />
+              <div className="py-5">
+                <br />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="input-tag input"
+                  name="text"
+                />
+                <label className="ml-7 label-user">Name</label>
+                <br />
+              </div>
+              <div>
+                <label className="ml-7">Email Address</label>
+                <br />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="input-tag"></input>
+                <br />
+              </div>
               <textarea
                 id="comments"
                 name="comments"
