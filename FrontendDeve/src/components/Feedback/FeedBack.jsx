@@ -91,13 +91,15 @@ const FeedBack = () => {
       </nav>
 
       <section>
-        <div className="flex justify-center items-center  container-form">
+        <div className="flex justify-center items-center  container-form main-container">
           <form action="">
-            <h1 className="text-4xl text-center">Feedback Form</h1>
+            <h1 className="text-4xl text-center mb-4 text-white">
+              Feedback Form
+            </h1>
             <div className="container-box-1 px-2">
               <div className="py-5">
                 <br />
-                <label className="ml-7 label-user">Name</label>
+                <label className="ml-7 label-user font-bold">Name</label>
                 <input
                   type="text"
                   placeholder="Name"
@@ -108,7 +110,7 @@ const FeedBack = () => {
                 <br />
               </div>
               <div>
-                <label className="ml-7">Email Address</label>
+                <label className="ml-7 font-bold">Email Address</label>
                 <br />
                 <input
                   type="email"
@@ -117,11 +119,11 @@ const FeedBack = () => {
                 <br />
               </div>
 
-              <div>
-                <h1>Share your experience in scaling</h1>
+              <div className="flex justify-center mt-8">
+                <h1 className="text-xl">Share your experience in scaling</h1>
               </div>
               {/* Star features: */}
-              <div className="flex">
+              <div className="flex mb-4">
                 <label className="container">
                   <input type="checkbox" className="container" />
 
@@ -202,7 +204,7 @@ const FeedBack = () => {
                 <button
                   id="feedback-btn"
                   type="submit"
-                  className="bg-blue-500 px-14 py-3 text-white">
+                  className="bg-blue-500 px-14 py-3 text-white hover:bg-blue-700">
                   Submit
                 </button>
               </div>
