@@ -72,3 +72,8 @@
 }
 
 /* button */
+
+.parent-btn {
+  display: flex;
+  justify-content: end;
+}

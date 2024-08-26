@@ -198,7 +198,7 @@ const FeedBack = () => {
                 rows="4"
                 cols="50"
                 placeholder="Enter your comments here..."></textarea>
-              <div>
+              <div className="parent-btn">
                 <button
                   id="feedback-btn"
                   type="submit"
