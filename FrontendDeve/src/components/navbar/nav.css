@@ -34,6 +34,7 @@ display: block;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
   margin-top: 15px;
+  /* margin-bottom: 50px; */
   position: fixed;
   /* margin-left: 1rem; */
   align-items: center;
