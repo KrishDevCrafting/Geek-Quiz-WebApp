@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "./Typing.js";
 import "./style.css";
-import "./../../styles.css"
+
 const Text = () => {
   return (
     <div className="App">

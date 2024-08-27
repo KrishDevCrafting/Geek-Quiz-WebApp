@@ -6,7 +6,7 @@ import { Home } from "./Home.jsx";
 import { QuizComponent } from "./components/home/QuizPage.jsx";
 import InputComponent from "./components/Test/testing.js";
 import FeedBack from "./components/Feedback/FeedBack.jsx";
-
+import PageCs from "./components/QuizCategories/Computer-Sci.jsx";
 const App = () => {
   return (
     <>
@@ -19,6 +19,7 @@ const App = () => {
             <Route path="/QuizPage" element={<QuizComponent />} />
             <Route path="/testing" element={<InputComponent />} />
             <Route path="/value" element={<FeedBack />} />
+            <Route path="/computer-science" element={<PageCs />} />
           </Routes>
         </BrowserRouter>
       </div>

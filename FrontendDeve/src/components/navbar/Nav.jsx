@@ -71,10 +71,15 @@ const NavBar = () => {
                       <div className="Drop-down-box">
                         <h1>Quiz-categories</h1>
                         <ul>
-                          <li>Anime</li>
+                          <li className="hover:text-blue-600">Anime</li>
                           <li>Cars</li>
                           <li>Techology</li>
-                          <li>Computer-Science</li>
+                          <Link to="/computer-science">
+                            <li className="hover:text-red-500">
+                              Computer-Science
+                            </li>
+                          </Link>
+
                           <li>Gaming</li>
                           <li>Science</li>
                           <li>Entertainment</li>
@@ -88,7 +93,7 @@ const NavBar = () => {
                           <li>Science</li>
                           <li>Technology</li>
                           <li>Movies</li>
-                          <li>Computer-Science</li>
+                          <li>Computer-science</li>
                           <li>Anime</li>
                           <li>Clothes</li>
                           <li>Music</li>
