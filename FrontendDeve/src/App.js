@@ -4,7 +4,7 @@ import LoginComponent from "./components/Pages/Auth/Login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home.jsx";
 import { QuizComponent } from "./components/home/QuizPage.jsx";
-import InputComponent from "./components/Test/testing.js";
+import Dropdown from "./components/Test/testing.js";
 import FeedBack from "./components/Feedback/FeedBack.jsx";
 import PageCs from "./components/QuizCategories/Computer-Sci.jsx";
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/QuizPage" element={<QuizComponent />} />
-            <Route path="/testing" element={<InputComponent />} />
+            <Route path="/testing" element={<Dropdown />} />
             <Route path="/value" element={<FeedBack />} />
             <Route path="/computer-science" element={<PageCs />} />
           </Routes>

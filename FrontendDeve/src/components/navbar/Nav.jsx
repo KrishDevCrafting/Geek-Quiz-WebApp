@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
@@ -7,37 +7,31 @@ import ComponenetA from "../../Background-Star-Effect/ComponentA";
 import Text from "./TextEffect/text";
 
 const NavBar = () => {
-  const [dropdownOpen, setDropdownOpen] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [Drop, setDropdownOpen] = useState(false);
+  const dropDown = useRef(null);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const ClickDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleDropDown = (e) => {
+    setDropdownOpen(!Drop);
+    e.stopPropagation();
   };
 
-  const closeDropdown = () => {
-    setDropdownOpen(false);
+  const handleClick = (e) => {
+    if (dropDown.current && !dropDown.current.contains(e.target)) {
+      setDropdownOpen(false);
+    }
   };
+
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      switch (true) {
-        case !event.target.closest(".dropdown"):
-          closeDropdown();
-          break;
-
-        default:
-          break;
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClick);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.addEventListener("click", handleClick);
     };
   }, []);
-
   return (
     <>
       {/* src/Testing/ComponentA.jsx */}
@@ -64,10 +58,12 @@ const NavBar = () => {
             </div>
             <div id="box-nav">
               <div>
-                <a onClick={ClickDropdown} className="hidden md:flex space-x-4">
+                <a
+                  onClick={toggleDropDown}
+                  className="hidden md:flex space-x-4">
                   General
-                  {dropdownOpen && (
-                    <div className="text-black drop-down">
+                  {Drop && (
+                    <div className="text-black drop-down" ref={dropDown}>
                       <div className="Drop-down-box">
                         <h1>Quiz-categories</h1>
                         <ul>
