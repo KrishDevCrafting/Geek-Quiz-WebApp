@@ -52,3 +52,11 @@
 }
 
 /* // End of the code */
+
+.box-card-six {
+  background-image: url("../../assets/operatingSystem.gif") !important;
+}
+
+.box-card-seven {
+  background-image: url("../../assets/cyberSecurity.gif") !important;
+}

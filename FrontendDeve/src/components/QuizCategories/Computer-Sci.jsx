@@ -4,9 +4,7 @@ import computerNetworkImg from "../../assets/Computer-network.gif";
 import dbmsImage from "../../assets/dbms.gif";
 import cloudComputingImage from "../../assets/cloud.gif";
 import sqlImage from "../../assets/SQL.gif";
-import osImage from "../../assets/operatingSystem.gif";
-// import cyberSecurityImage from "../../assets/cyberSecurity.gif";
-// import softwareEngineeringImage from "../../assets/software-engineering.gif";
+
 
 import "./cs.css";
 const PageCs = () => {
@@ -31,14 +29,7 @@ const PageCs = () => {
         background-image: url(${cloudComputingImage}) !important;
       }
         .box-card-five{
-        background-image: url(${sqlImage}) !important;}
-
-       .box-card-six{
-        background-image: url({${osImage}) !important;
-        }
-        .box-card-seven{
-        background-image: url({${cloudComputingImage}) !important;
-        }
+        background-image: url(${sqlImage}) !important;
     `}
         </style>
       </div>
@@ -135,7 +126,7 @@ const PageCs = () => {
 
           <div className="card">
             <div className="box-card-five card-2 w-3 bg-hero-pattern">
-              <div className="border-2"></div>
+              <div className="border-2-"></div>
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
@@ -151,7 +142,7 @@ const PageCs = () => {
           </div>
 
           <div className="card">
-            <div className="box-card-six card-2 w-3 bg-hero-pattern">
+            <div className="box-card-six card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">
