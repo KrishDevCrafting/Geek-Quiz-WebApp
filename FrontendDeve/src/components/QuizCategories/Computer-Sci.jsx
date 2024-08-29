@@ -5,7 +5,6 @@ import dbmsImage from "../../assets/dbms.gif";
 import cloudComputingImage from "../../assets/cloud.gif";
 import sqlImage from "../../assets/SQL.gif";
 
-
 import "./cs.css";
 const PageCs = () => {
   return (
@@ -169,7 +168,7 @@ const PageCs = () => {
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span>Cyber-Security</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
@@ -186,7 +185,7 @@ const PageCs = () => {
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span>Programming</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
@@ -203,7 +202,7 @@ const PageCs = () => {
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span>Software-engineering</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
@@ -223,7 +222,7 @@ const PageCs = () => {
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span>Blockchian</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
@@ -235,12 +234,12 @@ const PageCs = () => {
           </div>
 
           <div className="card">
-            <div className="box-card card-2 w-3 bg-hero-pattern">
+            <div className="box-card-twelve card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span className="text-black">AI and ML</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
@@ -252,12 +251,12 @@ const PageCs = () => {
           </div>
 
           <div className="card">
-            <div className="box-card card-2 w-3 bg-hero-pattern">
+            <div className="box-card-thirteen card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">
                   <div className="logo2">
-                    <span>DSA</span>
+                    <span>System-Design</span>
                   </div>
                   <span className="trail-2"></span>
                 </div>
