@@ -243,6 +243,7 @@ const PageCs = () => {
                   </div>
                   <span className="trail-2"></span>
                 </div>
+
                 <span className="logo-bottom-text-2">Krish.io</span>
                 {/* Add a unique identifier */}
               </div>
@@ -269,7 +270,7 @@ const PageCs = () => {
         </section>
 
         {/* Section-4 Started */}
-        {/* Section */}
+        {/* Section code 2.1 */}
       </div>
       {/* 👆🏻 Main div for whole component! */}
     </>
