@@ -22,6 +22,7 @@ const Card2 = () => {
     handleNavigate(); // Navigate after dispatching the action
   };
 
+  console.log(setBmw, setData, setRandom);
   const handlePower = () => {
     dispatch(userLogic(bmw));
   };
@@ -35,8 +36,9 @@ const Card2 = () => {
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
 
-      <div className="main-card sm:flex-col lg:flex-row"
-      onClick={handleNavigate}>
+      <div
+        className="main-card sm:flex-col lg:flex-row"
+        onClick={handleNavigate}>
         {/* Card-1 */}
         <section>
           <div className="main-container-2" onClick={handlePower}>
@@ -88,7 +90,7 @@ const Card2 = () => {
                 <div className="card-logo-2">
                   <div className="logo2">
                     <div className="logo2">
-                      <h1>Nissan GT-R</h1>
+                      <h1>Nissan GT-R </h1>
                     </div>
                   </div>
                   <span className="trail-2"></span>
