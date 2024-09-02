@@ -48,8 +48,8 @@ const Signup = () => {
         console.log("Success", data);
         setInterval(() => {
           navigate("/");
+          alert("Login-Successfully");
         }, 2000);
-        
       } else {
         console.error("Error", response.statusText);
       }
