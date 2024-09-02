@@ -22,7 +22,7 @@ const Card2 = () => {
     handleNavigate(); // Navigate after dispatching the action
   };
 
-  console.log(setBmw, setData, setRandom);
+  console.log(setBmw, setData, setRandom, "asdga");
   const handlePower = () => {
     dispatch(userLogic(bmw));
   };

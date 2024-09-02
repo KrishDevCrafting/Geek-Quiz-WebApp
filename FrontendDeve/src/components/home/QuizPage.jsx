@@ -18,7 +18,7 @@ export const QuizComponent = () => {
   // } else {
   //   setValue(0);
   // }
-  console.log(user, "hello");
+  // console.log(user, "hello");
 
   useEffect(() => {
     fetch("https://geek-quiz.onrender.com/user/get")

@@ -46,7 +46,10 @@ const Signup = () => {
       if (response.ok) {
         const data = await response.json();
         console.log("Success", data);
-        navigate("/");
+        setInterval(() => {
+          navigate("/");
+        }, 2000);
+        
       } else {
         console.error("Error", response.statusText);
       }
@@ -181,6 +184,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
-// Krish i know you can do it just believe in you're self or have a faith on it.
-// for tersting
