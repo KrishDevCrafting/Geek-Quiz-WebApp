@@ -4,8 +4,10 @@ import "../../../components/style.css";
 import "./SignupStyle.css";
 import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Signup = () => {
+  const notify = () => toast("Wow so easy!");
   // Initialized the navigate into use navigate..!
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
@@ -48,7 +50,7 @@ const Signup = () => {
         console.log("Success", data);
         setInterval(() => {
           navigate("/");
-          alert("Login-Successfully");
+          <ToastContainer />;
         }, 2000);
       } else {
         console.error("Error", response.statusText);
@@ -160,6 +162,7 @@ const Signup = () => {
                 </div>
                 <div className="my-2 res-btn">
                   <button
+                    onClick={notify}
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
                     title="button">
