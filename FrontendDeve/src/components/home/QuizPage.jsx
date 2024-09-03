@@ -5,12 +5,18 @@ export const QuizComponent = () => {
   // const [value, setValue] = useState(2);
 
   const user = useSelector((state) => state.user.value);
+  const [selectedOption, setSelectedOption] = useState(null);
   const [quizData, setQuizData] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // const handleNextQuestion = () => {
+  //   setSelectedOption(null); // Reset selected option
+  //   setCurrentQuestionIndex(currentQuestionIndex + 1);
+  // };
   // const { data, setdata } = React.useState([]);
 
   // if (user === false) {
@@ -99,6 +105,7 @@ export const QuizComponent = () => {
                 value={index}
                 name={`question-${currentQuestionIndex}`}
                 className="size-4 mt-4 radio-input"
+                checked={selectedOption === index}
                 onClick={() => handleAnswerSelection(index)} // Grouping radio buttons by question Groups radio buttons by the current question, ensuring only one can be selected at a time per question
                 type="radio"
               />
@@ -108,6 +115,7 @@ export const QuizComponent = () => {
                 <span class="radio-inner-circle"></span>
                 <h1 className="">{option}</h1>
               </label>
+              {/* <button onClick={handleNextQuestion}>next</button> */}
             </div>
           ))}
         </>
