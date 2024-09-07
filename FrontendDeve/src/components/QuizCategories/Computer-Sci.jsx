@@ -4,9 +4,24 @@ import computerNetworkImg from "../../assets/Computer-network.gif";
 import dbmsImage from "../../assets/dbms.gif";
 import cloudComputingImage from "../../assets/cloud.gif";
 import sqlImage from "../../assets/SQL.gif";
-
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { userLogic } from "../Features/user"; // Import the correct action
 import "./cs.css";
 const PageCs = () => {
+  const navigate = useNavigate();
+  const [dsa, setdsa] = React.useState(2);
+  const dispatch = useDispatch();
+
+  const handleNavigate = () => {
+    navigate("/quizPage");
+    console.log("Navigating to /quizPage with user:");
+  };
+
+  const handleRoute = () => {
+    dispatch(userLogic(dsa));
+    console.log(setdsa);
+  };
   return (
     <>
       <div>
@@ -39,7 +54,7 @@ const PageCs = () => {
           </h1>
         </nav>
         {/* section-1 */}
-        <div className="main-card">
+        <div className="main-card" onClick={handleNavigate}>
           <section>
             <div className="card">
               <div className="box-card card-2 w-3 bg-hero-pattern">
