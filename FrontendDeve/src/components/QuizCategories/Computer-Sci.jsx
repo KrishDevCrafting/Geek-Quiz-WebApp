@@ -10,7 +10,13 @@ import { userLogic } from "../Features/user"; // Import the correct action
 import "./cs.css";
 const PageCs = () => {
   const navigate = useNavigate();
-  const [dsa, setdsa] = React.useState(2);
+  const [dsa, setdsa] = React.useState(3);
+  const [CN, setCN] = React.useState(4);
+  const [dbms, setdata] = React.useState(5);
+  const [cloud, setcloud] = React.useState(6);
+  const [SQL, setSql] = React.useState(7);
+  const [OS, setOS] = React.useState(8);
+
   const dispatch = useDispatch();
 
   const handleNavigate = () => {
@@ -21,6 +27,22 @@ const PageCs = () => {
   const handleRoute = () => {
     dispatch(userLogic(dsa));
     console.log(setdsa);
+  };
+
+  const handleCN = () => {
+    dispatch(userLogic(CN));
+  };
+  const handleDbms = () => {
+    dispatch(userLogic(dbms));
+  };
+  const handleCloud = () => {
+    dispatch(userLogic(cloud));
+  };
+  const handleSQL = () => {
+    dispatch(userLogic(SQL));
+  };
+  const handleOS = () => {
+    dispatch(userLogic(OS));
   };
   return (
     <>
@@ -56,7 +78,7 @@ const PageCs = () => {
         {/* section-1 */}
         <div className="main-card" onClick={handleNavigate}>
           <section>
-            <div className="card">
+            <div className="card" onClick={handleRoute}>
               <div className="box-card card-2 w-3 bg-hero-pattern">
                 <div className="border-2"></div>
                 <div className="content-2">
@@ -77,7 +99,7 @@ const PageCs = () => {
           {/* section-end */}
 
           {/* box-2 started */}
-          <section>
+          <section onClick={handleCN}>
             <div className="card">
               <div className="box-card-two card-2 w-3">
                 <div className="border-2"></div>
@@ -100,7 +122,7 @@ const PageCs = () => {
 
           {/* box-3 started */}
 
-          <div className="card">
+          <div className="card" onClick={handleDbms}>
             <div className="box-card-three card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
@@ -120,8 +142,8 @@ const PageCs = () => {
           {/* box-3 Ended */}
         </div>
         {/* Section-2 covering all cards */}
-        <section className="flex justify-around">
-          <div className="card">
+        <section className="flex justify-around" onClick={handleNavigate} >
+          <div className="card" onClick={handleCloud}>
             <div className="box-card-four card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -138,7 +160,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleSQL}>
             <div className="box-card-five card-2 w-3 bg-hero-pattern">
               <div className="border-2-"></div>
               <div className="content-2">
@@ -155,7 +177,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleOS}>
             <div className="box-card-six card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
