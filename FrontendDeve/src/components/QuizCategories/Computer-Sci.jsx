@@ -16,6 +16,12 @@ const PageCs = () => {
   const [cloud, setcloud] = React.useState(6);
   const [SQL, setSql] = React.useState(7);
   const [OS, setOS] = React.useState(8);
+  const [CyberS, setCyber] = React.useState(9);
+  const [Programming, setProgramming] = React.useState(10);
+  const [software, setSoftware] = React.useState(11);
+  const [BlockChain, setBC] = React.useState(12);
+  const [AI, setAi] = React.useState(13);
+  const [SD, SetSD] = React.useState(14);
 
   const dispatch = useDispatch();
 
@@ -41,8 +47,26 @@ const PageCs = () => {
   const handleSQL = () => {
     dispatch(userLogic(SQL));
   };
+  const handleCyber = () => {
+    dispatch(userLogic(CyberS));
+  };
+  const handleProgramming = () => {
+    dispatch(userLogic(Programming));
+  };
+  const handleSoftware = () => {
+    dispatch(userLogic(software));
+  };
   const handleOS = () => {
     dispatch(userLogic(OS));
+  };
+  const handleBlockChain = () => {
+    dispatch(userLogic(BlockChain));
+  };
+  const handleAi = () => {
+    dispatch(userLogic(OS));
+  };
+  const handleSD = () => {
+    dispatch(userLogic(SD));
   };
   return (
     <>
@@ -142,7 +166,7 @@ const PageCs = () => {
           {/* box-3 Ended */}
         </div>
         {/* Section-2 covering all cards */}
-        <section className="flex justify-around" onClick={handleNavigate} >
+        <section className="flex justify-around" onClick={handleNavigate}>
           <div className="card" onClick={handleCloud}>
             <div className="box-card-four card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
@@ -198,8 +222,8 @@ const PageCs = () => {
 
         {/* Section-3 */}
 
-        <section className="flex justify-around">
-          <div className="card">
+        <section className="flex justify-around" onClick={handleNavigate}>
+          <div className="card" onClick={handleCyber}>
             <div className="box-card-seven card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -216,7 +240,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleProgramming}>
             <div className="box-card-eight card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -233,7 +257,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleSoftware}>
             <div className="box-card-nine card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -252,8 +276,8 @@ const PageCs = () => {
         </section>
         {/* Section-3 End! */}
 
-        <section className="flex justify-around">
-          <div className="card">
+        <section className="flex justify-around" onClick={handleNavigate}>
+          <div className="card" onClick={handleBlockChain}>
             <div className="box-card-ten card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -270,7 +294,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleAi}>
             <div className="box-card-twelve card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
@@ -288,7 +312,7 @@ const PageCs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" onClick={handleSD}>
             <div className="box-card-thirteen card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
               <div className="content-2">
