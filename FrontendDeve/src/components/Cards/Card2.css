@@ -12,14 +12,12 @@
 
 .main-card {
   /* background-color: aquamarine; */
-  border: 1px solid red;
+
   display: flex;
-  
+
   /* flex-direction: column; */
   justify-content: space-around;
 }
-
-
 
 .card-2 {
   margin: 50px 10px 50px 10px;
@@ -35,7 +33,6 @@
 }
 
 .box-card {
-  
   background-image: url("https://i.pinimg.com/originals/10/65/bc/1065bc662c55648c454c462f208d920e.gif") !important;
   background-position: center;
 }
@@ -87,7 +84,7 @@
   height: 33px;
   position: relative;
   width: 0px;
-  overflow:hidden;
+  overflow: hidden;
   transition: all 1s ease-in-out;
 }
 
@@ -338,15 +335,14 @@ body {
     color: #ffff;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px){
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   #text {
     color: #ffff;
   }
   .main-card {
     flex-direction: row;
   }
-  .card-2{
-    width:100vmin;
+  .card-2 {
+    width: 100vmin;
   }
-  
 }
