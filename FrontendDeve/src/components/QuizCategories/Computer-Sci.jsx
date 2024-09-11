@@ -166,9 +166,9 @@ const PageCs = () => {
           {/* box-3 Ended */}
         </div>
         {/* Section-2 covering all cards */}
-        <section className="flex justify-around" onClick={handleNavigate}>
+        <section className="flex justify-around section-2" onClick={handleNavigate}>
           <div className="card" onClick={handleCloud}>
-            <div className="box-card-four card-2 w-3 bg-hero-pattern">
+            <div className="box-card-four card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">

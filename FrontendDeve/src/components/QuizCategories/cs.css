@@ -81,3 +81,16 @@
 .box-card-thirteen {
   background-image: url("../../assets/system-design.gif");
 }
+.border-2 {
+  width: auto;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+  .section-2 {
+    flex-direction: column;
+  }
+}
+
+/* End Media Query */
