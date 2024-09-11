@@ -103,7 +103,7 @@ const PageCs = () => {
         <div className="main-card" onClick={handleNavigate}>
           <section>
             <div className="card" onClick={handleRoute}>
-              <div className="box-card card-2 w-3 bg-hero-pattern">
+              <div className="box-card card-2 w-3 ">
                 <div className="border-2"></div>
                 <div className="content-2">
                   <div className="card-logo-2">
@@ -166,7 +166,7 @@ const PageCs = () => {
           {/* box-3 Ended */}
         </div>
         {/* Section-2 covering all cards */}
-        <section className="flex justify-around section-2" onClick={handleNavigate}>
+        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
           <div className="card" onClick={handleCloud}>
             <div className="box-card-four card-2 w-3">
               <div className="border-2"></div>
@@ -185,7 +185,7 @@ const PageCs = () => {
           </div>
 
           <div className="card" onClick={handleSQL}>
-            <div className="box-card-five card-2 w-3 bg-hero-pattern">
+            <div className="box-card-five card-2 w-3">
               <div className="border-2-"></div>
               <div className="content-2">
                 <div className="card-logo-2">
@@ -222,7 +222,7 @@ const PageCs = () => {
 
         {/* Section-3 */}
 
-        <section className="flex justify-around" onClick={handleNavigate}>
+        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
           <div className="card" onClick={handleCyber}>
             <div className="box-card-seven card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
@@ -258,7 +258,7 @@ const PageCs = () => {
           </div>
 
           <div className="card" onClick={handleSoftware}>
-            <div className="box-card-nine card-2 w-3 bg-hero-pattern">
+            <div className="box-card-nine card-2 w-3">
               <div className="border-2"></div>
               <div className="content-2">
                 <div className="card-logo-2">
@@ -276,7 +276,7 @@ const PageCs = () => {
         </section>
         {/* Section-3 End! */}
 
-        <section className="flex justify-around" onClick={handleNavigate}>
+        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
           <div className="card" onClick={handleBlockChain}>
             <div className="box-card-ten card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
