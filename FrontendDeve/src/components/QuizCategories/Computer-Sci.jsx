@@ -96,7 +96,7 @@ const PageCs = () => {
       <div className="parent-container">
         <nav>
           <h1 className="text-white text-4xl text-center">
-            Computer-science-page!
+            Computer-Science-Quiz!
           </h1>
         </nav>
         {/* section-1 */}
