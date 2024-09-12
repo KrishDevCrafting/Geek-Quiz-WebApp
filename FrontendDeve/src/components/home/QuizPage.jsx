@@ -130,7 +130,9 @@ export const QuizComponent = () => {
           <ul>
             {userAnswers.map((answer, index) => (
               <li key={index}>
-                {answer.question} - Your answer: {answer.answer}
+                <h1>
+                  {answer.question} - Your answer: {answer.answer}
+                </h1>
                 {answer.isCorrect ? "Correct" : "Incorrect"}
               </li>
             ))}

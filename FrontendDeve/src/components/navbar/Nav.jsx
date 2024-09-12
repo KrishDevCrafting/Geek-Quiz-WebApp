@@ -1,16 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
+import { useNavigate } from "react-router-dom";
 import ComponenetA from "../../Background-Star-Effect/ComponentA";
 import Text from "./TextEffect/text";
-
+import { useDispatch } from "react-redux";
+import { userLogic } from "../Features/user";
 const NavBar = () => {
+  const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
   const [Drop, setDropdownOpen] = useState(false);
   const dropDown = useRef(null);
 
+  const navigate = useNavigate();
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
@@ -25,7 +29,13 @@ const NavBar = () => {
       setDropdownOpen(false);
     }
   };
-
+  const handleButton = () => {
+    const max = 15;
+    const randomInt = Math.floor(Math.random() * max);
+    console.log(randomInt); // Example: 4 (an integer between 0 and 9)
+    dispatch(userLogic(randomInt));
+    navigate("/quizPage");
+  };
   useEffect(() => {
     document.addEventListener("click", handleClick);
     return () => {
@@ -117,6 +127,7 @@ const NavBar = () => {
             </div>
             <div className="mr-4 responsive-btn">
               <button
+                onClick={handleButton}
                 id="btncss-play"
                 className="buttonCss md:hidden flex items-center">
                 <svg
