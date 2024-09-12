@@ -86,7 +86,7 @@ const Signup = () => {
                   toggle ? "text-color-black" : "text-color-white"
                 } text-4xl m-10`}
                 id="heading">
-                Welcome Mother' Fucker!
+                Sign-up Page
               </h1>
               <h1 className="heading-signUp">Sign Up</h1>
               <div className="text-center">
