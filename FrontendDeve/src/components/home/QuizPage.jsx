@@ -49,7 +49,7 @@ export const QuizComponent = () => {
         setError("Failed to load quiz data.");
         setLoading(false);
       });
-  });
+  }, [user]);
 
   const handleAnswerSelection = (answerIndex) => {
     if (!quizData) return;
@@ -89,6 +89,10 @@ export const QuizComponent = () => {
     return <div>No quiz data available</div>;
   }
 
+  window.onbeforeunload = function () {
+    return "Data will be lost if you leave the page, are you sure?";
+  };
+  // Add reload Functionality
   const questions = quizData.questions;
 
   return (
