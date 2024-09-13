@@ -5,10 +5,10 @@ import "./SignupStyle.css";
 import GoogleImg from "../../../assets/googleLogo.png";
 import githubImg from "../../../assets/github.png";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css"; // Import Toastify CSS
+
 const Signup = () => {
-  const notify = () => toast("Wow so easy!");
-  // Initialized the navigate into use navigate..!
+  const notify = () => toast.success("Signup Successful!");
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
   const [email, setEmail] = useState("");
@@ -18,22 +18,21 @@ const Signup = () => {
 
   useEffect(() => {
     console.log("Signup component mounted or updated");
-
     return () => {
       console.log("Signup component will unmount");
     };
   }, []);
-  // toggle fucntion..!
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
-  //basic login to set name,email,password to database..!
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const user = {
-      email: email,
-      password: password,
-      name: name,
+      email,
+      password,
+      name,
     };
 
     try {
@@ -48,15 +47,17 @@ const Signup = () => {
       if (response.ok) {
         const data = await response.json();
         console.log("Success", data);
-        setInterval(() => {
+        notify(); // Trigger toast notification after successful response
+        setTimeout(() => {
           navigate("/");
-          <ToastContainer />;
         }, 2000);
       } else {
         console.error("Error", response.statusText);
+        toast.error("Signup failed. Please try again.");
       }
     } catch (error) {
       console.error("Error", error);
+      toast.error("An error occurred.");
     }
   };
 
@@ -119,8 +120,8 @@ const Signup = () => {
                   </button>
                 </span>
               </div>
-              <div className="ml-20  form-responsive">
-                <div className="label-text-color my-8 ">
+              <div className="ml-20 form-responsive">
+                <div className="label-text-color my-8">
                   <label htmlFor="username" className="text-sm">
                     Username:
                   </label>
@@ -162,7 +163,6 @@ const Signup = () => {
                 </div>
                 <div className="my-2 res-btn">
                   <button
-                    onClick={notify}
                     id={toggle ? "login-btn" : "loginDark-btn"}
                     type="submit"
                     title="button">
@@ -182,6 +182,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };
