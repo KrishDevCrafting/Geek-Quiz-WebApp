@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify CSS
 
 const Signup = () => {
-  const notify = () => toast.success("Signup Successful!");
+  const notify = () => toast.success("Account created successfully!");
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
   const [email, setEmail] = useState("");
