@@ -17,12 +17,12 @@ const LoginComponent = () => {
     axios
       .post(dataFetch, { email, password })
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         if (result.status === 200) {
           toast.success("Login successfully!");
           setTimeout(() => {
             Navigate("/");
-          }, 3000);
+          }, 2000);
         } else {
           console.log("not success");
           Navigate("/login");
