@@ -22,11 +22,17 @@ const LoginComponent = () => {
           Navigate("/");
         } else {
           console.log("not success");
-          Navigate("/");
+          Navigate("/login");
           alert("You are not registered to this service");
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.error(
+          "Login failed:",
+          err.response ? err.response.data : err.message
+        );
+        alert("Login failed, please check your credentials.");
+      });
   };
 
   const handleEmail = (e) => {
