@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../../../components/style.css"; // Import your CSS file for styling
 import "../../../components/Pages/Auth/Login.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import Toastify CSS
 const LoginComponent = () => {
   // const [data, setdata] = useState("");
   const [email, setemail] = useState("");
@@ -17,9 +19,10 @@ const LoginComponent = () => {
       .then((result) => {
         console.log(result);
         if (result.status === 200) {
-          console.log("success");
-          alert("success");
-          Navigate("/");
+          toast.success("Login successfully!");
+          setTimeout(() => {
+            Navigate("/");
+          }, 3000);
         } else {
           console.log("not success");
           Navigate("/login");
@@ -31,7 +34,7 @@ const LoginComponent = () => {
           "Login failed:",
           err.response ? err.response.data : err.message
         );
-        alert("Login failed, please check your credentials.");
+        toast.error("Login failed, please check your credentials.");
       });
   };
 
@@ -84,6 +87,7 @@ const LoginComponent = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };
