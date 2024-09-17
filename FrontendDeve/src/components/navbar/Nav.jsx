@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./nav.css";
 import { ScrolleBar } from "./Scrollnav";
 import "../../components/style.css";
@@ -67,10 +67,8 @@ const NavBar = () => {
               </a>
             </div>
             <div id="box-nav">
-              <div>
-                <a
-                  onClick={toggleDropDown}
-                  className="hidden md:flex space-x-4">
+              <div onClick={toggleDropDown}>
+                <a className="hidden md:flex space-x-4" href={toggleDropDown}>
                   General
                   {Drop && (
                     <div className="text-black drop-down" ref={dropDown}>
