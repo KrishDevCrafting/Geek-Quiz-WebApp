@@ -39,19 +39,20 @@ const Card2 = () => {
       <div className="align-text lg:text-white">
         <h1 id="text">MotorCar-QUIZ</h1>
       </div>
+
       <div
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center">
+        className="main-card sm:flex-col lg:flex-row"
+        onClick={handleNavigate}>
+        {/* Card-1 */}
         <div
-          className="main-card sm:flex-col lg:flex-row"
-          onClick={handleNavigate}>
-          {/* Card-1 */}
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
           <section>
             <div className="main-container-2" onClick={handlePower}>
               <div className="box-card card-2 w-3">
@@ -71,8 +72,17 @@ const Card2 = () => {
               </div>
             </div>
           </section>
-
-          {/* Card-2 */}
+        </div>
+        {/* Card-2 */}
+        <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
           <section onClick={handleClick}>
             <div className="main-container-2">
               <div className="box-card-3 card-2">
@@ -92,8 +102,17 @@ const Card2 = () => {
               </div>
             </div>
           </section>
-
-          {/* Card-3 */}
+        </div>
+        {/* Card-3 */}
+        <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
           <section onClick={handleRandom}>
             <div className="main-container-2">
               <div className="box-card-2 card-2">
