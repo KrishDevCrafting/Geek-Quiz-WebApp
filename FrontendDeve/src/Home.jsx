@@ -5,6 +5,7 @@ import Card2 from "./components/Cards/Cards2";
 import Cards from "./components/Cards/Cards1";
 import DynamicName from "./components/Cards/PlayerName";
   import "./HomeStyle.css";
+import Footer from "./components/Cards/Footer/footer";
 export const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ export const Home = () => {
         <Card2 />
         <Cards />
         <SpeedInsights />
+        <Footer/>
       </div>
     </>
   );
