@@ -45,7 +45,7 @@ const Card2 = () => {
         onClick={handleNavigate}>
         {/* Card-1 */}
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -75,7 +75,7 @@ const Card2 = () => {
         </div>
         {/* Card-2 */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -105,7 +105,7 @@ const Card2 = () => {
         </div>
         {/* Card-3 */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
