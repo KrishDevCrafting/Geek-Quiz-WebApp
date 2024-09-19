@@ -51,7 +51,7 @@ const Card2 = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-anchor-placement="top-center">
           <section>
             <div className="main-container-2" onClick={handlePower}>
@@ -81,7 +81,7 @@ const Card2 = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-anchor-placement="top-center">
           <section onClick={handleClick}>
             <div className="main-container-2">
@@ -111,7 +111,7 @@ const Card2 = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-anchor-placement="top-center">
           <section onClick={handleRandom}>
             <div className="main-container-2">
