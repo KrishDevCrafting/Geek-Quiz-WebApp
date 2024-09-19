@@ -1,8 +1,9 @@
 import React from "react";
+import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className=" text-white flex justify-around" style={{ height: "500px" }}>
+      <div className=" text-white flex justify-around">
         <div>
           <h1>Join for Update</h1>
           <p style={{ width: "578px" }}>
@@ -24,6 +25,36 @@ const Footer = () => {
             style={{ width: "110px", height: "44px" }}>
             Subcribe
           </button>
+        </div>
+      </div>
+
+      <div className="main flex justify-around text-white">
+        <div>
+          <ul>
+            <li className="list-heading">Product & Service</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Appliances</li>
+            <li>Lifestyle</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li className="list-heading">Suport</li>
+            <li> contact</li>
+            <li>Email Support</li>
+            <li>Phone Support</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li className="list-heading">Account</li>
+            <li>My Account</li>
+            <li>score</li>
+            <li>Rewards</li>
+          </ul>
         </div>
       </div>
     </>
