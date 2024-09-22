@@ -1,3 +1,19 @@
 .list-heading {
   font-size: 2rem;
 }
+.parent-box {
+  width: 578px;
+}
+@media screen and (min-width: 320px) and (max-width: 456px) {
+  .join {
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+  .parent {
+    display: block;
+  }
+  .parent-box {
+    margin-left: 20px;
+    width: 400px;
+  }
+}

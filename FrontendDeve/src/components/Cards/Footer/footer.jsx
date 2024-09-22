@@ -3,10 +3,10 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className=" text-white flex justify-around">
+      <div className=" text-white flex justify-around parent">
         <div>
-          <h1>Join for Update</h1>
-          <p style={{ width: "578px" }}>
+          <h1 className="join">Join for Update</h1>
+          <p className="parent-box">
             Be the first to know about our latest updates, exclusive offers, and
             more
           </p>
