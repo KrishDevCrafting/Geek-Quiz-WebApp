@@ -205,53 +205,85 @@ const PageCs = () => {
           className="flex justify-around card-responsive"
           onClick={handleNavigate}>
           <div className="card" onClick={handleCloud}>
-            <div className="box-card-four card-2 w-3">
-              <div className="border-2"></div>
-              <div className="content-2">
-                <div className="card-logo-2">
-                  <div className="logo2">
-                    <span>Cloud-Computing</span>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="box-card-four card-2 w-3">
+                <div className="border-2"></div>
+                <div className="content-2">
+                  <div className="card-logo-2">
+                    <div className="logo2">
+                      <span>Cloud-Computing</span>
+                    </div>
+                    <span className="trail-2"></span>
                   </div>
-                  <span className="trail-2"></span>
+                  <span className="logo-bottom-text-2">Krish.io</span>
+                  {/* Add a unique identifier */}
                 </div>
-                <span className="logo-bottom-text-2">Krish.io</span>
-                {/* Add a unique identifier */}
+                <span className="bottom-text-2">Space.io</span>
               </div>
-              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
 
           <div className="card" onClick={handleSQL}>
-            <div className="box-card-five card-2 w-3">
-              <div className="border-2-"></div>
-              <div className="content-2">
-                <div className="card-logo-2">
-                  <div className="logo2">
-                    <span className="text-red-400 text-2xl">SQL-database</span>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="box-card-five card-2 w-3">
+                <div className="border-2-"></div>
+                <div className="content-2">
+                  <div className="card-logo-2">
+                    <div className="logo2">
+                      <span className="text-red-400 text-2xl">
+                        SQL-database
+                      </span>
+                    </div>
+                    <span className="trail-2"></span>
                   </div>
-                  <span className="trail-2"></span>
+                  <span className="logo-bottom-text-2">Krish.io</span>
+                  {/* Add a unique identifier */}
                 </div>
-                <span className="logo-bottom-text-2">Krish.io</span>
-                {/* Add a unique identifier */}
+                <span className="bottom-text-2">Space.io</span>
               </div>
-              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
 
           <div className="card" onClick={handleOS}>
-            <div className="box-card-six card-2 w-3">
-              <div className="border-2"></div>
-              <div className="content-2">
-                <div className="card-logo-2">
-                  <div className="logo2">
-                    <span>Operating-system</span>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="box-card-six card-2 w-3">
+                <div className="border-2"></div>
+                <div className="content-2">
+                  <div className="card-logo-2">
+                    <div className="logo2">
+                      <span>Operating-system</span>
+                    </div>
+                    <span className="trail-2"></span>
                   </div>
-                  <span className="trail-2"></span>
+                  <span className="logo-bottom-text-2">Krish.io</span>
+                  {/* Add a unique identifier */}
                 </div>
-                <span className="logo-bottom-text-2">Krish.io</span>
-                {/* Add a unique identifier */}
+                <span className="bottom-text-2">Space.io</span>
               </div>
-              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
         </section>
