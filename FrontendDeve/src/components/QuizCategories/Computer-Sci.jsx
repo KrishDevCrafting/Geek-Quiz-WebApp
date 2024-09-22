@@ -8,7 +8,10 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { userLogic } from "../Features/user"; // Import the correct action
 import "./cs.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const PageCs = () => {
+  AOS.init();
   const navigate = useNavigate();
   const [dsa, setdsa] = React.useState(3);
   const [CN, setCN] = React.useState(4);
@@ -100,45 +103,67 @@ const PageCs = () => {
           </h1>
         </nav>
         {/* section-1 */}
+
         <div className="main-card" onClick={handleNavigate}>
           <section>
-            <div className="card" onClick={handleRoute}>
-              <div className="box-card card-2 w-3 ">
-                <div className="border-2"></div>
-                <div className="content-2">
-                  <div className="card-logo-2">
-                    <div className="logo2">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="card" onClick={handleRoute}>
+                <div className="box-card card-2 w-3 ">
+                  <div className="border-2"></div>
+                  <div className="content-2">
+                    <div className="card-logo-2">
                       <div className="logo2">
-                        <span>DSA</span>
+                        <div className="logo2">
+                          <span>DSA</span>
+                        </div>
                       </div>
+                      <span className="trail-2"></span>
                     </div>
-                    <span className="trail-2"></span>
+                    <span className="logo-bottom-text-2">Krish.io</span>
                   </div>
-                  <span className="logo-bottom-text-2">Krish.io</span>
+                  <span className="bottom-text-2">Space.io</span>
                 </div>
-                <span className="bottom-text-2">Space.io</span>
               </div>
             </div>
           </section>
+
           {/* section-end */}
 
           {/* box-2 started */}
           <section onClick={handleCN}>
-            <div className="card">
-              <div className="box-card-two card-2 w-3">
-                <div className="border-2"></div>
-                <div className="content-2">
-                  <div className="card-logo-2">
-                    <div className="logo2">
+            <div
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="card">
+                <div className="box-card-two card-2 w-3">
+                  <div className="border-2"></div>
+                  <div className="content-2">
+                    <div className="card-logo-2">
                       <div className="logo2">
-                        <span>Computer-Networking</span>
+                        <div className="logo2">
+                          <span>Computer-Networking</span>
+                        </div>
                       </div>
+                      <span className="trail-2"></span>
                     </div>
-                    <span className="trail-2"></span>
+                    <span className="logo-bottom-text-2">Krish.io</span>
                   </div>
-                  <span className="logo-bottom-text-2">Krish.io</span>
+                  <span className="bottom-text-2">Space.io</span>
                 </div>
-                <span className="bottom-text-2">Space.io</span>
               </div>
             </div>
           </section>
@@ -147,26 +172,38 @@ const PageCs = () => {
           {/* box-3 started */}
 
           <div className="card" onClick={handleDbms}>
-            <div className="box-card-three card-2 w-3">
-              <div className="border-2"></div>
-              <div className="content-2">
-                <div className="card-logo-2">
-                  <div className="logo2">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              <div className="box-card-three card-2 w-3">
+                <div className="border-2"></div>
+                <div className="content-2">
+                  <div className="card-logo-2">
                     <div className="logo2">
-                      <span>Database-Management-System</span>
+                      <div className="logo2">
+                        <span>Database-Management-System</span>
+                      </div>
                     </div>
+                    <span className="trail-2"></span>
                   </div>
-                  <span className="trail-2"></span>
+                  <span className="logo-bottom-text-2">Krish.io</span>
                 </div>
-                <span className="logo-bottom-text-2">Krish.io</span>
+                <span className="bottom-text-2">Space.io</span>
               </div>
-              <span className="bottom-text-2">Space.io</span>
             </div>
           </div>
           {/* box-3 Ended */}
         </div>
         {/* Section-2 covering all cards */}
-        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
+        <section
+          className="flex justify-around card-responsive"
+          onClick={handleNavigate}>
           <div className="card" onClick={handleCloud}>
             <div className="box-card-four card-2 w-3">
               <div className="border-2"></div>
@@ -222,7 +259,9 @@ const PageCs = () => {
 
         {/* Section-3 */}
 
-        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
+        <section
+          className="flex justify-around card-responsive"
+          onClick={handleNavigate}>
           <div className="card" onClick={handleCyber}>
             <div className="box-card-seven card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
@@ -276,7 +315,9 @@ const PageCs = () => {
         </section>
         {/* Section-3 End! */}
 
-        <section className="flex justify-around card-responsive" onClick={handleNavigate}>
+        <section
+          className="flex justify-around card-responsive"
+          onClick={handleNavigate}>
           <div className="card" onClick={handleBlockChain}>
             <div className="box-card-ten card-2 w-3 bg-hero-pattern">
               <div className="border-2"></div>
