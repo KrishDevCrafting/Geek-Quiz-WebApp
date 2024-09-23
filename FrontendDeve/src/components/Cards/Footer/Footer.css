@@ -19,12 +19,13 @@
     margin-left: 20px;
     width: 400px;
   }
-  .style-list-a {
-    border: red 1px solid;
-  }
+
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal-width columns */
     grid-template-rows: auto auto; /* Two rows */
+  }
+  .main ul {
+    margin-left: 20px;
   }
 }
