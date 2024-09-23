@@ -21,6 +21,7 @@ const Footer = () => {
             placeholder="Enter your email address"
           />
           <button
+            id="btn"
             className="bg-blue-500 text-white"
             style={{ width: "110px", height: "44px" }}>
             Subcribe
@@ -41,19 +42,27 @@ const Footer = () => {
 
         <div>
           <ul>
-            <li className="list-heading">Suport</li>
-            <li> contact</li>
-            <li>Email Support</li>
-            <li>Phone Support</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
             <li className="list-heading">Account</li>
             <li>My Account</li>
             <li>score</li>
             <li>Rewards</li>
+          </ul>
+        </div>
+        {/* add */}
+        <div className="style-list-a">
+          <ul>
+            <li className="list-heading">Support</li>
+            <li>Contact</li>
+            <li>Email Support</li>
+            <li>Phone Support</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li className="list-heading">About</li>
+            <li>Update</li>
+            <li>Motive</li>
+            <li>About</li>
           </ul>
         </div>
       </div>
