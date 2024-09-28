@@ -25,7 +25,7 @@ const LoginComponent = () => {
           }, 2000);
         } else {
           console.log("not success");
-          Navigate("/login");
+          Navigate("/login"); 
           alert("You are not registered to this service");
         }
       })

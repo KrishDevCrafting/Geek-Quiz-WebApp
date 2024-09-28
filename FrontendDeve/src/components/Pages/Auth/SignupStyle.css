@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 #login-btn {
@@ -89,7 +88,6 @@
     display: block;
     color: #c7bdc7;
     margin: 20px;
-
   }
 
   .display {
@@ -114,15 +112,12 @@
     margin: 5px 5px 10px -50px;
   }
 
-  .rock {}
-
   .res-btn {
     margin-left: -50px;
   }
 
   #sign-page {
     height: 40rem;
-
   }
 }
 
@@ -141,7 +136,6 @@
 .container-box {
   height: 100vh;
 }
-
 
 /* Toggle button hard-code-css  */
 .toggle-switch {
@@ -178,7 +172,7 @@
   transition: 0.3s;
 }
 
-.checkbox:checked~.slider {
+.checkbox:checked ~ .slider {
   background-color: var(--light);
 }
 
@@ -197,7 +191,7 @@
   transition: 0.3s;
 }
 
-.checkbox:checked~.slider::before {
+.checkbox:checked ~ .slider::before {
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);
@@ -208,12 +202,10 @@
 
 /* tooggle btn css end */
 .toggle {
-
   display: inline-block;
   position: absolute;
   left: 90%;
   top: 2%;
-
 }
 
 .rock {
@@ -222,9 +214,7 @@
   left: 55%;
 }
 
-
 #sign-page {
-
   background: rgba(245, 240, 240, 0.15);
   backdrop-filter: blur(11px);
   border-radius: 8px;
@@ -242,5 +232,5 @@
 }
 
 .text-color-white {
-  color: #fff
+  color: #fff;
 }
