@@ -25,7 +25,7 @@ const LoginComponent = () => {
           }, 2000);
         } else {
           console.log("not success");
-          Navigate("/login"); 
+          Navigate("/login");
           alert("You are not registered to this service");
         }
       })
@@ -47,48 +47,53 @@ const LoginComponent = () => {
   };
 
   return (
-    <div className="login-container flex items-center justify-center">
-      <div className="login-content">
-        <h2 className="login-title text-purple-500 text-5xl">Welcome back</h2>
-        <form className="login-form" onSubmit={handleSubmit}>
-          <h3 className="text-white">Login</h3>
-          <div className="input-group">
-            <label htmlFor="email-address" className="text-lg">
-              Email address
-            </label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              onChange={handleEmail}
-              className="block py-2"
-              placeholder="Email address"
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="password" className="text-lg">
-              Password
-            </label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              autoComplete="current-password"
-              required
-              onChange={handlePassword}
-              className="block py-2"
-              placeholder="Password"
-            />
-          </div>
-          <button type="submit" className="login-button">
-            Sign in
-          </button>
-        </form>
+    <>
+      <div>
+        {/* s */}
       </div>
-      <ToastContainer />
-    </div>
+      <div className="login-container flex items-center justify-center">
+        <div className="login-content">
+          <h2 className="login-title text-purple-500 text-5xl">Welcome back</h2>
+          <form className="login-form" onSubmit={handleSubmit}>
+            <h3 className="text-white">Login</h3>
+            <div className="input-group">
+              <label htmlFor="email-address" className="text-lg">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                onChange={handleEmail}
+                className="block py-2"
+                placeholder="Email address"
+              />
+            </div>
+            <div className="input-group">
+              <label htmlFor="password" className="text-lg">
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                required
+                onChange={handlePassword}
+                className="block py-2"
+                placeholder="Password"
+              />
+            </div>
+            <button type="submit" className="login-button">
+              Sign in
+            </button>
+          </form>
+        </div>
+        <ToastContainer />
+      </div>
+    </>
   );
 };
 

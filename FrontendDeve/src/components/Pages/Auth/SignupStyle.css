@@ -128,13 +128,12 @@
   background-color: azure;
 }
 
+.container-box {
+  height: 100vh;
+}
 .main,
 .dark-mode {
   background-color: #191919;
-}
-
-.container-box {
-  height: 100vh;
 }
 
 /* Toggle button hard-code-css  */
