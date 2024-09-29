@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className=" text-white flex justify-around parent">
+      <div className=" text-white flex justify-around parent my-8">
         <div>
           <h1 className="join">Join for Update</h1>
           <p className="parent-box">
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="main flex justify-around text-white">
+      <div className="flex justify-around text-white">
         <div>
           <ul>
             <li className="list-heading">Product & Service</li>
