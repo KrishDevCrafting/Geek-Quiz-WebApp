@@ -127,7 +127,7 @@ const Signup = () => {
                   </label>
                   <input
                     onChange={(e) => setName(e.target.value)}
-                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput"
+                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput p-2"
                     name="username"
                     placeholder=" Username"
                     type="text"
@@ -144,7 +144,7 @@ const Signup = () => {
                     id="email"
                     placeholder=" Email"
                     onChange={(e) => setEmail(e.target.value)}
-                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput"
+                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput p-2"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ const Signup = () => {
                     id="password"
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder=" Password"
-                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput"
+                    className="block w-96 py-1 border-0 focus:outline-none my-2 userInput p-2"
                   />
                 </div>
                 <div className="my-2 res-btn">
