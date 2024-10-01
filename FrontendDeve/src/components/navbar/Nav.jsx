@@ -54,7 +54,6 @@ const NavBar = () => {
       {/* https://uiverse.io/JkHuger/curvy-liger-67 */}
 
       <div className="body2">
-        <ComponenetA />
         <ScrolleBar />
         <div className="main">
           <nav id="style">
