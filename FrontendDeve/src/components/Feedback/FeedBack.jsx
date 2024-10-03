@@ -26,54 +26,6 @@ const FeedBack = () => {
 
   return (
     <>
-      {/* style for star */}
-      <div>
-        <style>
-          {`
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-
-
-.container {
-
-  width: 5rem;
-  display: block;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
-.container svg {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 50px;
-  transition: all 0.3s;
-  fill: #666;
-}
-
-.container svg:hover {
-  transform: scale(1.1);
-}
-
-.container input:checked ~ svg {
-  fill: #ffeb49;
-}
-
-`}
-        </style>
-      </div>
-
-      {/* Style for Start */}
-
       <nav className="navbar">
         <h1 className="navbar-brand">Feed-Back</h1>
         <ul className="navbar-links">
