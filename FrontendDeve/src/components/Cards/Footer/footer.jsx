@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className=" text-white flex justify-around parent my-4">
+      <div className=" text-whitex   flex justify-around parent my-4">
         <div>
           <h1 className="join">Join for Update</h1>
           <p className="parent-box">

@@ -71,6 +71,9 @@
 .label-text-color {
   color: #757575;
 }
+#heading{
+text-align: center;
+}
 
 .heading-signUp {
   display: none;
