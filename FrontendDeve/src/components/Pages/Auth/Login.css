@@ -26,6 +26,13 @@ width: 379px;
   color: #122048;
   /* equivalent to text-purple-500 in Tailwind */
 }
+.sign-google{
+    padding-top: 10px;
+    width: 379px;
+    border: 1px solid black;
+    border-radius:8px ;
+    height: 44px;
+}
 
 .login-form {
   display: flex;
