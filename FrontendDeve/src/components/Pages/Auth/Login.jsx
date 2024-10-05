@@ -48,12 +48,12 @@ const LoginComponent = () => {
 
   return (
     <>
-      <div>
-        {/* s */}
-      </div>
+      <div>{/* s */}</div>
       <div className="login-container flex items-center justify-center">
         <div className="login-content">
-          <h2 className="login-title text-purple-500 text-5xl">Welcome back</h2>
+          <h2 className="login-title  text-5xl">
+            Log in to your account
+          </h2>
           <form className="login-form" onSubmit={handleSubmit}>
             <h3 className="text-white">Login</h3>
             <div className="input-group">
