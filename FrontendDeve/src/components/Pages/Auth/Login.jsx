@@ -59,7 +59,11 @@ const LoginComponent = () => {
 
               <h3 className="text-white google-heading">Sign in with Google</h3>
             </div>
-
+            <div class="separator">
+              <div class="separator-line"></div>
+              <div class="separator-text">or</div>
+              <div class="separator-line"></div>
+            </div>
             <div className="input-group">
               <label htmlFor="email-address" className="text-lg">
                 Email address
@@ -102,3 +106,5 @@ const LoginComponent = () => {
 };
 
 export default LoginComponent;
+
+// https://www.figma.com/design/YE7hDRTpHystYkAQfDZBlk/Responsive-Log-in-(Community)?node-id=1-3&node-type=canvas&t=gAKNFfPQSvzaqeyP-0
