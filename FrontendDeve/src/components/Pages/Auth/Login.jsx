@@ -52,13 +52,14 @@ const LoginComponent = () => {
       <div>{/* s */}</div>
       <div className="login-container flex items-center justify-center">
         <div className="login-content">
-          <h2 className="login-title  text-5xl">
-            {" "}
-            <img src={img} alt="img" />
-            Log in to your account
-          </h2>
+          <h2 className="login-title  text-5xl">Log in to your account</h2>
           <form className="login-form" onSubmit={handleSubmit}>
-            <h3 className="text-white sign-google">Sign in with Google</h3>
+            <div className="flex justify-center style-box">
+              <img src={img} alt="img" className="google-img" />
+
+              <h3 className="text-white google-heading">Sign in with Google</h3>
+            </div>
+
             <div className="input-group">
               <label htmlFor="email-address" className="text-lg">
                 Email address

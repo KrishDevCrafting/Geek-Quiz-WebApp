@@ -20,18 +20,25 @@
 .login-title {
   margin-bottom: 1.5rem;
   font-size: 24px;
-width: 379px;
+  width: 379px;
   /* equivalent to text-5xl in Tailwind */
   font-weight: bold;
   color: #122048;
   /* equivalent to text-purple-500 in Tailwind */
 }
-.sign-google{
-    padding-top: 10px;
-    width: 379px;
-    border: 1px solid black;
-    border-radius:8px ;
-    height: 44px;
+.style-box {
+  width: 379px;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 44px;
+}
+.google-heading {
+  padding: 10px 0px 10px 10px;
+}
+.google-img{
+margin-top: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .login-form {
