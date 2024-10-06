@@ -35,10 +35,10 @@
 .google-heading {
   padding: 10px 0px 10px 10px;
 }
-.google-img{
-margin-top: 10px;
-    width: 24px;
-    height: 24px;
+.google-img {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 .login-form {
@@ -100,19 +100,41 @@ margin-top: 10px;
 
 /* Custom Horizontal Line */
 .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+#horizontal-line {
+ font-size: 20px;
+}
+#horizontal-line::before {
+  content: "";
+  width: 150px;
+  height: 0.1px;
+  position: absolute;
+  left: 38%;
+  top: 300px;
+  z-index: -1;
+  display: block;
+  background-color: #000;
+}
+#horizontal-line::after {
+  content: "";
+  width: 150px;
+  height: 0.2px;
+  position: absolute;
+  right: 38%;
+  top: 300px;
+  z-index: -1;
+  display: block;
+  background-color: #000;
 }
 
-.separator-line {
-    flex: 1;
-    border-top: 1px solid #000;
-}
-
-.separator-text {
-    margin: 0 10px;
-    color: #000;
+.common-input {
+  border-radius: 8px;
+  width: 345px;
+  height: 44px;
+  margin-left: -20px;
 }
 /* End Horizontal-Line */

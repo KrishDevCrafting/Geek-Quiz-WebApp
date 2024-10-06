@@ -60,12 +60,10 @@ const LoginComponent = () => {
               <h3 className="text-white google-heading">Sign in with Google</h3>
             </div>
             <div class="separator">
-              <div class="separator-line"></div>
-              <div class="separator-text">or</div>
-              <div class="separator-line"></div>
+              <h1 id="horizontal-line">or</h1>
             </div>
             <div className="input-group">
-              <label htmlFor="email-address" className="text-lg">
+              <label htmlFor="email-address" className="text-lg -mx-4">
                 Email address
               </label>
               <input
@@ -75,12 +73,12 @@ const LoginComponent = () => {
                 autoComplete="email"
                 required
                 onChange={handleEmail}
-                className="block p-2"
+                className="block p-2 common-input"
                 placeholder="Email address"
               />
             </div>
             <div className="input-group">
-              <label htmlFor="password" className="text-lg">
+              <label htmlFor="password" className="text-lg -mx-4">
                 Password
               </label>
               <input
@@ -90,7 +88,7 @@ const LoginComponent = () => {
                 autoComplete="current-password"
                 required
                 onChange={handlePassword}
-                className="block p-2"
+                className="block p-2 common-input"
                 placeholder="Password"
               />
             </div>
