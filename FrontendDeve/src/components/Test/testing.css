@@ -1,0 +1,16 @@
+.container-love {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns with different widths */
+  grid-template-rows: auto 100px; /* Two rows: one auto and one 100px tall */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.item1 {
+  grid-column: 1 / 2; /* Spans from column 1 to 3 */
+  grid-row: 1 / 2; /* Spans row 1 */
+}

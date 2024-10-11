@@ -4,6 +4,15 @@
 .parent-box {
   width: 578px;
 }
+
+.grid-container {
+  border: 1px solid red;
+  display: grid;
+justify-items:center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 200px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 456px) {
   .join {
     font-weight: bolder;
@@ -18,14 +27,5 @@
   .parent-box {
     margin-left: 20px;
     width: 200px;
-  }
-
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: auto auto; /* Two rows */
-  }
-  .main ul {
-    margin-left: 20px;
   }
 }
