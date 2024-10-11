@@ -10,7 +10,7 @@
   display: grid;
 justify-items:center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 200px;
+  grid-template-rows: auto 100px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 456px) {
@@ -27,5 +27,8 @@ justify-items:center;
   .parent-box {
     margin-left: 20px;
     width: 200px;
+  }
+  .grid-container{
+    grid-template-columns: 1fr 2fr 1fr;
   }
 }
