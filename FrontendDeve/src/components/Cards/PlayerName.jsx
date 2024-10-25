@@ -20,7 +20,7 @@ const DynamicName = () => {
       {/* section 2 started here */}
       <section className="section2">
         <div className="box">
-          <h1 id="">Top player 🎮</h1>
+          <h1 className="text-4xl text-center">Top player 🎮</h1>
           <ul>
             {data.map((e) => (
               <li>{e.name}</li>
