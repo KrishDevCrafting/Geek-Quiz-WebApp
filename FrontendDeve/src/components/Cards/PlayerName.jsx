@@ -14,6 +14,8 @@ const DynamicName = () => {
     dynamicData();
   }, []);
 
+  
+
   return (
     <>
       
