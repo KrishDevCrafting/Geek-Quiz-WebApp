@@ -1,10 +1,4 @@
 /* section 2 */
-.section2 {
-  display: flex;
-  justify-content: center;
-
-  color: white;
-}
 
 .text-align {
   height: fit-content;
@@ -16,12 +10,24 @@
   margin-left: 30px;
 }
 
-li {
-  padding: 5px;
-  list-style: none;
+.box li {
+  display: inline-block;
 }
 
-.box li{
-display: inline-block;
+.bottle {
+  margin-top: 20px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-around;
+}
 
+.glass {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 10%;
+  height: 80px;
+  border-radius: 10px;
 }

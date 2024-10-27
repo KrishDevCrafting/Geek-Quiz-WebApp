@@ -14,20 +14,20 @@ const DynamicName = () => {
     dynamicData();
   }, []);
 
-  
-
   return (
     <>
-      
       {/* section 2 started here */}
       <section className="section2">
         <div className="box">
-          <h1 className="text-4xl text-center">Top player 🎮</h1>
-          <ul>
-            {data.map((e) => (
-              <li>{e.name}</li>
-            ))}
-          </ul>
+          <h1 className="text-4xl text-center text-white">Top player 🎮</h1>
+
+          <div className="bottle">
+            <div className="glass">
+              <p>Krish</p>
+            </div>
+            <div className="glass"></div>
+            <div className="glass"></div>
+          </div>
         </div>
       </section>
     </>
