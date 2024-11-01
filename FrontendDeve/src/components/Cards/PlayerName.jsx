@@ -23,7 +23,7 @@ const DynamicName = () => {
 
           <div className="">
             <div className="player-name-container">
-              {data.map((e) => (
+              {data.slice(0, 3).map((e) => (
                 <p className="player-name-box">{e.name}</p>
               ))}
             </div>
