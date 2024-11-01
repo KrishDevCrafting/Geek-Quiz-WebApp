@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./testing.css";
 
 const Testing = () => {
+  const [data, setData] = useState([
+    {
+      name: "krish",
+    },
+    { name: "Vaishali" },
+  ]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("./test.json");
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error("Error Fetching Data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <>
-      <div class="container-love">
-        <div class="item1">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-      </div>
-    </>
+    <div className="container-love">
+      {data.map((item, index) => (
+        <div key={index} className="box">
+          <p>{item.name}</p>
+        </div>
+      ))}
+    </div>
   );
 };
 
