@@ -21,6 +21,7 @@
 }
 
 .player-name-box {
+  padding: 10px;
   margin: 50px 50px 10px 50px;
   color: white;
   border: 1px solid white;
