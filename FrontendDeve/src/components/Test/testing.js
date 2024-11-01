@@ -7,6 +7,9 @@ const Testing = () => {
       name: "krish",
     },
     { name: "Vaishali" },
+    {name: "Yash"},{
+      name: "Shri Krishna ji"
+    }
   ]);
 
   useEffect(() => {
@@ -26,7 +29,7 @@ const Testing = () => {
   return (
     <div className="container-love">
       {data.map((item, index) => (
-        <div key={index} className="box">
+        <div className="time" key={index}>
           <p>{item.name}</p>
         </div>
       ))}

@@ -21,12 +21,12 @@ const DynamicName = () => {
         <div className="box">
           <h1 className="text-4xl text-center text-white">Top player 🎮</h1>
 
-          <div className="bottle">
-            <div className="glass">
-              <p>Krish</p>
+          <div className="">
+            <div className="player-name-container">
+              {data.map((e) => (
+                <p className="player-name-box">{e.name}</p>
+              ))}
             </div>
-            <div className="glass"></div>
-            <div className="glass"></div>
           </div>
         </div>
       </section>

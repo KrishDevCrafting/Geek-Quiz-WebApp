@@ -14,3 +14,7 @@
   grid-column: 1 / 2; /* Spans from column 1 to 3 */
   grid-row: 1 / 2; /* Spans row 1 */
 }
+
+.time {
+  border: 1px solid red;
+}

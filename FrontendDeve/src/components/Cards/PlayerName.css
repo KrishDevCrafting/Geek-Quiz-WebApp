@@ -14,20 +14,18 @@
   display: inline-block;
 }
 
-.bottle {
-  margin-top: 20px;
-  border: 2px solid red;
-  display: flex;
-  justify-content: space-around;
-}
-
-.glass {
-  color: white;
+.player-name-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  width: 10%;
-  height: 80px;
+}
+
+.player-name-box {
+  color: white;
+  border: 1px solid #000;
+  width: 200px;
+  height: 50px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
