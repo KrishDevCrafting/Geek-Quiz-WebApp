@@ -1,9 +1,24 @@
 .leftSide-nav {
-  background: #000;
+
   border: 1px solid red;
-  width: 200px;
+  width: auto;
   height: 100vh;
   color: #fff;
+  display: flex;
+  gap: 20px;
+}
+
+.sideNavbar-div {
+  background: #000;
+  border: 1px solid blue;
+  width: 250px;
+}
+
+.heading-div {
+  width: 500px;
+  border: 1px solid red;
+  ;
+
 }
 
 /* hello */
