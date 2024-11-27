@@ -29,7 +29,7 @@ const LeaderPageComponent = () => {
           <div>
             <span className="text-black">Showing:</span>
             <span>
-              <input type="text" />
+              <input type="text" id="input-option" />
             </span>
           </div>
           {/* End Section */}
