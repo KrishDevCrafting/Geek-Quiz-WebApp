@@ -22,13 +22,23 @@ const LeaderPageComponent = () => {
             </ul>
           </div>
         </div>
-        <div className="heading-div bg-red-900">
+        <div className="heading-div">
           <h1 className="text-black">See where You are!</h1>
+
+          {/* section for showing text */}
           <div>
-            <span>Showing:</span>
+            <span className="text-black">Showing:</span>
             <span>
               <input type="text" />
             </span>
+          </div>
+          {/* End Section */}
+
+          <div className="top-parent-container text-black my-4">
+            <div className="top-div-boxs">Karan</div>
+            <div className="top-div-boxs">Ashoka</div>
+            <div className="top-div-boxs">Divyansh</div>
+            <div className="top-div-boxs">Joe</div>
           </div>
         </div>
       </div>

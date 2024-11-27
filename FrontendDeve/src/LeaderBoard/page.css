@@ -21,5 +21,16 @@
 
 }
 
+.top-parent-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.top-div-boxs {
+  border: 1px solid black;
+}
+
 /* hello */
 /* Mewing Bye bye */
