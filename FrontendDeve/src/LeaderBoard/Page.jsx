@@ -22,9 +22,14 @@ const LeaderPageComponent = () => {
             </ul>
           </div>
         </div>
-        <div className="heading-div">
-          <h1 className="text-red-900">See where You are!</h1>
-          
+        <div className="heading-div bg-red-900">
+          <h1 className="text-black">See where You are!</h1>
+          <div>
+            <span>Showing:</span>
+            <span>
+              <input type="text" />
+            </span>
+          </div>
         </div>
       </div>
     </>
