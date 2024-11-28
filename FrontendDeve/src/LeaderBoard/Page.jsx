@@ -8,17 +8,17 @@ const LeaderPageComponent = () => {
         <div className="sideNavbar-div">
           <div>
             <ol>
-              <li>GeekQuiz</li>
-              <li>
+              <li className="py-4 px-16">GeekQuiz</li>
+              <li className="px-4 nav-input">
                 <input type="text" placeholder="search" />
               </li>
             </ol>
 
-            <ul>
-              <li>Home</li>
-              <li>FeedBack</li>
-              <li>Update</li>
-              <li>Browrse-more</li>
+            <ul className="p-4">
+              <li className="p-4">Home</li>
+              <li className="p-4">FeedBack</li>
+              <li className="p-4">Update</li>
+              <li className="p-4">Browrse-more</li>
             </ul>
           </div>
         </div>
